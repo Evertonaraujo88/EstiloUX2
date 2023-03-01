@@ -1,0 +1,23 @@
+
+/*Reset css*/
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: ;
+}
+
+header {
+    display: flex;
+
+    justify-content: space-between;
+    background-color: chartreuse;
+}

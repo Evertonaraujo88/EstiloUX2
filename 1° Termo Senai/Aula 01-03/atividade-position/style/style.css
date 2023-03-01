@@ -70,6 +70,7 @@ section.como-ajudamos {
     color: white;
 }
 section .como-ajudamos-flex {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -92,8 +93,9 @@ section .ajuda-box p {
 }
 
 section .conhecimento-profundo {
-    position: relative;
+    position: absolute;
     top: -65px;
+    right: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -1,0 +1,246 @@
+https://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php
+
+A propriedade CSS background
+Publicado em: 10/12/2003
+Atualizações: 06/06/2014 - 20/04/2015 - 06/05/2016
+Na atualização de 2015 deste tutorial foi atualizada também a página interativa destinada às suas experiências com esta propriedade CSS.
+Ir para a página interativa atualizada
+
+Introdução
+São 8 (oito) as propriedades CSS destinadas a estilizar o fundo de um box HTML. Elas são listadas e descritas sumariamente a seguir.
+
+background-color (define a cor do fundo);
+background-image (define uma imagem de fundo);
+background-repeat (define a maneira como a imagem de fundo é posicionada);
+background-attachment (define se a imagem de fundo "rola" ou não com a tela);
+background-position (define como e onde a imagem de fundo é posicionada);
+background-clip (define a área do box onde a imagem de fundo é aplicada);
+background-origin (define a posição de origem da imagem no box);
+background-size (define as dimensões da imagem no box);
+background (maneira abreviada para declarar todas as propriedades anteriores).
+Valores válidos para as propriedades destinadas a estilizar o fundo de um box HTML
+background-color:
+código hexadecimal: #ffc6d9
+código rgb: rgb(255,235,0)
+código rgba: rgb(255,235,0, 0.7)
+código hsl: hsl(210,100%,40%)
+código hsla: hsla(155,80%,35%,0.4)
+palavra-chave: red, blue, green...etc
+transparente: transparent
+background-image:
+URL: url(caminho/imagem.gif)
+URL: url('caminho/imagem.gif')
+URL: url("caminho/imagem.gif")
+Gradiente linear: linear-gradient(45deg, blue, red)
+Gradiente radial: radial-gradient(20px 50px, green, blue, red)
+O uso de aspas simples ou duplas no URL da imagem é facultativo
+
+background-repeat:
+imagem não repete: no-repeat
+imagem repete na vertical e horizontal: repeat
+imagem repete na vertical: repeat-y
+imagem repete na horizontal: repeat-x
+imagem toca as quatro bordas internas do box e são espaçadas de modo a se distribuirem igualmente: space
+imagem toca as quatro bordas internas do box e são redimensionadas de modo a preencherem o fundo tocando umas nas outras: round
+background-attachment:
+imagem permanece fixa em relação à viewport (janela do navegador) e não rola juntamente com o conteúdo: fixed
+imagem não permanece fixa em relação à viewport (janela do navegador) e rola juntamente com o conteúdo - este é o valor padrão: scroll
+imagem permanece fixa em relação à viewport (janela do navegador) mas quando aplicada ao box de um elemento rola juntamente com o conteúdo se o elemento tiver um mecanismo de rolagem definido por overflow: scroll: local
+background-position:
+Xpx Ypx
+X% Y%
+top left
+top center
+top right
+center left
+center center
+center right
+bottom left
+bottom center
+bottom right
+top
+right
+bottom
+left
+background-clip:
+a imagem ocupa até a área das bordas do box, inclusive, se houver uma - este é o comportamento padrão: border-box
+a imagem ocupa até a área de padding do box, inclusive, se houver uma e não ocupa a área de bordas: padding-box
+a imagem ocupa até a área de conteúdo do boxe não ocupa as áreas de padding e bordas se houver: content-box
+background-origin:
+a a imagem tem por origem o canto superior esquerdo do box considerada das bordas do box, se houver uma - este é o comportamento padrão: border-box
+a imagem tem por origem o canto superior esquerdo do box sem considerar as bordas do box, se houver uma: padding-box
+a imagem tem por origem o canto superior esquerdo do box sem considerar o padding e as bordas do box, se houver: content-box
+background-size:
+a imagem terá as dimensões definidas por unidade de medida CSS: 150px 70px
+a imagem terá suas dimensões originais - este é o valor padrão: auto
+a imagem terá as dimensões de modo a que sua maior dimensão ocupe toda a extensão do box e a menor dimensão seja tal que o aspect ratio (relação entre largura e altura) seja preservado: contain
+a imagem terá as dimensões de modo a que sua menor dimensão ocupe toda a extensão do box e a maior dimensão seja tal que o aspect ratio (relação entre largura e altura) seja preservado: cover
+Exemplos práticos
+Vejamos a seguir alguns exemplos práticos.
+
+background-color
+HTML
+...
+<head>
+<style rel="stylesheet">/>
+  body { background-color: #cff; } /*azul claro*/
+  h2 { background-color: #f00; }   /* vermelho */
+  p { background-color: #0f0; }    /*  verde   */
+</style>
+</head>
+<body>
+  <h2>Estude CSS</h2>
+  <p>Com CSS você controla melhor seu layout</p>
+</body>
+</html>
+Este é o efeito da folha de estilo acima:
+
+Estude CSS
+
+Com CSS você controla melhor seu layout
+
+background-image
+HTML
+...
+<head>
+<style rel="stylesheet">/>
+  body { background-image: url("/images/logo-css3.png"); }
+</style>
+</head>
+<body>
+</body>
+</html>
+Este é o efeito da folha de estilo acima:
+
+background-repeat (na vertical)
+HTML
+...
+<head>
+<style rel="stylesheet">/>
+  body {
+    background-image: url("/images/logo-html5.png");
+    background-repeat: repeat-y;
+  }
+</style>
+</head>
+<body>
+</body>
+</html>
+Este é o efeito da folha de estilo acima:
+
+background-repeat (na horizontal)
+HTML
+...
+<head>
+style type="text/css">
+  body {
+    background-image: url("/images/logo-css3.png");
+    background-repeat: repeat-x;
+  }
+</style
+</head>
+<body>
+</body>
+</html>
+Este é o efeito da folha de estilo acima:
+
+background-position
+HTML
+...
+<head>
+<style rel="stylesheet">/>
+  body {
+    background-image: url("/images/logo-html5.png");
+    background-repeat: no-repeat;
+    background-position: 200px 70px; 
+  }
+</style>
+</head>
+<body>
+</body>
+</html>
+Este é o efeito da folha de estilo acima: a imagem esta posicionada a 200 pixel da margem esquerda e 70 pixel da margem superior
+
+Atenção: cuidado ao definir a propriedade background-position com uso de valores em porcentagem, pois é indespensável que você esteja ciente de como a posição é calculada nestes casos para não ser surpreendido com "resultado não esperado".
+
+Definir os valores 0% 0% posiciona o canto superior esquerdo da imagem no canto superior esquerdo do box (as coordenadas do canto superior esquerdo tanto da imagem como do box são 0% 0%).
+
+Definir os valores 100% 100% posiciona o canto inferior direito da imagem no canto inferior direito do box (as coordenadas do canto inferior direito tanto da imagem como do box são 100% 100%).
+
+Definir os valores X% Y% posiciona o ponto da imagem cujas coordenadas são X% Y% no ponto do box cujas coordenadas são X% Y% (as coordenadas X% Y% tanto da imagem como do box são X% Y%).
+
+A imagem mostrada a seguir foi copiada da especificação do W3C e esclarece o posicionamento com uso dos valores em porcentagem 75% 50%.
+
+esquema de posicionamneto com porcentagem
+background-attachment
+HTML
+...
+<head>
+  <style rel="stylesheet">/>
+  body {
+    background-image: url("/images/logo-css3.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+</style>
+</head>
+<body>
+</body>
+</html>
+Este é o efeito da aplicação das regras CSS acima em uma página web.
+
+background (declaração abreviada)
+Esta é a maneira abreviada de você escrever uma regra para as propriedades do fundo.
+
+Você pode declarar todas ou algumas das propriedades estudadas em uma regra única conforme mostrado a seguir.
+
+CSS
+seletor {
+  background: 
+    background-image background-position /
+    background-size background-repeat
+    background-attachment background-origin
+    background-clip background-color;
+} /* se um valor for omitido será considerado 
+     o valor padrão */ 
+Observe o exemplo abaixo:
+
+HTML
+...
+<head>>
+<style rel="stylesheet">/>
+body { 
+background:  url("css.gif") 200px 70px /
+80% no-repeat fixed content-box content-box #00FF00;
+}
+</style>
+</head>
+Múltiplas imagens de fundo
+Podemos definir quantas imagens de fundo quisermos, em um mesmo box, posicionando e dimensionando cada uma delas individualmente.
+
+Cada uma das imagens de fundo definidas para um mesmo box cria um layer com uma coordenada z (como se fosse um z-index) definindo sua visibilidade. Os layers são posicionados em uma pilha de layers colocados uns sobre outros fazendo com que os layers com maior coordenada z se sobreponham àqueles com menor coordenada z.
+
+ordem de empilhamento, ou seja, a coordenada z é definida pela ordem em que a imagem é declarada dentro da regra CSS. A primeira imagem declarada recebe a maior coordenada z, a segunda recebe a segunda maior coordenada e assim por diante até a última imagem declarada que recebe a menor coordenada z. A sintaxe para declarar múltiplas imagens de fundo consiste em separar os valores das propriedades com uma vírgula.
+
+Considere a regra CSS a seguir, destinada a definir três imagens como fundo de um DIV.
+
+CSS
+div {
+  background-image: 
+    url(triangulo.png), 
+      url(circulo.png), 
+        url(retangulo.png);
+  background-repeat: 
+    repeat-x, 
+      no-repeat, 
+        repeat-y;
+  background-position: 
+    right 120px, 
+      center, 
+        0 0;
+  background-color: 
+    #f0c;
+}
+Na figura seguinte mostramos a renderização das três imagens (triângulo, círculo e retângulo) e da cor de fundo.
+
+fundo com três imagens

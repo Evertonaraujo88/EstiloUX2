@@ -110,7 +110,8 @@ main .banner #bannerinfo{
      color: #F9003D;
      margin-bottom: 20px;
  }
-
+ /* espacamento da imagem do mouse*/
+ 
 main .banner #bannerinfo img{
     margin-left: 50px;
 }

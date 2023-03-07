@@ -19,7 +19,7 @@
     box-sizing: border-box;
 }
 
-/* DESKTOP FIRT */
+/* DESKTOP FIRST */
 
 /* Classes Genéricas */
 
@@ -75,6 +75,9 @@ header nav a:hover {
     color: #F9003D;
 }
 
+header #menu-mobile {
+    display: none;
+}
 
 /* MAIN */
 
@@ -163,14 +166,6 @@ main .sobre .linha .participantes p {
 
 
 
-
-
-
-
-
-
-
-
 footer .endereco {
     background-color: black;
     color: white;
@@ -186,10 +181,60 @@ footer .endereco p {
     font-family: 'Courier New', Courier, monospace;
 }
 
-/********MEDIAS QUERIES ********/
 
-/* tablets >= 768px ate 991px*/
 
+
+/***** MEDIA QUERIES *****/
+
+/* tablets >= 768px até 991px*/
 @media screen and (max-width: 991px) {
-    
+  
+}
+
+/* smartphones >= 0 até 767px */
+
+/*temporariamente off*/
+
+main {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .mostrarMenu {
+    left: 0;
+    opacity: 1;
+}
+
+    header #menu-mobile {
+        display: block;
+        color: white;
+        
+    }
+
+    header nav {
+        position: fixed;
+        top: 60px;
+        left: -80vw;
+        width: 80vw; /*viewport width*/
+        height: 100vh; /*viewport height*/
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #F9003D;
+        opacity: 0;
+        transition: left 0.8s, opacity 1s;
+        
+    }
+
+    header nav a {
+        border-left: 2px dotted #ffffff ;
+        ;
+        
+    }
 }

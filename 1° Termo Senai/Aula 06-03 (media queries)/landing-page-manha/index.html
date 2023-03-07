@@ -12,13 +12,13 @@
 <body>
     <header>
         <div class="layout-grid header-flex">
-            <nav>
+            <nav id="navmenu">
                 <a href="">Início</a>
                 <a href="">Sobre</a>
                 <a href="">Desafios</a>
                 <a href="">Endereço</a>
             </nav>
-            <img src="./assets/icons/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu-mobile" alt="abre o menu de nagevacao mobile">
+            <img src="./assets/icones/menu-hamburger.svg" id="menu-mobile" alt="Abre o menu mobile" onclick="mostrarMenu()" >
         </div>
     </header>
 
@@ -75,6 +75,13 @@
             </section>
         </div> -->
     </footer>
+
+    <script>
+
+        function mostrarMenu() {
+            document.getElementById("navmenu").classList.toggle("mostrarMenu");
+        }
+    </script>
 
 </body>
 

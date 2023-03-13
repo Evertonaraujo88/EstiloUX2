@@ -9,8 +9,8 @@
     font-family: TitilliumWeb-Regular ;
     src: url(../assets/fonts/TitilliumWeb-Regular.ttf);
 
-    font-family: Inter-Regular ;
-    src: url(../assets/fonts/static/Inter-Regular.ttf);
+    font-family: Inter ;
+    src: url(../assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
 
     font-family: Quicksand-Regular ;
     src: url(../assets/fonts/static/Quicksand-Regular.ttf);
@@ -26,12 +26,12 @@ box-sizing: border-box;
 }
 
 body {
-    background-color: #1B1426;
+    /*background-color: #1B1426;*/
     color: white;
 }
 /*  CLASSES GENERICAS*/
 .layout-grid {
-    border: 1px solid salmon;
+    /*border: 1px solid salmon;*/
     width: 90%;
     height: 100%;
     margin: 0 auto;
@@ -77,18 +77,45 @@ header .header-bottom img.logo {
 header .header-bottom nav {
     position: fixed;
     top: 60px;
-    left: 0;
+    left: -80vw;
     width: 80vw;
     height: calc(100vh - 60px);
-
+    padding-bottom: 20px;  
     
     display: flex;
     flex-direction: column;
-    background-color: gray;
+    justify-content: space-between;
 
-    border: 1px solid white;
+    background-color: white;
+    background-image: linear-gradient(to right bottom, rgb(27, 20, 38, 0.7), rgb(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+    
+
+}
+/* somente links "filhos diretos" da nav*/
+header .header-bottom nav > a {
+    padding: 30px 0;
+    color: white;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    border-bottom: 2px solid #f9aa01;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 
+header .header-bottom nav > a:last-of-type{ /*last-of-type (aplica o cod que desejar somente no ultimo item da div)*/
+    border: none;
+}
+/* icones de midias sociaos possibilidade de positiomn*/
+header .header-bottom nav .midias-sociais{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+}
+/* ***MENU LATERAL DIRETA - ICONES*** */
 header .header-bottom .menu-usuarios {
     display: none;
 }

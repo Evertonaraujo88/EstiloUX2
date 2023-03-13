@@ -25,7 +25,6 @@
                     </div>
                 </div>
 
-
                 <div class="midias-sociais ">
                     <a href="">
                         <img src="../Projeto Gamer/assets/icons/ri_facebook-fill.svg"
@@ -49,28 +48,28 @@
         <div class="header-bottom">
             <div class="layout-grid alinhamento-between-center">
                 <!-- menu hamburger -->
-                <img class="menu-hamburger" src="../Projeto Gamer/assets/icons/hambergermenu.svg"
+                <img onclick="mostraMenu()" class="menu-hamburger" src="../Projeto Gamer/assets/icons/hambergermenu.svg"
                     alt="icone menu hamburger para inicar e fechar no mobile">
 
                 <img class="logo" src="../Projeto Gamer/assets/icons/logotipo-gamer 3.svg"
                     alt="logotipo  da empresa gamer, logomarca da empresa com um controle de video gamer no centro">
 
-                <nav class="menu">
-                    <a href="inicio"></a>
-                    <a href="jogadores"></a>
-                    <a href="equipes"></a>
-                    <a href="noticias"></a>
+                <nav class="menu" id="menu">
+                    <a href="">inicio</a>
+                    <a href="">jogadores</a>
+                    <a href="">equipes</a>
+                    <a href="">noticias</a>
 
                     <!--VISIVEL APENAS NO MOBILE-->
 
-                    <div class="phone">
+                    <a class="phone">
                         <img src="../Projeto Gamer/assets/icons/phone.svg" alt="icone telefone">
                         <span>(11) 0900-1010</span>
-                    </div>
-                    <div class="e-mail">
+                    </a>
+                    <a class="e-mail">
                         <img src="../Projeto Gamer/assets/icons/mdi_envelope-outline.svg" alt="icone e-mail">
                         <span>contato@gamar.com.br</span>
-                    </div>
+                    </a>
 
 
 
@@ -119,7 +118,11 @@
         </div>
     </header>
 
-
+    <script>
+        function mostrarMenu() {
+            document.getElementById("menu").classList.toggle("mostrar-menu");
+        }
+    </script>
 </body>
 
 </html>

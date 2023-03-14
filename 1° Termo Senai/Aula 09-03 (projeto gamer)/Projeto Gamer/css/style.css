@@ -43,6 +43,13 @@ body {
     align-items: center;
 }
 
+.mostrar-menu {
+    left: 0 !important;
+}
+
+.mostrar-usuarios {
+    right: 0 !important;
+}
 
 /* ******* Mobile First *********/
 
@@ -89,6 +96,8 @@ header .header-bottom nav {
     background-color: white;
     background-image: linear-gradient(to right bottom, rgb(27, 20, 38, 0.7), rgb(27, 20, 38, 0.4));
     backdrop-filter: blur(45px);
+
+    transition: left 0.7s;
     
 
 }
@@ -108,14 +117,65 @@ header .header-bottom nav > a {
 header .header-bottom nav > a:last-of-type{ /*last-of-type (aplica o cod que desejar somente no ultimo item da div)*/
     border: none;
 }
-/* icones de midias sociaos possibilidade de positiomn*/
+/* icones de midias sociaos possibilidade de gap*/
 header .header-bottom nav .midias-sociais{
+    /*border: 1px solid red;*/
     display: flex;
     justify-content: center;
     gap: 50px;
 
 }
+
+/* ícone de mídias sociais possibilidade position 
+header .header-bottom nav .midias-sociais {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 100px);
+    border: 1px solid red;
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+*/
+
 /* ***MENU LATERAL DIRETA - ICONES*** */
+
+
 header .header-bottom .menu-usuarios {
-    display: none;
+    position: fixed;
+    top: 60px;
+    right: -19vw;
+    width: 19vw;
+    height: calc(35vh - 60px);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   
+    background-color: white;
+    background-image: linear-gradient(to right bottom, rgb(27, 20, 38, 0.7), rgb(27, 20, 38, 0.4));
+    backdrop-filter: blur(45px);
+
+    transition: left 0.7s;
+}
+
+/* ***MAIN*** */
+
+main {
+    margin-top: 60px;
+}
+
+/* banner*/
+.banner {
+    width: 100%;
+    height: 606px;
+    /*background-color: rebeccapurple;*/
+    background-image: url(../assets/images/banner\ liga\ gamer.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }

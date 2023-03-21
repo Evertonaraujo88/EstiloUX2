@@ -22,6 +22,10 @@
     font-family: Quicksand;
     src: url(../assets/fonts/Quicksand/Quicksand-VariableFont_wght.ttf)
 }
+@font-face {
+    font-family: TitilliumWeb-Regular;
+    src: url(../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
 
 * {
     margin: 0;
@@ -330,6 +334,7 @@ footer .footer-top #contatos p span {
 footer #newsletter input, footer #newsletter button {
     width: 100%;
     height: 40px;
+    margin-top: 20px;
     border-radius: 8px;
 }
 
@@ -340,10 +345,22 @@ footer #newsletter input {
     border: 1px solid white;
     color: white;
     padding: 5px 10px;
-
+    font-family: TitilliumWeb-Regula;
+    font-size: 16px;
 }
 
+footer #newsletter input::placeholder {
+    color: white;
+}
 
+footer #newsletter button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F9AA01;
+    font-family: TitilliumWeb-Bold;
+    font-size: 16px;
+}
 
 
 
@@ -408,7 +425,7 @@ footer #newsletter input {
     header .header-bottom nav .midias-sociais {
         display: none;
     }
-header .header-bottom{
+    header .header-bottom{
         height: 90px;
     }
     header .header-bottom img.logo {
@@ -475,7 +492,23 @@ header .header-bottom{
         width: 556px;
     }
     
+    /* Footer */
 
+    .footer-top {
+        border: 1px solid white;
+    
+    }
+
+    .footer-top > div {
+        border-top: 2px solid salmon;
+
+    }
+
+    .footer-bottom {
+        border: 1px solid white;
+    }
+
+    
     
     
 }

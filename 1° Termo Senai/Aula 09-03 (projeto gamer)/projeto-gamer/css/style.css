@@ -272,6 +272,7 @@ footer .footer-top {
 }
 /* apagar depois..somete para visualizacao melhor */
 footer .footer-top > div {
+
     /*border: 2px solid white;*/
 }
 
@@ -495,6 +496,9 @@ footer #newsletter button {
     /* Footer */
 
     .footer-top {
+        height: 501px;
+        display: flex;
+       
         border: 1px solid white;
     
     }

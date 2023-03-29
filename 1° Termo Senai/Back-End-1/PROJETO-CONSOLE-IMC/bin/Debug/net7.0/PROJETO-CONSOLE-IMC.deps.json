@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PROJETO-CONSOLE-IMC/1.0.0": {
+        "runtime": {
+          "PROJETO-CONSOLE-IMC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PROJETO-CONSOLE-IMC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\bin\Debug\net7.0\CALCULO DE IDADE.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\bin\Debug\net7.0\CALCULO DE IDADE.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\bin\Debug\net7.0\CALCULO DE IDADE.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\bin\Debug\net7.0\CALCULO DE IDADE.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\bin\Debug\net7.0\CALCULO DE IDADE.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\refint\CALCULO DE IDADE.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\CALCULO DE IDADE.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO DE IDADE\obj\Debug\net7.0\ref\CALCULO DE IDADE.dll

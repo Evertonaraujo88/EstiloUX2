@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\bin\Debug\net7.0\PROJETO-CONSOLE-IMC.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\bin\Debug\net7.0\PROJETO-CONSOLE-IMC.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\bin\Debug\net7.0\PROJETO-CONSOLE-IMC.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\bin\Debug\net7.0\PROJETO-CONSOLE-IMC.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\bin\Debug\net7.0\PROJETO-CONSOLE-IMC.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\refint\PROJETO-CONSOLE-IMC.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\PROJETO-CONSOLE-IMC.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-CONSOLE-IMC\obj\Debug\net7.0\ref\PROJETO-CONSOLE-IMC.dll

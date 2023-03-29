@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\bin\Debug\net7.0\CALCULO-DE-MEDIA.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\bin\Debug\net7.0\CALCULO-DE-MEDIA.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\bin\Debug\net7.0\CALCULO-DE-MEDIA.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\bin\Debug\net7.0\CALCULO-DE-MEDIA.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\bin\Debug\net7.0\CALCULO-DE-MEDIA.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\refint\CALCULO-DE-MEDIA.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\CALCULO-DE-MEDIA.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\CALCULO-DE-MEDIA\obj\Debug\net7.0\ref\CALCULO-DE-MEDIA.dll

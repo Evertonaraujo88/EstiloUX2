@@ -1,9 +1,24 @@
-﻿Console.WriteLine($"Digite o Ano de seu Nascimento");
-var Nascimento = (Console.ReadLine());
+﻿//Console.WriteLine($"Digite o Ano de seu Nascimento");
+//float Nascimento = float.Parse(Console.ReadLine());
 
-var data = DateTime.Now;
-var formatada = String.Format("{0:yyyy}", data);
+//float data = float.Parse(DateTime.Now);
+//var formatada = String.Format("{0:yyyy}", data);
 
-var anos = ((formatada) - Nascimento);
+//var anos = ((formatada) - Nascimento);
 
+ //float idade  = Nascimento
+
+ int anoNascimento;
+ int idade;
+ int idadeEmSemana;
+ 
+ int anoAtual = DateTime.Now.Year;
+
+ Console.Write($"Digite o ano do nascimento :");
+ anoNascimento = int.Parse(Console.ReadLine());
+
+ idade = (anoAtual - anoNascimento);
+ idadeEmSemana = (idade*52);
+
+ Console.Write($"sua idade é {idade} em anos e {idadeEmSemana} em semanas.");
  

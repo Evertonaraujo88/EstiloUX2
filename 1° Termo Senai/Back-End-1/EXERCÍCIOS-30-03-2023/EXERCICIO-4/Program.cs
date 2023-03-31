@@ -3,6 +3,7 @@
 //Devem     ser    impressas     as    seguintes     mensagens:
 //ACESSO    PERMITIDO    caso    a    senha    seja    válida.
 //ACESSO    NEGADO    caso    a    senha    seja    inválida.
+
 Console.WriteLine($"Digite a senha:");
 int senha = int.Parse(Console.ReadLine());
 

@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9DeIlbZG7Im28jkBCpjAdEisxBIK6Ti/QmKlohrl3X9kCR5tORnuQ3l32EXjIBqVSXEx0sg2OcqC8T8ta/in2g==",
+  "dgSpecHash": "08HKbXzr2Ca16kknvBEwsvZuXzYEm5wfo9XACo7qpqcW0S7b/bv6qWGTOY1++nfGXn0qIMElHv8WkuooAIZVpg==",
   "success": true,
   "projectFilePath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\Back-End-1\\EXERCÍCIOS-30-03-2023\\EXERCICIO-4\\EXERCICIO-4.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

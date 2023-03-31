@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\bin\Debug\net7.0\EXERCICIO-1.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\bin\Debug\net7.0\EXERCICIO-1.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\bin\Debug\net7.0\EXERCICIO-1.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\bin\Debug\net7.0\EXERCICIO-1.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\bin\Debug\net7.0\EXERCICIO-1.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\refint\EXERCICIO-1.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\EXERCICIO-1.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\EXERCICIOS-31-03-2023\EXERCICIO-1\obj\Debug\net7.0\ref\EXERCICIO-1.dll

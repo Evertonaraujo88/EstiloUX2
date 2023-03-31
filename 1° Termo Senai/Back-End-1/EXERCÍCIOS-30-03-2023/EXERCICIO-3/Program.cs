@@ -1,4 +1,4 @@
-﻿//Escreva     um     programa que leia     as     medidas     dos     lados     de     um     triângulo     e    escreva    se    ele    é    Equilátero,    Isósceles    ou  Escaleno. 
+//Escreva     um     programa que leia     as     medidas     dos     lados     de     um     triângulo     e    escreva    se    ele    é    Equilátero,    Isósceles    ou  Escaleno. 
 //Sendo    que:    
 //− Triângulo    Equilátero:    possui    os    3    lados    iguais.
 //− Triângulo    Isóscele:    possui    2    lados    iguais.
@@ -11,8 +11,8 @@
 
 //processamento
 // if (a==b && b==c) ....{(imprimi...Triangulo Equilatero!!)
-// else if (a == b && b != c)....{imprimir...Triangulo Isoceles}
-// else {imprimir....Triangulo Escaleno}
+// else if (a != b && b != c && c != a)....{imprimir...Triangulo Escaleno}
+// else {imprimir....Triangulo Isoceles}
 
 Console.WriteLine($"Digite um lado do triângulo: ");
 int a = int.Parse(Console.ReadLine());

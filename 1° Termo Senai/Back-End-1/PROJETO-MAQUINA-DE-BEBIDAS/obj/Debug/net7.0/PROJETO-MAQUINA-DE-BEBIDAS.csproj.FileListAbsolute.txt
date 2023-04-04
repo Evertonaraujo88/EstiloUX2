@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\bin\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\bin\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\bin\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\bin\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\bin\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\refint\PROJETO-MAQUINA-DE-BEBIDAS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\PROJETO-MAQUINA-DE-BEBIDAS.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-MAQUINA-DE-BEBIDAS\obj\Debug\net7.0\ref\PROJETO-MAQUINA-DE-BEBIDAS.dll

@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\bin\Debug\net7.0\Nova pasta.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\bin\Debug\net7.0\Nova pasta.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\bin\Debug\net7.0\Nova pasta.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\bin\Debug\net7.0\Nova pasta.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\bin\Debug\net7.0\Nova pasta.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\refint\Nova pasta.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\Nova pasta.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\Nova pasta\obj\Debug\net7.0\ref\Nova pasta.dll

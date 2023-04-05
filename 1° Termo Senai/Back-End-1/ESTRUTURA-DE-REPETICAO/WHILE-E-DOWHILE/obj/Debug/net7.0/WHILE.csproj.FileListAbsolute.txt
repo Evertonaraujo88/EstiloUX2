@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\bin\Debug\net7.0\WHILE.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\bin\Debug\net7.0\WHILE.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\bin\Debug\net7.0\WHILE.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\bin\Debug\net7.0\WHILE.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\bin\Debug\net7.0\WHILE.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\refint\WHILE.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\WHILE.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ESTRUTURA-DE-REPETICAO\WHILE\obj\Debug\net7.0\ref\WHILE.dll

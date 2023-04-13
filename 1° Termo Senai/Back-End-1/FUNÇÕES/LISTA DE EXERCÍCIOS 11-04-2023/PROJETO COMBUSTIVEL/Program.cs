@@ -11,12 +11,33 @@
 // sabendo-se que o preço do litro da gasolina é R$ 5,30 e o preço do litro do álcool é R$ 4,90.
 // Dica: utilize switch case e funções/métodos para otimizar o algorítimo.
 
+float Alcool= 4.90f;
+float Gasolina= 5.30f;
 
-//ENTRDA
-// Informar se eh:
-// a - para alcool
-// g - para gasolina
+static double descGasolina(float Gasolina, float litros)
+{
+    if (litros > 20)
+    {
+        return( litros * (Gasolina* 0.94));
+    }
+    else
+    {
+        return (litros * (Gasolina * 0.96));
+    }
+}
 
+static double DescAlcool (float Alcool, float litros)
+{
+    if (litros > 20)
+    {
+        return( litros * (Alcool * 0.95) );
+    }
+    else
+    {
+        return (litros *(Alcool * 0.97));
+    }
+}
+// Informar se é Alcool ou Gasolina
 Console.WriteLine(@$"
 -----------------------------------
 |  PROJETO CALCULO DE COMBUSTIVEL |
@@ -26,23 +47,48 @@ Console.WriteLine(@$"
 | A - Alcool                      |
 | G - Gasolina                    |
 -----------------------------------
-
 ");
 
 char Combustivel = char.Parse(Console.ReadLine().ToUpper());
-
+    
 // Informar quantos litros foram abastecidos:
-Console.WriteLine($"Informar quantos litros foi abastecido: ");
-float litros = float.Parse(Console.ReadLine().ToUpper());
+Console.WriteLine($"Informar quantos litros foram abastecidos: ");
+float litros = float.Parse(Console.ReadLine());
 
 //Processamento
-switch (Combustivel)
+    double VlAlcool = DescAlcool(Alcool, litros);
+    double VlGasolina = descGasolina(Gasolina, litros);
+   
+    switch (Combustivel)
 {
-    case 'A':
+    case 'A': if (litros <= 20)
+    {
+        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlAlcool,2)}.");
+        
+    }
+    else
+    {
+        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlAlcool,2)}.");
+    }
 
+    break;
 
-    case "G": 
-    
+    case 'G': 
+    if (litros <= 20)
+    {
+        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlGasolina,2)}.");
+        
+    }
+    else
+    {
+        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlGasolina,2)}.");
+    }
+
+    break;    
     default:
+    Console.WriteLine($"Operação inválida, escolha a opção correta!");
+    break;
+    
 }
+
 

@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\bin\Debug\net7.0\PROJETO COMBUSTIVEL.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\bin\Debug\net7.0\PROJETO COMBUSTIVEL.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\bin\Debug\net7.0\PROJETO COMBUSTIVEL.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\bin\Debug\net7.0\PROJETO COMBUSTIVEL.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\bin\Debug\net7.0\PROJETO COMBUSTIVEL.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\refint\PROJETO COMBUSTIVEL.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\PROJETO COMBUSTIVEL.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO COMBUSTIVEL\obj\Debug\net7.0\ref\PROJETO COMBUSTIVEL.dll

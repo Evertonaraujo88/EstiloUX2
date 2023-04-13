@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "METODOS OPERAÇÕES MATEMATICAS/1.0.0": {
+        "runtime": {
+          "METODOS OPERAÇÕES MATEMATICAS.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "METODOS OPERAÇÕES MATEMATICAS/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

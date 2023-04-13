@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\bin\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\bin\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\bin\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\bin\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\bin\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\refint\METODOS OPERAÇÕES MATEMATICAS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\METODOS OPERAÇÕES MATEMATICAS.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\METODOS OPERAÇÕES MATEMATICAS\obj\Debug\net7.0\ref\METODOS OPERAÇÕES MATEMATICAS.dll

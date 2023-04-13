@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\bin\Debug\net7.0\PROJETO VOTAR.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\bin\Debug\net7.0\PROJETO VOTAR.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\bin\Debug\net7.0\PROJETO VOTAR.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\bin\Debug\net7.0\PROJETO VOTAR.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\bin\Debug\net7.0\PROJETO VOTAR.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\refint\PROJETO VOTAR.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\PROJETO VOTAR.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO VOTAR\obj\Debug\net7.0\ref\PROJETO VOTAR.dll

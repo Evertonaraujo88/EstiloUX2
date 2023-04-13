@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "PROJETO CALCULO DE IMPOSTO/1.0.0": {
+        "runtime": {
+          "PROJETO CALCULO DE IMPOSTO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PROJETO CALCULO DE IMPOSTO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\bin\Debug\net7.0\EXERCICIO DE FIXACAO.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\bin\Debug\net7.0\EXERCICIO DE FIXACAO.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\bin\Debug\net7.0\EXERCICIO DE FIXACAO.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\bin\Debug\net7.0\EXERCICIO DE FIXACAO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\bin\Debug\net7.0\EXERCICIO DE FIXACAO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\refint\EXERCICIO DE FIXACAO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\EXERCICIO DE FIXACAO.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\ARRAYS\EXERCICIO DE FIXACAO\obj\Debug\net7.0\ref\EXERCICIO DE FIXACAO.dll

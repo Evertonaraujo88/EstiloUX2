@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\bin\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\bin\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\bin\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\bin\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\bin\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\refint\PROJETO CALCULO DE IMPOSTO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\PROJETO CALCULO DE IMPOSTO.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\PROJETO CALCULO DE IMPOSTO\obj\Debug\net7.0\ref\PROJETO CALCULO DE IMPOSTO.dll

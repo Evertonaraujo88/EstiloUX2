@@ -14,7 +14,7 @@
 float Alcool= 4.90f;
 float Gasolina= 5.30f;
 
-static double descGasolina(float Gasolina, float litros)
+static double DescGasolina(float Gasolina, float litros)
 {
     if (litros > 20)
     {
@@ -57,7 +57,7 @@ float litros = float.Parse(Console.ReadLine());
 
 //Processamento
     double VlAlcool = DescAlcool(Alcool, litros);
-    double VlGasolina = descGasolina(Gasolina, litros);
+    double VlGasolina = DescGasolina(Gasolina, litros);
    
     switch (Combustivel)
 {

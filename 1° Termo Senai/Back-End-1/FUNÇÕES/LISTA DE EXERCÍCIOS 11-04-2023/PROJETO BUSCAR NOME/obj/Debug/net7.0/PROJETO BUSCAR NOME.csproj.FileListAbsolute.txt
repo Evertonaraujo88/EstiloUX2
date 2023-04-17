@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\bin\Debug\net7.0\PROJETO BUSCAR NOME.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\bin\Debug\net7.0\PROJETO BUSCAR NOME.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\bin\Debug\net7.0\PROJETO BUSCAR NOME.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\bin\Debug\net7.0\PROJETO BUSCAR NOME.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\bin\Debug\net7.0\PROJETO BUSCAR NOME.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\refint\PROJETO BUSCAR NOME.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\PROJETO BUSCAR NOME.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\FUNÇÕES\LISTA DE EXERCÍCIOS 11-04-2023\PROJETO BUSCAR NOME\obj\Debug\net7.0\ref\PROJETO BUSCAR NOME.dll

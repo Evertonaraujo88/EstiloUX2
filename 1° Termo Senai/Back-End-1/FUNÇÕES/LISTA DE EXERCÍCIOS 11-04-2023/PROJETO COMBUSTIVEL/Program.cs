@@ -61,29 +61,16 @@ float litros = float.Parse(Console.ReadLine());
    
     switch (Combustivel)
 {
-    case 'A': if (litros <= 20)
+    case 'A':
     {
-        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlAlcool,2)}.");
-        
+        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlAlcool,2)}.");  
     }
-    else
-    {
-        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlAlcool,2)}.");
-    }
-
     break;
 
-    case 'G': 
-    if (litros <= 20)
+    case 'G':
     {
-        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlGasolina,2)}.");
-        
+        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlGasolina,2)}.");   
     }
-    else
-    {
-        Console.WriteLine($"O valor por {litros} litros a ser pago é R$ {Math.Round(VlGasolina,2)}.");
-    }
-
     break;    
     default:
     Console.WriteLine($"Operação inválida, escolha a opção correta!");

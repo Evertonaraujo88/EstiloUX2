@@ -32,17 +32,86 @@ Ao cadastrar uma passagem ao final o sistema deverá perguntar se gostaria de ca
 //perguntar se deseja cadastrar uma nova passagem(s/N)
 
 
-static bool login (int senha)
-{
-    int senhaCorreta = 123456;
+//Variaveis
+int qtdCadastro = 5;
+string [] nome = new string [qtdCadastro] ;
+string [] origem= new string [ qtdCadastro] ;
+string [] destino= new string [qtdCadastro] ;
+string [] dataVoo= new string [qtdCadastro] ;
 
-    while (senha == senhaCorreta)
+int senhaCorreta = 123456;
+
+
+//Funcoes
+
+ static void cadastroPassagem (string[] nome, string[] origem, string[] destino, string[] dataVoo)
+ {
+    for (int i = 0; i < nome.Length; i++)
     {
-        Console.WriteLine($"Senha incorreta!");
+        Console.WriteLine($"Digite o {i+1}º nome: ");
+        nome[i] = Console.ReadLine();
+
+        Console.WriteLine($"Digite a {i+1}º origem do Voo: ");
+        origem[i] = Console.ReadLine();
+        
+        Console.WriteLine($"Digite o {i+1}º destino do Voo: ");
+        destino[i] = Console.ReadLine();
+        
+        Console.WriteLine($"Digite a {i+1}º data do Voo: ");
+        dataVoo[i] = Console.ReadLine();
+        
     }
+    
+        
+ }
+  Console.WriteLine($"Digite o nome do usuário: ");
+string usuario = Console.ReadLine();
 
-return(true);
+Console.WriteLine($"Digite sua senha: ");
+int senhaDigitada = int.Parse(Console.ReadLine());
+
+while (senhaDigitada != senhaCorreta )
+{
+    Console.WriteLine($"Senha inválida, digite novamente!!!");
+    senhaDigitada= int.Parse(Console.ReadLine());
+    
+}  
+
+Console.WriteLine(@$"
+--------------------------------
+***PROJETO PASSAGENS AEREAS***
+--------------------------------
+");
+
+Console.WriteLine(@$"
+-----------------------------------
+|                                 |
+| Escolha a opção que deseja:     |
+|                                 |
+| 1 - Cadastrar Passagem          |
+| 2 - Listar Passagen             |
+| 0 - Sair                        |
+-----------------------------------
+");
+
+char escolha = char.Parse(Console.ReadLine().ToUpper());
+
+switch (escolha)
+{
+    case '1':
+    cadastroPassagem(nome, origem, destino, dataVoo);
+    break;
+
+    case '2':
+    Console.WriteLine($"listar");
+    break;
+
+    case '0':
+    Console.WriteLine($"sair");
+    break;
+    
+    default:
+    Console.WriteLine($"Opção inválida!!");
+    break;
 }
-
-Console.WriteLine($"Digite a senha de acesso:");
-int senha = int.Parse(Console.ReadLine());
+while (escolha != 0);

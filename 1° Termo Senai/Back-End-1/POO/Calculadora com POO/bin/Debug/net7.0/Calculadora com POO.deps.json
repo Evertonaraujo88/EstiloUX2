@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Calculadora com POO/1.0.0": {
+        "runtime": {
+          "Calculadora com POO.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Calculadora com POO/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

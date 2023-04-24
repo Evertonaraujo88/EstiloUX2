@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\bin\Debug\net7.0\Calculadora com POO.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\bin\Debug\net7.0\Calculadora com POO.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\bin\Debug\net7.0\Calculadora com POO.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\bin\Debug\net7.0\Calculadora com POO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\bin\Debug\net7.0\Calculadora com POO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\refint\Calculadora com POO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\Calculadora com POO.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\Calculadora com POO\obj\Debug\net7.0\ref\Calculadora com POO.dll

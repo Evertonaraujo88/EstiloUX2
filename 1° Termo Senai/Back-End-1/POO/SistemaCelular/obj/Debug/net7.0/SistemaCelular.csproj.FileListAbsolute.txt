@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\bin\Debug\net7.0\SistemaCelular.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\bin\Debug\net7.0\SistemaCelular.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\bin\Debug\net7.0\SistemaCelular.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\bin\Debug\net7.0\SistemaCelular.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\bin\Debug\net7.0\SistemaCelular.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\refint\SistemaCelular.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\SistemaCelular.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\SistemaCelular\obj\Debug\net7.0\ref\SistemaCelular.dll

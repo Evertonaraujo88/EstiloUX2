@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\bin\Debug\net7.0\CadastroDeAluno.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\bin\Debug\net7.0\CadastroDeAluno.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\bin\Debug\net7.0\CadastroDeAluno.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\bin\Debug\net7.0\CadastroDeAluno.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\bin\Debug\net7.0\CadastroDeAluno.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\refint\CadastroDeAluno.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\CadastroDeAluno.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\POO\CadastroDeAluno\obj\Debug\net7.0\ref\CadastroDeAluno.dll

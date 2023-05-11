@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\bin\Debug\net7.0\EXERCICIO-CARRO.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\bin\Debug\net7.0\EXERCICIO-CARRO.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\bin\Debug\net7.0\EXERCICIO-CARRO.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\bin\Debug\net7.0\EXERCICIO-CARRO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\bin\Debug\net7.0\EXERCICIO-CARRO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\refint\EXERCICIO-CARRO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\EXERCICIO-CARRO.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\LISTA-DE-OBJETOS\EXERCICIO-CARRO\obj\Debug\net7.0\ref\EXERCICIO-CARRO.dll

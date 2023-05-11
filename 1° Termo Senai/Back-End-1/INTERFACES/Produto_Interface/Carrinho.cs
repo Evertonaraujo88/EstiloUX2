@@ -40,7 +40,7 @@ namespace Produto_Interface
 
         public void Remover(Produto _produto)
         {
-            throw new NotImplementedException();
+            carrinho.Remove(_produto);
         }
     }
 }

@@ -21,7 +21,7 @@ namespace Produto_Interface
         void Listar();
 
         //Update
-        void Atualizar(int _codigo, Produto _produto);
+        void Atualizar(int _codigo, Produto _novoProduto);
 
         //Delete
         void Remover(Produto _produto);

@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\bin\Debug\net7.0\Produto_Interface.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\bin\Debug\net7.0\Produto_Interface.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\bin\Debug\net7.0\Produto_Interface.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\bin\Debug\net7.0\Produto_Interface.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\bin\Debug\net7.0\Produto_Interface.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\refint\Produto_Interface.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\Produto_Interface.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\INTERFACES\Produto_Interface\obj\Debug\net7.0\ref\Produto_Interface.dll

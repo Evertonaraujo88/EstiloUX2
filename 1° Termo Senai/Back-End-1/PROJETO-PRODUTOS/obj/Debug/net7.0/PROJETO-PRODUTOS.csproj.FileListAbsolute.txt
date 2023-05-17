@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\bin\Debug\net7.0\PROJETO-PRODUTOS.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\bin\Debug\net7.0\PROJETO-PRODUTOS.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\bin\Debug\net7.0\PROJETO-PRODUTOS.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\bin\Debug\net7.0\PROJETO-PRODUTOS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\bin\Debug\net7.0\PROJETO-PRODUTOS.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\refint\PROJETO-PRODUTOS.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\PROJETO-PRODUTOS.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\PROJETO-PRODUTOS\obj\Debug\net7.0\ref\PROJETO-PRODUTOS.dll

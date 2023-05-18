@@ -15,15 +15,15 @@ namespace PROJETO_PRODUTOS.Classes
 
        public Marca Cadastrar()
        {
-        //aqui vai a logica
-
-        //instanciar o objeto
         Marca novaMarca = new Marca();
-      
+        //aqui vai a logica
+        Console.WriteLine($"Digite o nome da Marca:");
+        novaMarca.NomeMarca = Console.ReadLine();
         
-        //receber os dados e cadastrar nesse obejto
-        //armazenar o objeto na lista
-        //retornar o objeto criado
+        
+        ListadeMarcas.Add(novaMarca);
+        //instanciar o objeto
+        
         return novaMarca;
        }
 
@@ -31,6 +31,19 @@ namespace PROJETO_PRODUTOS.Classes
        {
         //aqui vai a lógica
         //exibir os objetos cadastrados na lista
+        if (ListadeMarcas.Count > 0 || ListadeMarcas != null)
+            {
+               foreach (Marca p in ListadeMarcas)
+               {
+                Console.WriteLine(@$"
+                Marca: {p.NomeMarca}                               
+                ");
+                
+                }
+            }else
+            {
+                Console.WriteLine($"Produto não cadastrado!!!");
+            }
        }
 
        public void Deletar(int _codigo)

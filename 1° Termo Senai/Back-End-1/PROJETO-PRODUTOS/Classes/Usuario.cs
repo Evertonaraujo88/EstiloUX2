@@ -20,7 +20,7 @@ namespace PROJETO_PRODUTOS.Classes
     public void Cadastrar()
     {
         this.Nome = "Everton";
-        this.Email = "evertonaraujosenai@gmail.com";
+        this.Email = "a";
         this.Senha = "1234";
         this.DataCadastro = DateTime.Now;
     }

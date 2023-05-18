@@ -35,14 +35,16 @@ namespace PROJETO_PRODUTOS.Classes
             if (email == _usuario.Email && senha == _usuario.Senha)
             {
                 this.Logado = true;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Login Efetuado com sucesso!!");
-                
+                Console.ResetColor();
             }
             else
             {
                 this.Logado = false;
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Falha ao logar!!");
-                
+                Console.ResetColor();
             }
             
             
@@ -85,6 +87,7 @@ namespace PROJETO_PRODUTOS.Classes
                 case "1":
                 //cadastrar
                 produto.Cadastrar();
+                
                 break;
 
                 case "2":

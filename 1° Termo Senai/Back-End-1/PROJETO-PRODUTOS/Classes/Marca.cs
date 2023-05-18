@@ -15,14 +15,20 @@ namespace PROJETO_PRODUTOS.Classes
 
        public Marca Cadastrar()
        {
-        Marca novaMarca = new Marca();
         //aqui vai a logica
+        //instanciar o objeto
+        Marca novaMarca = new Marca();
+        
+        Console.WriteLine($"Digite o Código da Marca:");
+        novaMarca.Codigo = int.Parse(Console.ReadLine());
+        
         Console.WriteLine($"Digite o nome da Marca:");
         novaMarca.NomeMarca = Console.ReadLine();
-        
-        
+
+        novaMarca.DataCadastro = DateTime.Now;
+    
         ListadeMarcas.Add(novaMarca);
-        //instanciar o objeto
+        
         
         return novaMarca;
        }
@@ -36,21 +42,33 @@ namespace PROJETO_PRODUTOS.Classes
                foreach (Marca p in ListadeMarcas)
                {
                 Console.WriteLine(@$"
-                Marca: {p.NomeMarca}                               
+                Código: {p.Codigo}
+                Marca: {p.NomeMarca}
+                Data do Cadastro: {p.DataCadastro}                               
                 ");
                 
                 }
-            }else
+            }if ( ListadeMarcas.Count < 1)
             {
-                Console.WriteLine($"Produto não cadastrado!!!");
+                Console.WriteLine($"Não exitem marcas cadastrados");   
             }
+            
        }
 
        public void Deletar(int _codigo)
        {
         //aqui vai a lógica
         //buscar um objeto na lista pelo seu código
+        int index = ListadeMarcas.IndexOf(ListadeMarcas.Find(x=>x.Codigo == _codigo));
         //remove-lo
+        Console.WriteLine($"Deseja exluir o Produto? s para sim e n para não");
+            string resp = Console.ReadLine();
+            
+            if (resp == "s")
+            {
+                ListadeMarcas.RemoveAt(index);
+                Console.WriteLine($"Marca Excluída com sucesso!");
+            }
        }
         
 

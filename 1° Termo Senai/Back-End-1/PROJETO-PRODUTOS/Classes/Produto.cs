@@ -19,10 +19,13 @@ namespace PROJETO_PRODUTOS.Classes
         List<Produto> ListaDeProdutos = new List<Produto>();
         public void Cadastrar()
         {
+
             //aqui vai a lógica
             //instanciar o objeto
             Produto novoProduto = new Produto();
             //receber os dados e cadastrar nesse objeto
+            string resp;
+           
             Console.WriteLine($"Digite o codigo do produto: ");           
             novoProduto.Codigo =int.Parse(Console.ReadLine());
 
@@ -41,6 +44,7 @@ namespace PROJETO_PRODUTOS.Classes
              
             //armazenar o objeto na lista
             ListaDeProdutos.Add(novoProduto);
+            
         }
 
         public void Listar()
@@ -62,10 +66,11 @@ namespace PROJETO_PRODUTOS.Classes
                 ");
                 
                 }
-            }else
+            }if ( ListaDeProdutos.Count < 1)
             {
-                Console.WriteLine($"Produto não cadastrado!!!");
+                Console.WriteLine($"Não exitem produtos cadastrados");   
             }
+            
             
         }
 
@@ -73,9 +78,18 @@ namespace PROJETO_PRODUTOS.Classes
         {
             //aqui vai a lógica
             //buscar um objeto na lista pelo seu código
-            ListaDeProdutos.Find(x=>x.Codigo == _codigo).Codigo = _codigo;
+            int index = ListaDeProdutos.IndexOf(ListaDeProdutos.Find(x=>x.Codigo == _codigo));
+                       
             //remove-lo
-            ListaDeProdutos.Remove();
+            Console.WriteLine($"Deseja exluir o Produto? s para sim e n para não");
+            string resp = Console.ReadLine();
+            
+            if (resp == "s")
+            {
+                ListaDeProdutos.RemoveAt(index);
+                Console.WriteLine($"Produto Excluído!");
+            }
+                       
         }
     }
 }   

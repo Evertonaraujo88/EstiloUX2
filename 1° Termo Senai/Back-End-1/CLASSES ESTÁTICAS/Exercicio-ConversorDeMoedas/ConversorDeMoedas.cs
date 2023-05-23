@@ -17,15 +17,20 @@ namespace Exercicio_ConversorDeMoedas
 
 
         public static void RealParaDolar (float ValorParaConverter)
-        {
-            float conversor = ValorParaConverter * ValorDolar;
+        {   Console.WriteLine($"Digite o valor que deseja converter?");
+            float valor = float.Parse(Console.ReadLine());
+            ValorParaConverter = valor;
+            float conversor = ValorParaConverter / ValorDolar;
 
            Console.WriteLine ($"{conversor:C}");
             
         }
         public static void DolarParaReal (float ValorParaConverter)
         {
-            float conversor = ValorParaConverter / ValorDolar;
+            Console.WriteLine($"Digite o valor que deseja converter?");
+            float valor = float.Parse(Console.ReadLine());
+            ValorParaConverter = valor;
+            float conversor = ValorParaConverter * ValorDolar;
 
             //especificar de moeda CultureInfo.CreateSpecificCulture("codigo do pais")
            Console.WriteLine ($"{(conversor).ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");

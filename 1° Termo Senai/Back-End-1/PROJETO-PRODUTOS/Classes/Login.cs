@@ -7,6 +7,8 @@ namespace PROJETO_PRODUTOS.Classes
 {
     public class Login
     {
+
+   
         public bool Logado{ get; private set; }
 
         public Login()
@@ -26,11 +28,18 @@ namespace PROJETO_PRODUTOS.Classes
 
         public void Logar(Usuario _usuario)
         {
+            string email;
+            string senha;
+            do
+           {
+
             Console.WriteLine($"Insira seu e-mail: ");
-            string email = Console.ReadLine();
+            email = Console.ReadLine();
             
             Console.WriteLine($"Insira sua senha: ");
-            string senha = Console.ReadLine();
+            senha = Console.ReadLine();
+           
+            
             
             if (email == _usuario.Email && senha == _usuario.Senha)
             {
@@ -38,6 +47,8 @@ namespace PROJETO_PRODUTOS.Classes
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Login Efetuado com sucesso!!");
                 Console.ResetColor();
+
+                                
             }
             else
             {
@@ -45,8 +56,9 @@ namespace PROJETO_PRODUTOS.Classes
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Falha ao logar!!");
                 Console.ResetColor();
+                
             }
-            
+            } while (Logado == false);
             
         }
 
@@ -97,6 +109,7 @@ namespace PROJETO_PRODUTOS.Classes
 
                 case "3":
                 //remover
+                produto.Listar();
                 Console.WriteLine($"Informe o codigo do produto a ser removido: ");
                 int codigo = int.Parse(Console.ReadLine());
                 
@@ -116,6 +129,7 @@ namespace PROJETO_PRODUTOS.Classes
 
                 case "6":
                 //Remover Marca
+                marca.Listar();
                 Console.WriteLine($"Informe o codigo da marca a ser removido: ");
                 int codigoMarca = int.Parse(Console.ReadLine());
 

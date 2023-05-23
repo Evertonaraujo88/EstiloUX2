@@ -31,13 +31,37 @@ cel.Tamanho = Console.ReadLine();
 Console.WriteLine($"O celular esta ligado? s para sim e n para nao ");
 string resp = Console.ReadLine().ToLower();
 
-cel.Ligado = resp == "s" ? true : false;
+//cel.Ligado = resp == "s" ? true : false;
+
+if (resp == "s")
+{
+  cel.Ligado = true;
+}
+else if (resp == "n")
+{
+  cel.Ligado = false;
+
+  Console.WriteLine($"Deseja ligar o celular? s para sim ou n para não");
+  string resp2 = Console.ReadLine();
+  if (resp2 =="s")
+  {
+    cel.Ligar();
+  }
+  else
+  {
+    cel.Desligar();
+  }
+  
+}
+
 
 if (cel.Ligado == true)
 {
 char escolha;
 do
 {
+
+  cel.CorCelular();
   Console.WriteLine(@$"
 -----------------------------------
 |                                 |
@@ -47,10 +71,9 @@ do
 | 2 - DESLIGAR O CELULAR          |
 | 3 - FAZER LIGAÇÃO               |
 | 4 - ENVIAR MENSAGEM             |
-|                                 |
-| 0 - SAIR                        |
 -----------------------------------
 ");
+  Console.ResetColor();
 
 escolha= char.Parse(Console.ReadLine());
 
@@ -63,6 +86,7 @@ escolha= char.Parse(Console.ReadLine());
 
     case '2':
     cel.Desligar();
+    Console.WriteLine($"Ate a próxima!!");
     break;
 
     case '3':
@@ -72,17 +96,13 @@ escolha= char.Parse(Console.ReadLine());
     case '4':
     cel.EnviarMensagem();
     break;
-
-    case '0':
-    Console.WriteLine($"Ate a próxima!!");
-    break;
         
     default:
     Console.WriteLine($"Opção inválida!!!");
     break;
 }
   
-} while (escolha != '0');
+} while (escolha != '2');
      
 
 }

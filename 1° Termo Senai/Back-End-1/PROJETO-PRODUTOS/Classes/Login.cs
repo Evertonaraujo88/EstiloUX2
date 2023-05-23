@@ -30,7 +30,8 @@ namespace PROJETO_PRODUTOS.Classes
         {
             string email;
             string senha;
-            do
+
+            do //Validação paralogar no sistema, enquanto usuario e senha estiver incorretos, não entra no sistema e fica perguntando usuario e senha corretos
            {
 
             Console.WriteLine($"Insira seu e-mail: ");
@@ -53,20 +54,25 @@ namespace PROJETO_PRODUTOS.Classes
             else
             {
                 this.Logado = false;
+                Console.WriteLine($"");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Falha ao logar!!");
                 Console.ResetColor();
+                Console.WriteLine($"");
                 
             }
             } while (Logado == false);
             
         }
-
+        //Deslogar do app
         public void Deslogar ()
         {
             Logado = false;
+            Console.WriteLine($"");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Deslogando do app");
-            
+            Console.ResetColor();
+            Console.WriteLine($"");
         }
 
         
@@ -79,18 +85,28 @@ namespace PROJETO_PRODUTOS.Classes
         
             do
             {
-             Console.WriteLine(@$"
-            [1] - Cadastrar Produto
-            [2] - Listar Produto
-            [3] - Remover Produto
-            _______________________
-            [4] - Cadastrar Marca
-            [5] - Listar Marcas
-            [6] - Remover Marca
+            Console.WriteLine($"");
+            Console.WriteLine(@$"
 
-            [0] - Sair
-            
+                  MENU DE OPÇÕES:
+            ---------------------------
+            | [1] - Cadastrar Produto |
+            |                         |
+            | [2] - Listar Produto    |
+            |                         |
+            | [3] - Remover Produto   |
+            |                         |
+            | [4] - Cadastrar Marca   |
+            |                         |
+            | [5] - Listar Marcas     |
+            |                         |
+            | [6] - Remover Marca     |
+            |                         |
+            | [0] - Sair              |
+            ---------------------------
             ");
+            Console.WriteLine($"");
+            
             
             opcao = Console.ReadLine();
             

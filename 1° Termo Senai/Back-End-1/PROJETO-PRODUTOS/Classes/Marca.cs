@@ -22,6 +22,7 @@ namespace PROJETO_PRODUTOS.Classes
         Console.WriteLine($"Digite o Código da Marca:");
         int codigo = int.Parse(Console.ReadLine());
 
+        //
        novaMarca = ListaDeMarcas.FirstOrDefault(x => x.Codigo == codigo);
                      
        

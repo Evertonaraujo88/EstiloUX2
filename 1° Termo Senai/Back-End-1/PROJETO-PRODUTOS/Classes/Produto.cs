@@ -107,7 +107,11 @@ namespace PROJETO_PRODUTOS.Classes
                 }
             }if ( ListaDeProdutos.Count < 1)
             {
-                Console.WriteLine($"Não exitem produtos cadastrados");   
+               Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Não exitem Produtos cadastrados");
+                Console.ResetColor();
+                Console.WriteLine($"");
             }
             
             
@@ -117,6 +121,11 @@ namespace PROJETO_PRODUTOS.Classes
         {
             //aqui vai a lógica        
             //buscar um objeto na lista pelo seu código
+
+            if (ListaDeProdutos.Count > 0 || ListaDeProdutos != null)
+            {
+                
+            
             int index = ListaDeProdutos.IndexOf(ListaDeProdutos.Find(x=>x.Codigo == _codigo));
                        
             //remove-lo
@@ -131,6 +140,15 @@ namespace PROJETO_PRODUTOS.Classes
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"Produto Excluído!");
                 Console.ResetColor();
+            }
+            }
+            else
+            {
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Não exitem Produtos para serem excluídos.");
+                Console.ResetColor();
+                Console.WriteLine($"");
             }
                        
         }

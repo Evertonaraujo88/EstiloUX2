@@ -7,6 +7,8 @@ namespace PROJETO_PRODUTOS.Classes
 {
     public class Login
     {
+
+   
         public bool Logado{ get; private set; }
 
         public Login()
@@ -26,11 +28,19 @@ namespace PROJETO_PRODUTOS.Classes
 
         public void Logar(Usuario _usuario)
         {
+            string email;
+            string senha;
+
+            do //Validação paralogar no sistema, enquanto usuario e senha estiver incorretos, não entra no sistema e fica perguntando usuario e senha corretos
+           {
+
             Console.WriteLine($"Insira seu e-mail: ");
-            string email = Console.ReadLine();
+            email = Console.ReadLine();
             
             Console.WriteLine($"Insira sua senha: ");
-            string senha = Console.ReadLine();
+            senha = Console.ReadLine();
+           
+            
             
             if (email == _usuario.Email && senha == _usuario.Senha)
             {
@@ -38,23 +48,31 @@ namespace PROJETO_PRODUTOS.Classes
                 Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"Login Efetuado com sucesso!!");
                 Console.ResetColor();
+
+                                
             }
             else
             {
                 this.Logado = false;
+                Console.WriteLine($"");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine($"Falha ao logar!!");
                 Console.ResetColor();
+                Console.WriteLine($"");
+                
             }
-            
+            } while (Logado == false);
             
         }
-
+        //Deslogar do app
         public void Deslogar ()
         {
             Logado = false;
+            Console.WriteLine($"");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Deslogando do app");
-            
+            Console.ResetColor();
+            Console.WriteLine($"");
         }
 
         
@@ -67,18 +85,28 @@ namespace PROJETO_PRODUTOS.Classes
         
             do
             {
-             Console.WriteLine(@$"
-            [1] - Cadastrar Produto
-            [2] - Listar Produto
-            [3] - Remover Produto
-            _______________________
-            [4] - Cadastrar Marca
-            [5] - Listar Marcas
-            [6] - Remover Marca
+            Console.WriteLine($"");
+            Console.WriteLine(@$"
 
-            [0] - Sair
-            
+                  MENU DE OPÇÕES:
+            ---------------------------
+            | [1] - Cadastrar Produto |
+            |                         |
+            | [2] - Listar Produto    |
+            |                         |
+            | [3] - Remover Produto   |
+            |                         |
+            | [4] - Cadastrar Marca   |
+            |                         |
+            | [5] - Listar Marcas     |
+            |                         |
+            | [6] - Remover Marca     |
+            |                         |
+            | [0] - Sair              |
+            ---------------------------
             ");
+            Console.WriteLine($"");
+            
             
             opcao = Console.ReadLine();
             
@@ -97,6 +125,7 @@ namespace PROJETO_PRODUTOS.Classes
 
                 case "3":
                 //remover
+                produto.Listar();
                 Console.WriteLine($"Informe o codigo do produto a ser removido: ");
                 int codigo = int.Parse(Console.ReadLine());
                 
@@ -116,6 +145,7 @@ namespace PROJETO_PRODUTOS.Classes
 
                 case "6":
                 //Remover Marca
+                marca.Listar();
                 Console.WriteLine($"Informe o codigo da marca a ser removido: ");
                 int codigoMarca = int.Parse(Console.ReadLine());
 

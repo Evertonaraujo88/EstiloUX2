@@ -12,6 +12,7 @@ Console.WriteLine(@$"
 
 ");
 
+
 Console.WriteLine(@$"
  _____________________
 |                     |
@@ -23,13 +24,24 @@ Console.WriteLine(@$"
 |_____________________|
 
 ");
-char resp = char.Parse(Console.ReadLine());
 
-switch (resp = '1')
+
+char resp = char.Parse(Console.ReadLine()); 
+
+
+switch (resp)
 {
-    Console.WriteLine($"Digite o valor que deseja converter?");
+    case '1':
+    ConversorDeMoedas.DolarParaReal(ConversorDeMoedas.ValorParaConverter);
+    break;
 
-    
+    case '2': 
+    ConversorDeMoedas.RealParaDolar(ConversorDeMoedas.ValorParaConverter);
+    break;
+
+    default:
+    Console.WriteLine($"Operação inválida!!");
+    break; 
 }
 
 

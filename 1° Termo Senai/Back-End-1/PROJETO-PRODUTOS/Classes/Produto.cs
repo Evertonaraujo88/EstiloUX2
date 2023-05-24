@@ -23,28 +23,67 @@ namespace PROJETO_PRODUTOS.Classes
             //aqui vai a lógica
             //instanciar o objeto
             Produto novoProduto = new Produto();
-            //receber os dados e cadastrar nesse objeto
             string resp;
-           
-            Console.WriteLine($"Digite o codigo do produto: ");           
-            novoProduto.Codigo =int.Parse(Console.ReadLine());
 
+            Console.WriteLine($"");
+            
+            //receber os dados e cadastrar nesse objeto
+            Console.WriteLine($"Digite o codigo do produto: ");           
+            int codigo =int.Parse(Console.ReadLine());
+
+            novoProduto = ListaDeProdutos.Find(x => x.Codigo == codigo);
+
+            if (novoProduto == null)
+            {
+            novoProduto = new Produto();
+            novoProduto.Codigo = codigo;
+            
             Console.WriteLine($"Digite o nome do Produto: ");
             novoProduto.NomeProduto = Console.ReadLine();
-            
+          
             Console.WriteLine($"Digite o preço do produto: ");
             novoProduto.Preco = float.Parse(Console.ReadLine());
             
             novoProduto.DataCadastro = DateTime.Now;
 
             novoProduto.Marca = Marca.Cadastrar();
-
-             
+ 
             novoProduto.CadastradoPor = new Usuario();
              
             //armazenar o objeto na lista
             ListaDeProdutos.Add(novoProduto);
+            }
+            else
+            {
+            Console.WriteLine($"");
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"Produto já cadastrado!");
+            Console.ResetColor();
+            Console.WriteLine($"");
+            }
+
             
+            
+            Console.WriteLine($"");
+            Console.WriteLine($"Deseja cadastrar outro produto? s para sim ou n para não");
+            resp = Console.ReadLine();
+            
+            if (resp == "s")
+            {
+            Cadastrar();
+            } 
+
+            if (resp == "n")
+            {
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine($"Voltando ao menu...");
+                Console.ResetColor();
+ 
+            } else
+            {
+                                
+            }           
         }
 
         public void Listar()
@@ -68,7 +107,11 @@ namespace PROJETO_PRODUTOS.Classes
                 }
             }if ( ListaDeProdutos.Count < 1)
             {
-                Console.WriteLine($"Não exitem produtos cadastrados");   
+               Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Não exitem Produtos cadastrados");
+                Console.ResetColor();
+                Console.WriteLine($"");
             }
             
             
@@ -76,8 +119,13 @@ namespace PROJETO_PRODUTOS.Classes
 
         public void Deletar(int _codigo)
         {
-            //aqui vai a lógica
+            //aqui vai a lógica        
             //buscar um objeto na lista pelo seu código
+
+            if (ListaDeProdutos.Count > 0 || ListaDeProdutos != null)
+            {
+                
+            
             int index = ListaDeProdutos.IndexOf(ListaDeProdutos.Find(x=>x.Codigo == _codigo));
                        
             //remove-lo
@@ -87,7 +135,20 @@ namespace PROJETO_PRODUTOS.Classes
             if (resp == "s")
             {
                 ListaDeProdutos.RemoveAt(index);
+
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"Produto Excluído!");
+                Console.ResetColor();
+            }
+            }
+            else
+            {
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Não exitem Produtos para serem excluídos.");
+                Console.ResetColor();
+                Console.WriteLine($"");
             }
                        
         }

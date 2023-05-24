@@ -1,0 +1,15 @@
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\bin\Debug\net7.0\teste.exe
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\bin\Debug\net7.0\teste.deps.json
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\bin\Debug\net7.0\teste.runtimeconfig.json
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\bin\Debug\net7.0\teste.dll
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\bin\Debug\net7.0\teste.pdb
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.dll
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\refint\teste.dll
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.pdb
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\teste.genruntimeconfig.cache
+C:\Users\Usuario\Desktop\Tecnico-Senai\1° Termo Senai\Back-End-1\teste\obj\Debug\net7.0\ref\teste.dll

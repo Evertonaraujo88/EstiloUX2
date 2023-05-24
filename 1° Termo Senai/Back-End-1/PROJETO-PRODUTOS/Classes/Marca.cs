@@ -22,11 +22,11 @@ namespace PROJETO_PRODUTOS.Classes
         Console.WriteLine($"Digite o Código da Marca:");
         int codigo = int.Parse(Console.ReadLine());
 
-        novaMarca = ListaDeMarcas.Find(x=>x.Codigo == codigo);
-        //Console.WriteLine($"{novaMarca}");
+        //
+       novaMarca = ListaDeMarcas.FirstOrDefault(x => x.Codigo == codigo);
+                     
        
-       
-        if (novaMarca == null)
+         if (novaMarca == null)
         {
             novaMarca = new Marca();
             novaMarca.Codigo = codigo;
@@ -43,12 +43,16 @@ namespace PROJETO_PRODUTOS.Classes
         }
         else
         {
-
+            Console.WriteLine($"");
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Marca já cadastrada!");
+            Console.ResetColor();
+            Console.WriteLine($"");
+            
 
             return novaMarca;
             
-        }
+        } 
     
        }
 
@@ -69,7 +73,11 @@ namespace PROJETO_PRODUTOS.Classes
                 }
             }if ( ListaDeMarcas.Count < 1)
             {
-                Console.WriteLine($"Não exitem marcas cadastrados");   
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Não exitem marcas cadastrados");
+                Console.ResetColor();
+                Console.WriteLine($"");
             }
             
        }
@@ -81,12 +89,24 @@ namespace PROJETO_PRODUTOS.Classes
         int index = ListaDeMarcas.IndexOf(ListaDeMarcas.Find(x=>x.Codigo == _codigo));
         //remove-lo
         Console.WriteLine($"Deseja exluir o Produto? s para sim e n para não");
-            string resp = Console.ReadLine();
+        string resp = Console.ReadLine();
             
             if (resp == "s")
             {
                 ListaDeMarcas.RemoveAt(index);
+
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine($"Marca Excluída com sucesso!");
+                Console.ResetColor();
+                Console.WriteLine($"");
+            } else
+            {
+                Console.WriteLine($"");
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Marca não excluida, voltando ao menu!");
+                Console.ResetColor();
+                Console.WriteLine($"");
             }
        }
         

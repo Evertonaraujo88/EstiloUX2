@@ -1,0 +1,15 @@
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\bin\Debug\net7.0\PROJETO_EVENTO.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\bin\Debug\net7.0\PROJETO_EVENTO.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\bin\Debug\net7.0\PROJETO_EVENTO.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\bin\Debug\net7.0\PROJETO_EVENTO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\bin\Debug\net7.0\PROJETO_EVENTO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.csproj.AssemblyReference.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\refint\PROJETO_EVENTO.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\PROJETO_EVENTO.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\1° Termo Senai\MVC\PROJETO_EVENTO\obj\Debug\net7.0\ref\PROJETO_EVENTO.dll

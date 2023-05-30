@@ -15,6 +15,8 @@ namespace PROJETO_GAMERFULL.Models
                               //DATA ANNOTATION - IdEquipe
         [ForeignKey("Equipe")]// definindo a chave estrangeira na classe Jogador, utilizando a chave primaria criada na classe Equipe
         public int IdEquipe { get; set; }
+
+        public Equipe Equipe { get; set; }
     }
 
 

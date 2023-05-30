@@ -3,6 +3,7 @@ using PROJETO_GAMERFULL.Models;
 
 namespace PROJETO_GAMERFULL.Infra
 {
+    //configuracoes para acesso ao banco de dados
     public class Context : DbContext
     {
         public Context()
@@ -29,7 +30,7 @@ namespace PROJETO_GAMERFULL.Infra
 
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Data Source = ; initial catalog = gamerFull; Integrated Security = true; TrustServerCertificate = true  ");//string de conexao com o banco de dados
+                optionsBuilder.UseSqlServer("Data Source = NOTE16-S15; Initial Catalog = gamerFull; User Id = sa; pwd = Senai@134; TrustServerCertificate = true ");//string de conexao com o banco de dados
 
             }
             

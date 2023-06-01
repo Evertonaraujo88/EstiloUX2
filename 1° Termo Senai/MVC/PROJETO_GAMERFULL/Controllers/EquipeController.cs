@@ -98,6 +98,20 @@ namespace PROJETO_GAMERFULL.Controllers
             
             return LocalRedirect("~/Equipe/Listar");
         }
+        //rota para o metodo excluir
+        [Route ("Excluir/{id}")]
+        public IActionResult Excluir (int id)
+        {
+            //
+            Equipe equipeBuscada = c.Equipe.First(e => e.IdEquipe == id);
+
+            c.Remove(equipeBuscada);
+
+            c.SaveChanges();
+
+            return LocalRedirect ("~/Equipe/Listar");
+        }
     }
+
 
 }

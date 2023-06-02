@@ -8,8 +8,7 @@
 
     <!-- 
     post -> enviar
-    get -> obter enctype="multipart/form-data"
-    -->
+    get -> obter     -->
 <form method="post" action="@Url.Action("Cadastrar")" enctype="multipart/form-data">
     <label for="Nome">Nome</label>
     <input type="text" name="Nome" required >
@@ -42,6 +41,10 @@
                 </td>
                 <td>
                     <a asp-area="Excluir a equipe selecionada" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                </td>
+
+                <td>
+                    <a asp-area="Edita a equipe selecionada" asp-controller="Equipe" asp-action="Editar" asp-route-id = "@equipe.IdEquipe">Editar</a>
                 </td>
             </tr>
         }

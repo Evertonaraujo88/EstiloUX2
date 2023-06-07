@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lax1hDuMnQXseSDn2DdhIMCT9GuNCcNkBAvk0UYSkZU=",
+  "Hash": "68Gy8u63hzeEroVgI7hDqfo/Odz/tlMdWtiZdnfnd9w=",
   "Source": "PROJETO_GAMERFULL",
   "BasePath": "_content/PROJETO_GAMERFULL",
   "Mode": "Default",
@@ -102,6 +102,23 @@
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\barcelona.png"
     },
     {
+      "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\curintia.png",
+      "SourceId": "PROJETO_GAMERFULL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\",
+      "BasePath": "_content/PROJETO_GAMERFULL",
+      "RelativePath": "img/Equipes/curintia.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\curintia.png"
+    },
+    {
       "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\FCBarcelona.svg.png",
       "SourceId": "PROJETO_GAMERFULL",
       "SourceType": "Discovered",
@@ -151,6 +168,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Equipes\\palmeiras.png"
+    },
+    {
+      "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\santos.png",
+      "SourceId": "PROJETO_GAMERFULL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\",
+      "BasePath": "_content/PROJETO_GAMERFULL",
+      "RelativePath": "img/Equipes/santos.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\santos.png"
+    },
+    {
+      "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\saopaulo.png",
+      "SourceId": "PROJETO_GAMERFULL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\",
+      "BasePath": "_content/PROJETO_GAMERFULL",
+      "RelativePath": "img/Equipes/saopaulo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\Equipes\\saopaulo.png"
     },
     {
       "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\js\\site.js",

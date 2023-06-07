@@ -28,6 +28,9 @@ namespace PROJETO_GAMERFULL.Controllers
         public IActionResult Index()
 
         {
+            //viewbag da login controller para ter acesso ao userName
+             ViewBag.UserName =  HttpContext.Session.GetString("UserName");
+
             //Variavel que armazena as equipes listadas do banco de dados
             ViewBag.Equipe = c.Equipe.ToList();
 
@@ -115,6 +118,8 @@ namespace PROJETO_GAMERFULL.Controllers
         [Route ("Editar/{id}")]
         public IActionResult Editar (int id)
         {
+             ViewBag.UserName =  HttpContext.Session.GetString("UserName");
+
             Equipe equipe = c.Equipe.First(x => x.IdEquipe == id);
 
             ViewBag.Equipe = equipe;

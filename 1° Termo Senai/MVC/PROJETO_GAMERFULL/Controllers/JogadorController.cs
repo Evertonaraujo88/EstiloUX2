@@ -26,6 +26,8 @@ namespace PROJETO_GAMERFULL.Controllers
         [Route ("Listar")]//http://localhost:/Jogador/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName =  HttpContext.Session.GetString("UserName");
+
             ViewBag.Jogador= c.Jogador.ToList();
             ViewBag.Equipe = c.Equipe.ToList();
 
@@ -72,6 +74,8 @@ namespace PROJETO_GAMERFULL.Controllers
 
         public IActionResult Editar(int id)
         {
+            ViewBag.UserName =  HttpContext.Session.GetString("UserName");
+
             Jogador jogador = c.Jogador.First(j => j.IdJogador == id);
 
             ViewBag.Jogador = jogador;

@@ -21,12 +21,24 @@
       "PackagePath": "staticwebassets\\img\\Equipes\\barcelona.png"
     },
     {
+      "Id": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\curintia.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\curintia.png"
+    },
+    {
       "Id": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\padrao.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\padrao.png"
     },
     {
       "Id": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\palmeiras.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\palmeiras.png"
+    },
+    {
+      "Id": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\santos.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\santos.png"
+    },
+    {
+      "Id": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\img\\Equipes\\saopaulo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\saopaulo.png"
     },
     {
       "Id": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\MVC\\PROJETO_GAMERFULL\\wwwroot\\js\\site.js",

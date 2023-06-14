@@ -10574,11 +10574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\GarmerMigration\\PROJETO_GAMERFULL\\PROJETO_GAMERFULL.csproj",
+      "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\PROJETO_GAMERFULL.csproj",
       "projectName": "PROJETO_GAMERFULL",
-      "projectPath": "C:\\Users\\32599952859\\Desktop\\GarmerMigration\\PROJETO_GAMERFULL\\PROJETO_GAMERFULL.csproj",
+      "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\PROJETO_GAMERFULL.csproj",
       "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\32599952859\\Desktop\\GarmerMigration\\PROJETO_GAMERFULL\\obj\\",
+      "outputPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",

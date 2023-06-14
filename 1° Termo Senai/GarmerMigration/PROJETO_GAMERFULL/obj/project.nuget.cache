@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gLL46F/3syX/FHM3XHoAr89E0xj+bb7IRwR7FAOHTc0zmHjZFfw0W35qKPm9gFEDKraLA/ZLM7OC48YwDM5h6g==",
+  "dgSpecHash": "U2vFx0BYKoApuO4Ioo8H89BLDYkoR7EgeeRq6EvDnRJGqg9WhfxlQTrxrolMjVYn+VM3FuJzlCpS4FQU+WDjTQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\32599952859\\Desktop\\GarmerMigration\\PROJETO_GAMERFULL\\PROJETO_GAMERFULL.csproj",
+  "projectFilePath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\PROJETO_GAMERFULL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\32599952859\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

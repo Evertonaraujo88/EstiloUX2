@@ -3,6 +3,7 @@
 @{
     ViewData["Title"] = "Equipe";
 }
+
 <link rel="stylesheet" href="~/css/equipes.css">
 
  <!-- MAIN -->
@@ -53,7 +54,8 @@
                             <th>Id</th>
                             <th>Nome</th>
                             <th>Foto</th>
-                            <th>Ações</th>
+                            <th>Excluir</th>
+                            <th>Editar</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -64,13 +66,13 @@
                                 <td>@equipe.IdEquipe</td>
                                 <td>@equipe.Nome</td>
                                 @* <td><img class="green-play" src="~/assets/green-play.svg" alt=""></td> *@
-                                <td><img class="yellow-trash" src="/img/Equipes/@equipe.Imagem" alt="imagem da equipe @equipe.Nome" width="50px"></td>
+                                <td><img class="" src="/img/Equipes/@equipe.Imagem" alt="imagem da equipe @equipe.Nome" width="50px"></td>
                                 <td>
-                                <a asp-area="Excluir a equipe selecionada" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe">Excluir</a>
+                                <a asp-area="Excluir a equipe selecionada" asp-controller="Equipe" asp-action="Excluir" asp-route-id="@equipe.IdEquipe"><img class="green-play" src="~/assets/trash.png" alt=""></a>
                                 </td>
 
                                 <td>
-                                <a asp-area="Edita a equipe selecionada" asp-controller="Equipe" asp-action="Editar" asp-route-id = "@equipe.IdEquipe">Editar</a>
+                                <a asp-area="Edita a equipe selecionada" asp-controller="Equipe" asp-action="Editar" asp-route-id = "@equipe.IdEquipe"><img class="green-play" src="~/assets/lapis.png" alt=""></a>
                                 </td>
                             </tr>
                             @* <tr>

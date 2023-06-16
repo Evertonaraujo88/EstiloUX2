@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "w1BHuSKNlew+RJMQ8JAeS1V6T4Pm3mlmyXoWMn1PAyI=",
+  "Hash": "/7NnYm0JOFHWRDz5FZKVHVdV4BNbI/DZxsKBK1pC+2o=",
   "Source": "PROJETO_GAMERFULL",
   "BasePath": "_content/PROJETO_GAMERFULL",
   "Mode": "Default",
@@ -816,6 +816,23 @@
       "OriginalItemSpec": "wwwroot\\assets\\joystick-prof-icon.svg"
     },
     {
+      "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\wwwroot\\assets\\lapis.png",
+      "SourceId": "PROJETO_GAMERFULL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\wwwroot\\",
+      "BasePath": "_content/PROJETO_GAMERFULL",
+      "RelativePath": "assets/lapis.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\lapis.png"
+    },
+    {
       "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\wwwroot\\assets\\linkedin-yellow.svg",
       "SourceId": "PROJETO_GAMERFULL",
       "SourceType": "Discovered",
@@ -848,6 +865,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\linkedin.svg"
+    },
+    {
+      "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\wwwroot\\assets\\lixeira.svg",
+      "SourceId": "PROJETO_GAMERFULL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\wwwroot\\",
+      "BasePath": "_content/PROJETO_GAMERFULL",
+      "RelativePath": "assets/lixeira.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\lixeira.svg"
     },
     {
       "Identity": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\1° Termo Senai\\GarmerMigration\\PROJETO_GAMERFULL\\wwwroot\\assets\\logotipo-gamer.png",

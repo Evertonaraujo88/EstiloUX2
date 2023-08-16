@@ -48,4 +48,21 @@ CREATE TABLE tb_Medico (
 	CRM VARCHAR (20) NOT NULL UNIQUE
 );
 
+CREATE TABLE tb_Consulta(
+	IdConsulta INT PRIMARY KEY IDENTITY,
+	IdPaciente INT FOREIGN KEY REFERENCES tb_Paciente (IdPaciente) NOT NULL,
+	IdMedico INT FOREIGN KEY REFERENCES tb_Medico (IdMedico) NOT NULL,
+	DataConsulta DATE NOT NULL,
+	HoraConsulta TIME NOT NULL,
+	Prontuario TEXT NOT NULL,
+	Situacao BIT DEFAULT (1)
+);
+
+CREATE TABLE tb_Comentarios(
+	IdComentarios INT PRIMARY KEY IDENTITY,
+	IdPaciente INT FOREIGN KEY REFERENCES tb_Paciente (IdPaciente) NOT NULL,
+	IdConsulta INT FOREIGN KEY REFERENCES tb_Consulta (IdConsulta) NOT NULL,
+	Descricao TEXT NOT NULL,
+	Situacao BIT DEFAULT (0)
+);
 

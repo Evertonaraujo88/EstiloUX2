@@ -16,7 +16,7 @@ USE Health_Clinic_Manha;
 SELECT
 tb_Consulta.IdConsulta AS "Id Consulta",
 tb_Consulta.DataConsulta AS "Data da Consulta",
-tb_Consulta.HoraConsulta AS "Horario da Consulta",
+CONVERT (VARCHAR(5),tb_Consulta.HoraConsulta) AS "Horario da Consulta",
 tb_Clinica.NomeFantasia AS "Nome da Clinica",
 tb_Paciente.NomePaciente AS "Nome do Paciente",
 tb_Medico.NomeMedico AS "Nome do Medico",

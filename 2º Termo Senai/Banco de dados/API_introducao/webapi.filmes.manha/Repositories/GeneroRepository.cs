@@ -14,7 +14,7 @@ namespace webapi.filmes.manha.Repository
         //     - Windows: Integrate Security = true;
         //     - SqlServer: User Id= sa; Pwd = Senha;
 
-        private string stringConexao = "DataSource = NOTE01-S14; Initial Catalog = Filmes; User Id = sa; Pwd = Senai@134";
+        private string stringConexao = "Data Source = NOTE01-S14; Initial Catalog = Filmes; User Id = sa; Pwd = Senai@134";
         //Integrated Security = true (para conexao integrada com windows)
 
 
@@ -33,9 +33,30 @@ namespace webapi.filmes.manha.Repository
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// Cadastrar um novo Genero
+        /// </summary>
+        /// <param name="novoGenero">Objeto com as informacoes que serao cadastradas</param>
         public void Cadastrar(GeneroDomain novoGenero)
         {
-            throw new NotImplementedException();
+            //Declera conexao passando a string conexao como parametro
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                //Declara a query que sera executada
+                string queryInsert = "INSERT INTO Genero(Nome) VALUES (' " + novoGenero.Nome + " ')";
+
+                //Declara o SqlCommand passando a query que sera executada e a conexao com o banco de dados
+                using (SqlCommand cmd = new SqlCommand(queryInsert, con))
+                {
+                    //Abre a conexao com o banco de dados
+                    con.Open();
+
+                    //executar a query (queryInsert)
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
+
         }
 
         public void Deletar(int id)
@@ -83,17 +104,17 @@ namespace webapi.filmes.manha.Repository
 
 
                         //Adiciona cada objeto dentro da lista
-                        listaGeneros.Add(genero);
+                        ListaGeneros.Add(genero);
                     }
-                    
+
 
                 }
             }
 
-
+            return ListaGeneros;
         }
 
-                return ListaGeneros;
-        }
+
+    }
 }
-}
+

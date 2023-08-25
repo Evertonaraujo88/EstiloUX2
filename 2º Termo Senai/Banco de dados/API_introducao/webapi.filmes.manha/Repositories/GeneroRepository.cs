@@ -30,7 +30,27 @@ namespace webapi.filmes.manha.Repository
 
         public GeneroDomain BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            //Declera conexao passando a string conexao como parametro
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                //Declara a query que sera executada
+                string querySearch = "SELECT * FROM Genero.IdGenero = @IdBuscado";
+
+                //Declara o SqlCommand passando a query que sera executada e a conexao com o banco de dados
+                using (SqlCommand cmd = new SqlCommand(querySearch, con))
+                {
+
+                    //passa o valor do parametro @Nome
+                    cmd.Parameters.AddWithValue("@Nome", novoGenero.Nome);
+
+                    //Abre a conexao com o banco de dados
+                    con.Open();
+
+                    //executar a query (queryInsert)
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
         }
 
         /// <summary>
@@ -43,11 +63,15 @@ namespace webapi.filmes.manha.Repository
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 //Declara a query que sera executada
-                string queryInsert = "INSERT INTO Genero(Nome) VALUES (' " + novoGenero.Nome + " ')";
+                string queryInsert = "INSERT INTO Genero(Nome) VALUES (@Nome)";
 
                 //Declara o SqlCommand passando a query que sera executada e a conexao com o banco de dados
                 using (SqlCommand cmd = new SqlCommand(queryInsert, con))
                 {
+
+                    //passa o valor do parametro @Nome
+                    cmd.Parameters.AddWithValue("@Nome", novoGenero.Nome);
+
                     //Abre a conexao com o banco de dados
                     con.Open();
 
@@ -59,10 +83,34 @@ namespace webapi.filmes.manha.Repository
 
         }
 
+        /// <summary>
+        /// Deletar um Genero
+        /// </summary>
+        /// <param name="id">Id que deseja deletar</param>
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            //Declera conexao passando a string conexao como parametro
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                string queryDelete = "DELETE FROM Genero WHERE IdGenero = @IdDeletado";
+
+                //Declara o SqlCommand passando a query que sera executada e a conexao com o banco de dados
+                using (SqlCommand cmd = new SqlCommand(queryDelete, con))
+                {
+
+                    //passa o valor do parametro @Nome
+                    cmd.Parameters.AddWithValue("@IdDeletado", id);
+
+                    //Abre a conexao com o banco de dados
+                    con.Open();
+
+                    //executar a query (queryInsert)
+                    cmd.ExecuteNonQuery();
+
+                }
+            }
         }
+
 
         ///<summary>
         ///Listar todos objetos (generos)
@@ -115,6 +163,10 @@ namespace webapi.filmes.manha.Repository
         }
 
 
+
+
     }
-}
+
+
+
 

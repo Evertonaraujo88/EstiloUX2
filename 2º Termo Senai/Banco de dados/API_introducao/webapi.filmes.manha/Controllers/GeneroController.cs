@@ -87,5 +87,30 @@ namespace webapi.filmes.manha.Controllers
             }
         }
 
+        /// <summary>
+        /// EndPoint que aciona o metodo de Deletar genero no repositorio
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Retorna que o genero foi deletado</returns>
+        [HttpDelete ("{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                //Fazendo a chamada para o metodo cadastrar passando o objeto como parametro
+                _generoRepository.Deletar(id);
+
+                //Retorna um status code 204(No Content)
+                return StatusCode(204);
+            }
+            catch (Exception erro)
+            {
+                //Retorna um status Code BadRequest(400) e a menssagem do erro
+                return BadRequest(erro.Message);
+            }
+        }
+
+
+
     }
 }

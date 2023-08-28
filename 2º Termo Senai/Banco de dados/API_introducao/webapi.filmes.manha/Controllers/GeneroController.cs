@@ -92,7 +92,7 @@ namespace webapi.filmes.manha.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Retorna que o genero foi deletado</returns>
-        [HttpDelete ("{id}")]
+        [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {
             try
@@ -102,6 +102,32 @@ namespace webapi.filmes.manha.Controllers
 
                 //Retorna um status code 204(No Content)
                 return StatusCode(204);
+            }
+            catch (Exception erro)
+            {
+                //Retorna um status Code BadRequest(400) e a menssagem do erro
+                return BadRequest(erro.Message);
+            }
+        }
+
+        [HttpGet("{id}")]
+
+        public IActionResult GetById(int id)
+        {
+
+            try
+            {
+                 //Fazendo a chamada para o metodo cadastrar passando o objeto como parametro
+                 GeneroDomain generoBuscado = _generoRepository.BuscarPorId(id);
+
+                if (generoBuscado == null)
+                {
+                    return NotFound("Nenhum genero foi encontrado!!");
+                }
+
+                //Retorna um status code 204(No Content)
+
+                return Ok(generoBuscado);
             }
             catch (Exception erro)
             {

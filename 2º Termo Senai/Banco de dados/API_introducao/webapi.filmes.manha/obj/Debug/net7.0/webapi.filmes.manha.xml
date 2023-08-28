@@ -121,6 +121,13 @@
             <param name="id">Id do objeto a ser buscado</param>
             <returns>Objeto Buscado</returns>
         </member>
+        <member name="M:webapi.filmes.manha.Repository.GeneroRepository.BuscarPorId(System.Int32)">
+            <summary>
+            Buscar um Genero atraves do ID
+            </summary>
+            <param name="id">Id do genero a ser buscado</param>
+            <returns>Objeto buscadi ou null casa nao seja encontratrado</returns>
+        </member>
         <member name="M:webapi.filmes.manha.Repository.GeneroRepository.Cadastrar(webapi.filmes.manha.Domains.GeneroDomain)">
             <summary>
             Cadastrar um novo Genero

@@ -25,31 +25,77 @@ namespace webapi.filmes.manha.Repository
 
         public void AtualizarIdUrl(int id, GeneroDomain genero)
         {
-            throw new NotImplementedException();
-        }
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+                BuscarPorId(id);
 
+                con.Open();
+
+                //Declara a query que sera executada
+                string queryUpDate = "UPDATE Genero SET Nome WHERE IdGenero = @IdGenero";
+
+                
+
+                using (SqlCommand cmd = new SqlCommand(queryUpDate, con))
+                {
+                    //passa o valor do parametro @Nome
+                    cmd.Parameters.AddWithValue("@Idgenero", genero.Nome);
+                    
+        
+                    //executar a query (queryInsert)
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        /// <summary>
+        /// Buscar um Genero atraves do ID
+        /// </summary>
+        /// <param name="id">Id do genero a ser buscado</param>
+        /// <returns>Objeto buscadi ou null casa nao seja encontratrado</returns>
         public GeneroDomain BuscarPorId(int id)
         {
             //Declera conexao passando a string conexao como parametro
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
                 //Declara a query que sera executada
-                string querySearch = "SELECT * FROM Genero.IdGenero = @IdBuscado";
+                string querySelectById = "SELECT IdGenero, Nome FROM Genero WHERE IdGenero = @IdGenero";
+
+                //Abre a conexao com o banco de dados
+                con.Open();
+
+                //Declara 0 sqlDataReader para percorrer a tabela do banco de dados
+                SqlDataReader rdr;
 
                 //Declara o SqlCommand passando a query que sera executada e a conexao com o banco de dados
-                using (SqlCommand cmd = new SqlCommand(querySearch, con))
+                using (SqlCommand cmd = new SqlCommand(querySelectById, con))
                 {
+                    //Passando o valor para o paramentro @IdGenero
+                    cmd.Parameters.AddWithValue("@IdGenero", id);
 
-                    //passa o valor do parametro @Nome
-                    cmd.Parameters.AddWithValue("@Nome", novoGenero.Nome);
+                    //Executa a query e armazena os dados no rdr
+                    rdr = cmd.ExecuteReader();
 
-                    //Abre a conexao com o banco de dados
-                    con.Open();
+                    //Verifica se o resultado da query retornou algum registro
+                    if (rdr.Read())
+                    {
+                        //se sim, instacia um novo objeto generoBuscado do tipo GeneroDomain
+                        GeneroDomain generoBuscado = new GeneroDomain
+                        {
+                            //Atribui a propriedade IdGenero o valor da coluna "IdGenero" da tabela do banco de dados
+                            IdGenero = Convert.ToInt32(rdr["IdGenero"]),
 
-                    //executar a query (queryInsert)
-                    cmd.ExecuteNonQuery();
+                            //Atribui a propriedade nome o valor da coluna "Nome" da tabela do banco de dados
+                            Nome = rdr["Nome"].ToString()
+                        };
+
+                        //Retorna o generoBuscado com os dados obtidos
+                        return generoBuscado;
+                    }
+                    //se nao, retorna null
+                    return null;
 
                 }
+
             }
         }
 
@@ -165,7 +211,9 @@ namespace webapi.filmes.manha.Repository
 
 
 
+
     }
+}
 
 
 

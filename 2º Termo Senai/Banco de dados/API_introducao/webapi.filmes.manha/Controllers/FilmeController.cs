@@ -146,8 +146,8 @@ namespace webapi.filmes.manha.Controllers
         /// <param name="id"></param>
         /// <param name="novofilme"></param>
         /// <returns></returns>
-        [HttpPut("{id}")]
-        public IActionResult PutIdURL(int id, FilmeDomain filme)
+        [HttpPut("{idFilme}")]
+        public IActionResult PutIdURL(int idFilme, FilmeDomain filme)
         {
 
             try
@@ -160,7 +160,7 @@ namespace webapi.filmes.manha.Controllers
                 }
 
 
-                _filmeRepository.AtualizarIdUrl(id, filme);
+                _filmeRepository.AtualizarIdUrl(idFilme, filme);
 
                 return StatusCode(200);
             }

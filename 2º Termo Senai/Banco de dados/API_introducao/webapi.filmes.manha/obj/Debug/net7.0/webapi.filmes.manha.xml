@@ -4,6 +4,51 @@
         <name>webapi.filmes.manha</name>
     </assembly>
     <members>
+        <member name="P:webapi.filmes.manha.Controllers.FilmeController._filmeRepository">
+            <summary>
+            Objeto _filmeRepository que irah receber todos os metodos definidos a interface IFilmeRepository
+            </summary>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.FilmeController.#ctor">
+            <summary>
+            Instancia o objeto _filmeRepository para que haja referencia aos metodos no repositorio
+            </summary>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.FilmeController.Get">
+            <summary>
+            EndPoint que aciona o metodo ListarTodos no repositorio
+            </summary>
+            <returns>Retorna a resposta para o usuario(Front-End)</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.FilmeController.Post(webapi.filmes.manha.Domains.FilmeDomain)">
+            <summary>
+            EndPoint que aciona o metodo de cadastro de filmes
+            </summary>
+            <param name="novofilme">Objeto recebido na requisicao</param>
+            <returns>Retorna a resposta para o usuario(Front-End)</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.FilmeController.Delete(System.Int32)">
+            <summary>
+            EndPoint que aciona o metodo de Deletar filme no repositorio
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna que o filme foi deletado</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.FilmeController.GetById(System.Int32)">
+            <summary>
+            EndPoint que aciona o metodo de buscar filme por Id
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna o genero que foi encontrado</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.FilmeController.PutIdURL(System.Int32,webapi.filmes.manha.Domains.FilmeDomain)">
+            <summary>
+            Endpoint que aciona o metodo AtualizarPorUrl
+            </summary>
+            <param name="id"></param>
+            <param name="novofilme"></param>
+            <returns></returns>
+        </member>
         <member name="P:webapi.filmes.manha.Controllers.GeneroController._generoRepository">
             <summary>
             Objeto _generoRepository que irah receber todos os metodos definidos a interface IGeneroRepository
@@ -33,6 +78,28 @@
             </summary>
             <param name="id"></param>
             <returns>Retorna que o genero foi deletado</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.GeneroController.GetById(System.Int32)">
+            <summary>
+            EndPoint que aciona o metodo de buscar genero por Id
+            </summary>
+            <param name="id"></param>
+            <returns>Retorna o genero que foi encontrado</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.GeneroController.PutIdURL(System.Int32,webapi.filmes.manha.Domains.GeneroDomain)">
+            <summary>
+            Endpoint que aciona o metodo AtualizarPorUrl
+            </summary>
+            <param name="id"></param>
+            <param name="Genero"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Controllers.GeneroController.PutIdCorpo(webapi.filmes.manha.Domains.GeneroDomain)">
+            <summary>
+            Endpoint que aciona o metodo Atualizar pelo corpo
+            </summary>
+            <param name="Genero"></param>
+            <returns></returns>
         </member>
         <member name="T:webapi.filmes.manha.Domains.GeneroDomain">
             <summary>
@@ -120,6 +187,19 @@
             </summary>
             <param name="id">Id do objeto a ser buscado</param>
             <returns>Objeto Buscado</returns>
+        </member>
+        <member name="M:webapi.filmes.manha.Repository.GeneroRepository.AtualizarIdCorpo(webapi.filmes.manha.Domains.GeneroDomain)">
+            <summary>
+            Atualiza um genero passando o seu id pelo corpo da requisicao
+            </summary>
+            <param name="genero">Objeto genero com as novas informacoes</param>
+        </member>
+        <member name="M:webapi.filmes.manha.Repository.GeneroRepository.AtualizarIdUrl(System.Int32,webapi.filmes.manha.Domains.GeneroDomain)">
+            <summary>
+            Atualiza um genero atraves do id
+            </summary>
+            <param name="id"></param>
+            <param name="genero"></param>
         </member>
         <member name="M:webapi.filmes.manha.Repository.GeneroRepository.BuscarPorId(System.Int32)">
             <summary>

@@ -17,31 +17,62 @@ namespace webapi.filmes.manha.Repository
         private string stringConexao = "Data Source = NOTE01-S14; Initial Catalog = Filmes; User Id = sa; Pwd = Senai@134";
         //Integrated Security = true (para conexao integrada com windows)
 
-
+        /// <summary>
+        /// Atualiza um genero passando o seu id pelo corpo da requisicao
+        /// </summary>
+        /// <param name="genero">Objeto genero com as novas informacoes</param>
         public void AtualizarIdCorpo(GeneroDomain genero)
         {
-            throw new NotImplementedException();
+            using (SqlConnection con = new SqlConnection(stringConexao))
+            {
+            
+                con.Open();
+
+                string queryUpDateBody = "UPDATE Genero SET Nome = @novoNome WHERE IdGenero = @idGenero";
+
+                using (SqlCommand cmd = new SqlCommand(queryUpDateBody, con))
+                {
+
+                    //passa o valor do parametro @Nome
+                    cmd.Parameters.AddWithValue("@Idgenero", genero.IdGenero);
+                    cmd.Parameters.AddWithValue("@novoNome", genero.Nome);
+
+
+
+                    //executar a query (queryInsert)
+                    cmd.ExecuteNonQuery();
+                }
+
+            }
+
         }
 
+        /// <summary>
+        /// Atualiza um genero atraves do id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="genero"></param>
         public void AtualizarIdUrl(int id, GeneroDomain genero)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {
-                BuscarPorId(id);
 
                 con.Open();
 
                 //Declara a query que sera executada
-                string queryUpDate = "UPDATE Genero SET Nome WHERE IdGenero = @IdGenero";
+                string queryUpDateUrl = "UPDATE Genero SET Nome = @novoNome WHERE IdGenero = @idGenero";
 
-                
+                //BuscarPorId(id);
 
-                using (SqlCommand cmd = new SqlCommand(queryUpDate, con))
+                using (SqlCommand cmd = new SqlCommand(queryUpDateUrl, con))
                 {
+
                     //passa o valor do parametro @Nome
-                    cmd.Parameters.AddWithValue("@Idgenero", genero.Nome);
-                    
-        
+                    cmd.Parameters.AddWithValue("@Idgenero", id);
+                    cmd.Parameters.AddWithValue("@novoNome", genero.Nome);
+
+
+
                     //executar a query (queryInsert)
                     cmd.ExecuteNonQuery();
                 }

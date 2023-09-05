@@ -14,7 +14,7 @@ namespace webapi.filmes.manha.Repositories
             throw new NotImplementedException();
         }
 
-        public void AtualizarIdUrl(int id, FilmeDomain filme)
+        public void AtualizarIdUrl(int idFilme, FilmeDomain filme)
         {
             using (SqlConnection con = new SqlConnection(stringConexao))
             {

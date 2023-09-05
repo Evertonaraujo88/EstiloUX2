@@ -1,4 +1,5 @@
-﻿  using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using webapi.filmes.manha.Domains;
 using webapi.filmes.manha.Interfaces;
@@ -41,6 +42,7 @@ namespace webapi.filmes.manha.Controllers
         /// </summary>
         /// <returns>Retorna a resposta para o usuario(Front-End)</returns>
         [HttpGet]
+        [Authorize(Roles = "Administrador, Comum")]//autorização para acessar o metodo get
         public IActionResult Get()
         {
 
@@ -68,6 +70,7 @@ namespace webapi.filmes.manha.Controllers
         /// <param name="novogenero">Objeto recebido na requisicao</param>
         /// <returns>Retorna a resposta para o usuario(Front-End)</returns>
         [HttpPost]
+        [Authorize (Roles = "Administrador")]
         public IActionResult Post(GeneroDomain novogenero)
         {
 

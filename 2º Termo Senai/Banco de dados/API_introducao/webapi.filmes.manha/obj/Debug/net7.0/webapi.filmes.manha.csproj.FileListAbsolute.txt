@@ -38,3 +38,11 @@ C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_in
 C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\obj\Debug\net7.0\webapi.filmes.manha.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\webapi.filmes.manha.xml
 C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\obj\Debug\net7.0\webapi.filmes.manha.xml
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\2º Termo Senai\Banco de dados\API_introducao\webapi.filmes.manha\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

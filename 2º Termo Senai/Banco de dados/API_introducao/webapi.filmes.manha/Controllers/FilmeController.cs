@@ -152,7 +152,7 @@ namespace webapi.filmes.manha.Controllers
 
             try
             {
-                FilmeDomain filmeBuscado = _filmeRepository.BuscarPorId(id);
+                FilmeDomain filmeBuscado = _filmeRepository.BuscarPorId(idFilme);
 
                 if (filmeBuscado == null)
                 {

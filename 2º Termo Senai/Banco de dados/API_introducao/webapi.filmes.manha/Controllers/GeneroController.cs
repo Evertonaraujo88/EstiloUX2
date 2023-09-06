@@ -7,7 +7,7 @@ using webapi.filmes.manha.Repository;
 
 namespace webapi.filmes.manha.Controllers
 {
-    //Define que a rita de yna requisicai sera ni seguinte formato
+    //Define que a rita de yna requisicao sera ni seguinte formato
     // dominio/api/nomeControle
     //exemplo: http://localhost:5000/api/genero
     [Route("api/[controller]")]

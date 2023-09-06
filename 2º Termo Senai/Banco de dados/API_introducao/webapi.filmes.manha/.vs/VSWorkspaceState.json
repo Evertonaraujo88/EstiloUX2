@@ -2,9 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\Controllers",
-    "\\Interfaces",
-    "\\Repositories"
+    "\\Domains",
+    "\\Interfaces"
   ],
-  "SelectedNode": "\\Controllers",
+  "SelectedNode": "\\Repositories",
   "PreviewInSolutionExplorer": false
 }

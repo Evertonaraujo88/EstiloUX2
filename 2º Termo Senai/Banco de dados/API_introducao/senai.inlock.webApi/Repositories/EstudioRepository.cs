@@ -55,14 +55,14 @@ namespace senai.inlock.webApi_.Repositories
         public List<EstudioDomain> ListarTodos()
         {
        
-                //Cria uma lista de objetos do tipo genero 
+                //Cria uma lista de objetos do tipo estudio
                 List<EstudioDomain> ListaEstudios = new List<EstudioDomain>();
 
                 //Declaro a SqlConnetion passando a string de conexao como parametro
                 using (SqlConnection con = new SqlConnection(stringConexao))
                 {
                     //Declara a instrucao a ser executada
-                    string querySelectAll = "SELECT IdEstudio, Nome FROM Estudio";
+                    string querySelectAll = "SELECT * FROM Estudio";
 
                     //Abre a conexao com o banco de dados
                     con.Open();

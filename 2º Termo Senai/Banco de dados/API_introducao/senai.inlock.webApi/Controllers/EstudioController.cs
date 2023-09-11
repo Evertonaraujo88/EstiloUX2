@@ -37,7 +37,7 @@ namespace senai.inlock.webApi_.Controllers
         /// <param name="novoestudio">Objeto recebido na requisicao</param>
         /// <returns>Retorna a resposta para o usuario(Front-End)</returns>
         [HttpPost]
-        [Authorize(Roles = "Administrador")]
+        [Authorize(Roles = "2")]
         public IActionResult Post(EstudioDomain novoestudio)
         {
 
@@ -63,7 +63,7 @@ namespace senai.inlock.webApi_.Controllers
         /// </summary>
         /// <returns>Retorna a resposta para o usuario(Front-End)</returns>
         [HttpGet]
-        [Authorize(Roles = "Administrador, Comum")]//autorização para acessar o metodo get
+        [Authorize(Roles = "1,2")]///autorização para acessar o metodo get
         public IActionResult Get()
         {
 

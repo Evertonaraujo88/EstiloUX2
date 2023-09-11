@@ -1,13 +1,15 @@
 ﻿using senai.inlock.webApi_.Domains;
 using senai.inlock.webApi_.Interfaces;
 using System.Data.SqlClient;
+using System.Globalization;
+using System.IO;
 
 namespace senai.inlock.webApi_.Repositories
 {
     public class JogosRepository : IJogosRepository
     {
         // criado string de conexao com o banco de dados
-        private string stringConexao = "Data Source = NOTE01-S14; Initial Catalog = inlock_games; User Id = sa; Pwd = Senai@134";
+        private string stringConexao = "Data Source = DESKTOP-T9B12O6; Initial Catalog = inlock_games; User Id = sa; Pwd = Info@134";
 
         /// <summary>
         /// Cadastra um novo Jogo
@@ -59,7 +61,7 @@ namespace senai.inlock.webApi_.Repositories
             {
 
                 //Declara a instrucao a ser executada
-                string querySelectAll = "SELECT * FROM Jogo";
+                string querySelectAll = "SELECT Jogo.IdJogo, Jogo.IdEstudio, Jogo.Nome, Jogo.Descricao, Jogo.DataLancamento, Jogo.Valor, Estudio.IdEstudio, Estudio.Nome FROM Jogo INNER JOIN Estudio ON Jogo.IdEstudio = Estudio.IdEstudio";
 
                 con.Open();
 
@@ -76,12 +78,20 @@ namespace senai.inlock.webApi_.Repositories
                     {
                         JogosDomain jogo = new JogosDomain()
                         {
-
-                            IdEstudio = Convert.ToInt32(rdr[0]),
+                            IdJogo = Convert.ToInt32(rdr[0]),
+                            IdEstudio = Convert.ToInt32(rdr[1]),
                             Nome = rdr["Nome"].ToString(),
                             Descricao = rdr["Descricao"].ToString(),
-                            DataLancamento = Convert.ToInt32(rdr[1]),
-                            Valor = Convert.ToInt32(rdr[2]),
+                            DataLancamento = Convert.ToDateTime(rdr["DataLancamento"]),
+
+                            //O método Convert.ToSingle é usado para converter um valor do seu tipo de dados atual para o tipo de dados float;
+                            Valor = Convert.ToSingle(rdr["Valor"], CultureInfo.InvariantCulture),
+
+                            Estudio = new EstudioDomain()
+                            {
+                                IdEstudio = Convert.ToInt32(rdr["IdEstudio"]),
+                                NomeEstudio = rdr["Nome"].ToString()
+                            }
 
                         };
                         

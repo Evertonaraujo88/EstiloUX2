@@ -32,6 +32,7 @@ namespace senai.inlock.webApi_.Controllers
         /// <param name="novojogo">Objeto recebido na requisicao</param>
         /// <returns>Retorna a resposta para o usuario(Front-End)</returns>
         [HttpPost]
+        [Authorize(Roles = "2")]
         public IActionResult Post(JogosDomain novojogo)
         {
 
@@ -56,6 +57,7 @@ namespace senai.inlock.webApi_.Controllers
         /// </summary>
         /// <returns>Retorna a resposta para o usuario(Front-End)</returns>
         [HttpGet]
+        [Authorize(Roles = "1,2")]
         public IActionResult Get()
         {
 

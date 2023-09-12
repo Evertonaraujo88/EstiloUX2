@@ -64,8 +64,8 @@ builder.Services.AddSwaggerGen(options =>
 
     //Configura o swagger para usar o arquivo XML gerado
     // using System.Reflection;
-    /*var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";*/
-    /*options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));*/
+    var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+    options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
 
     options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme()
     {

@@ -15,7 +15,7 @@ namespace senai.inlock.webApi_.Repositories
         //     - Windows: Integrate Security = true;
         //     - SqlServer: User Id= sa; Pwd = Senha;
 
-        private string stringConexao = "Data Source = DESKTOP-T9B12O6; Initial Catalog = inlock_games; User Id = sa; Pwd = Info@134";
+        private string stringConexao = "Data Source = NOTE01-S14; Initial Catalog = Filmes; User Id = sa; Pwd = Senai@134";
         //Integrated Security = true (para conexao integrada com windows)
 
         /// <summary>

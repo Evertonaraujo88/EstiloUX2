@@ -3,8 +3,9 @@
     "",
     "\\Controllers",
     "\\Domains",
-    "\\Interfaces"
+    "\\Interfaces",
+    "\\Repositories"
   ],
-  "SelectedNode": "\\Repositories",
+  "SelectedNode": "\\Repositories\\GeneroRepository.cs",
   "PreviewInSolutionExplorer": false
 }

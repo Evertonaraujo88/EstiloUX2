@@ -12,22 +12,45 @@ namespace webapi.inlock.dbFirst.manha.Repositories
 
         public void Atualizar(Guid id, Estudio estudio)
         {
-            throw new NotImplementedException();
+
+            Estudio estudioBuscado = ctx.Estudios.Find(id);
+
+            if (estudioBuscado != null)
+            {
+                estudioBuscado.Nome = estudio.Nome;
+            }
+
+            ctx.Estudios.Update(estudioBuscado!);
+
+            ctx.SaveChanges();
+
         }
 
         public Estudio BuscarPorId(Guid id)
         {
-            throw new NotImplementedException();
+            //acessa o contexto a tabela estudios e busca no banco de dados o id informado pelo usuario
+            return ctx.Estudios.FirstOrDefault(e => e.IdEstudio == id)!;
+
         }
 
         public void Cadastrar(Estudio estudio)
         {
-            throw new NotImplementedException();
+            //antes de cadastrar um novo estudio, esse comando cria um novo Guid(id)
+            estudio.IdEstudio = Guid.NewGuid();
+
+            ctx.Estudios.Add(estudio);
+
+            ctx.SaveChanges();
+
         }
 
         public void Deletar(Guid id)
         {
-            throw new NotImplementedException();
+            Estudio estudioBuscado = ctx.Estudios.Find(id);
+
+            ctx.Estudios.Remove(estudioBuscado);
+
+            ctx.SaveChanges();
         }
 
         public List<Estudio> Listar()

@@ -6,6 +6,6 @@
     "\\Interfaces",
     "\\Repositories"
   ],
-  "SelectedNode": "\\Repositories\\GeneroRepository.cs",
+  "SelectedNode": "\\Interfaces\\IFilmesRepository.cs",
   "PreviewInSolutionExplorer": false
 }

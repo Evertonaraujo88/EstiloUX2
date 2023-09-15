@@ -1,7 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Interfaces"
+    "\\Contexts",
+    "\\Controllers",
+    "\\Domains",
+    "\\Interfaces",
+    "\\obj",
+    "\\Properties",
+    "\\Repositories"
   ],
   "PreviewInSolutionExplorer": false
 }

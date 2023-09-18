@@ -21,7 +21,7 @@ namespace webapi.inlock.codeFirst.manha.Controllers
         }
 
         [HttpPost]
-        public IActionResult Longin(LoginViewModel usuario) 
+        public IActionResult Login(LoginViewModel usuario) 
         {
 
             try

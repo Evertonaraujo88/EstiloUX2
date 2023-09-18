@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace webapi.event_.manha.Domains
 {
     [Table(nameof(TiposUsuarioDomain))]
+
     public class TiposUsuarioDomain
     {
 

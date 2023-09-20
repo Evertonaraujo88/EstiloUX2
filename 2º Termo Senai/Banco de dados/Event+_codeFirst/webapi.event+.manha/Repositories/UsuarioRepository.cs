@@ -20,7 +20,21 @@ namespace webapi.event_.manha.Repositories
         {
             try
             {
-                UsuarioDomain usuarioBuscado = _eventContext.Usuario.FirstOrDefault(u => u.Email == email)!;
+                UsuarioDomain usuarioBuscado = _eventContext.Usuario
+                    .Select(u => new UsuarioDomain
+                    {
+
+                        IdUsuario = u.IdUsuario,
+                        Nome = u.Nome,
+                        Email = u.Email,
+                        Senha = u.Senha,
+                        TiposUsuario = new TiposUsuarioDomain
+                        {
+                            IdTiposUsuario = u.IdTipoUsuario,
+                            Titulo = u.TiposUsuario!.Titulo
+                        }
+
+                    }).FirstOrDefault(u => u.Email == email)!;
 
                 if (usuarioBuscado != null)
                 {
@@ -53,6 +67,8 @@ namespace webapi.event_.manha.Repositories
 
                         IdUsuario = u.IdUsuario,
                         Nome = u.Nome,
+                        Email= u.Email,
+                        Senha= u.Senha,
                         TiposUsuario = new TiposUsuarioDomain
                         {
                             Titulo = u.TiposUsuario!.Titulo

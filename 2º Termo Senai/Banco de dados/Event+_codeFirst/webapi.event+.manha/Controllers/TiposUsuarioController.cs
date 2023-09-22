@@ -34,6 +34,28 @@ namespace webapi.event_.manha.Controllers
             }
         }
 
+       /// <summary>
+       /// EndPoint que aciona o metodo de listar todos os tipos de usuario
+       /// </summary>
+       /// <returns></returns>
+        [HttpGet]
+        public IActionResult Get() 
+        {
+
+            try
+            {
+                List<TiposUsuarioDomain> ListarTiposUsuario = _tiposUsuarioRepository.Listar();
+
+                return Ok(ListarTiposUsuario);
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        }
+
 
     }
 }

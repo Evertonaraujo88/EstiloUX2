@@ -4,6 +4,26 @@
         <name>webapi.event+.manha</name>
     </assembly>
     <members>
+        <member name="M:webapi.event_.manha.Controllers.TiposUsuarioController.Get">
+            <summary>
+            EndPoint que aciona o metodo de listar todos os tipos de usuario
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.manha.Controllers.UsuarioController.Post(webapi.event_.manha.Domains.UsuarioDomain)">
+            <summary>
+            EndPoint que aciona o metodo de cadastrar um novo usuaria
+            </summary>
+            <param name="usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.event_.manha.Controllers.UsuarioController.GetById(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de Buscar um usuario pelo ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="T:webapi.event_.manha.Migrations.BD">
             <inheritdoc />
         </member>

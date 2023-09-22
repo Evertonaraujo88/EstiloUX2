@@ -20,6 +20,12 @@ namespace webapi.event_.manha.Controllers
             _usuarioRepository = new UsuarioRepository();
         }
 
+
+        /// <summary>
+        /// EndPoint que aciona o metodo de cadastrar um novo usuaria
+        /// </summary>
+        /// <param name="usuario"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Post(UsuarioDomain usuario)
         {
@@ -35,6 +41,37 @@ namespace webapi.event_.manha.Controllers
                 return BadRequest(e.Message);
             }
         }
+
+        /// <summary>
+        /// EndPoint que aciona o metodo de Buscar um usuario pelo ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id) 
+        {
+
+            try
+            {
+
+                
+
+                return Ok(_usuarioRepository.BuscarPorId(id));
+
+
+
+
+            }
+            catch (Exception e)
+            {
+
+                return BadRequest(e.Message);
+            }
+        
+        }
+
+
+
 
     }
 }

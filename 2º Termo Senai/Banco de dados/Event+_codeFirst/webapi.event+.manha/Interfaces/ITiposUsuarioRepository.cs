@@ -9,7 +9,7 @@ namespace webapi.event_.manha.Interfaces
 
         void Deletar(Guid id);
 
-        List<TiposUsuarioDomain> Litar();
+        List<TiposUsuarioDomain> Listar();
 
         TiposUsuarioDomain BuscarPorId(Guid id);
 

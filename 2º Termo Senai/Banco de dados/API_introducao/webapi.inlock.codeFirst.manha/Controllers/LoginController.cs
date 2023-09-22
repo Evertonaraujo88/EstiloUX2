@@ -54,8 +54,10 @@ namespace webapi.inlock.codeFirst.manha.Controllers
 
                         claims: claims,
 
-                        expires: DateTime
+                        expires: DateTime.Now.AddMinutes(5)
                     );
+
+                return Ok();
 
             }
             catch (Exception)

@@ -1,4 +1,5 @@
-﻿using webapi.event_.manha.Context;
+﻿using Microsoft.AspNetCore.Http.HttpResults;
+using webapi.event_.manha.Context;
 using webapi.event_.manha.Domains;
 using webapi.event_.manha.Interfaces;
 
@@ -37,9 +38,24 @@ namespace webapi.event_.manha.Repositories
             throw new NotImplementedException();
         }
 
-        public List<TiposUsuarioDomain> Litar()
+        public List<TiposUsuarioDomain> Listar()
         {
-            throw new NotImplementedException();
+            try
+            {
+                List<TiposUsuarioDomain> ListaTiposUsuario = new List<TiposUsuarioDomain>();
+
+                ListaTiposUsuario = _eventContext.TiposUsuario.ToList();
+
+                return (ListaTiposUsuario);
+            }
+            catch (Exception e)
+            {
+
+                throw;
+            }
+
+
+
         }
     }
 }

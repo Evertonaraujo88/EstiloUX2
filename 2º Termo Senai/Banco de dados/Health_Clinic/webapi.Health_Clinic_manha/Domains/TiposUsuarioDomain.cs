@@ -8,8 +8,7 @@ namespace webapi.Health_Clinic_manha.Domains
     [Table (nameof(TiposUsuarioDomain))]
     public class TiposUsuarioDomain
     {
-        [Key]
-        public Guid IdTipoUsuario { get; set; }
+        [Key] public Guid IdTipoUsuario { get; set; }
 
         [Column (TypeName = "VARCHAR(100)")]
         [Required(ErrorMessage = "O tipo de usuario é obrigatório")]

@@ -7,8 +7,7 @@ namespace webapi.Health_Clinic_manha.Domains
     [Table(nameof(ConsultaDomain))]
     public class ConsultaDomain
     {
-        [Key]
-        public Guid IdConsulta { get; set; }
+        [Key] public Guid IdConsulta { get; set; }
 
         [Column(TypeName ="DATE")]
         [Required(ErrorMessage ="Informe a data da Consulta.")]
@@ -18,7 +17,7 @@ namespace webapi.Health_Clinic_manha.Domains
         [Required(ErrorMessage ="Informar o horário da Consulta.")]
         public TimeOnly HoraConsulta { get; set; }
 
-        [Column(TypeName ="TEXT")]
+        [Column(TypeName = "Text")]
         [Required(ErrorMessage ="Obrigatório descrever o atendimento da consulta do paciente.")]
         public string? Prontuario { get; set; }
 

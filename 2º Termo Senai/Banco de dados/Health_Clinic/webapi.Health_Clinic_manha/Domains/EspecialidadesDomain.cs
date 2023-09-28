@@ -6,8 +6,7 @@ namespace webapi.Health_Clinic_manha.Domains
     [Table (nameof(EspecialidadesDomain))]
     public class EspecialidadesDomain
     {
-        [Key]
-        public Guid IdEspecialidade { get; set; }
+        [Key] public Guid IdEspecialidade { get; set; }
 
         [Column (TypeName = "VARCHAR(100)")]
         public String? NomeEspecialidade { get; set; }

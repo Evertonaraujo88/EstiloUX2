@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>webapi.Health_Clinic_manha</name>
+    </assembly>
+    <members>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.TiposUsuarioController.Get">
+            <summary>
+            EndPoint que aciona o metodo de Listar tipos de usuarios cadastrados
+            </summary>
+            <returns> retorna a lista de tipos de usuario</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.TiposUsuarioController.Post(webapi.Health_Clinic_manha.Domains.TiposUsuarioDomain)">
+            <summary>
+            EndPoint que aciona o metodo de CADASTRAR um novo tipo de Usuario.
+            </summary>
+            <param name="tiposUsuario"></param>
+            <returns>o tipo cadastrado</returns>
+        </member>
+        <member name="T:webapi.Health_Clinic_manha.Migrations.BDHealth">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Migrations.BDHealth.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Migrations.BDHealth.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Migrations.BDHealth.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

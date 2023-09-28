@@ -10,8 +10,7 @@ namespace webapi.Health_Clinic_manha.Domains
     public class PacienteDomain
     {
 
-        [Key]
-        public Guid IdPaciente { get; set; }
+        [Key] public Guid IdPaciente { get; set; }
 
         [Column(TypeName ="VARCHAR(200)")]
         [Required(ErrorMessage ="O nome do paciente é obrigatório.")]

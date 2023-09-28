@@ -10,8 +10,7 @@ namespace webapi.Health_Clinic_manha.Domains
     public class UsuarioDomain
     {
 
-        [Key]
-        public Guid IdUsuario { get; set; }
+        [Key] public Guid IdUsuario { get; set; }
 
     
         [Column(TypeName = "VARCHAR(100)")]

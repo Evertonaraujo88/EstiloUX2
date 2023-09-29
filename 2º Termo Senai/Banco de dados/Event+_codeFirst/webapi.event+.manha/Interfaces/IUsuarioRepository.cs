@@ -11,5 +11,7 @@ namespace webapi.event_.manha.Interfaces
 
         UsuarioDomain BuscarPorEmailESenha(string email, string senha);
 
+        List<UsuarioDomain> Listar();
+
     }
 }

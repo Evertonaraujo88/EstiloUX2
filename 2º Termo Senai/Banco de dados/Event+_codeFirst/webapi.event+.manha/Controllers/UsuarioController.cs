@@ -69,6 +69,23 @@ namespace webapi.event_.manha.Controllers
             }
         
         }
+        [HttpGet]
+        public IActionResult Get() 
+        {
+
+            try
+            {
+                List<UsuarioDomain> ListarUsuario = _usuarioRepository.Listar();
+
+                return Ok(ListarUsuario);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+        
+        }
 
 
 

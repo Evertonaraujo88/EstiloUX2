@@ -17,6 +17,13 @@
             <param name="tiposUsuario"></param>
             <returns>o tipo cadastrado</returns>
         </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.UsuarioController.Post(webapi.Health_Clinic_manha.Domains.UsuarioDomain)">
+            <summary>
+            EndPoint que aciona o metodo de CADASTRAR um novo Usuario.
+            </summary>
+            <param name="usuario"></param>
+            <returns>o usuario cadastrado</returns>
+        </member>
         <member name="T:webapi.Health_Clinic_manha.Migrations.BDHealth">
             <inheritdoc />
         </member>

@@ -108,5 +108,23 @@ namespace webapi.event_.manha.Repositories
             }
 
         }
+
+        public List<UsuarioDomain> Listar()
+        {
+            try
+            {
+                List<UsuarioDomain> ListaUsuario = new List<UsuarioDomain>();
+                ListaUsuario = _eventContext.Usuario.ToList();
+
+                return (ListaUsuario);
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+
+        }
     }
 }

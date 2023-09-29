@@ -13,5 +13,7 @@ namespace webapi.Health_Clinic_manha.Interfaces
 
         List<UsuarioDomain> Listar();
 
+        void Deletar(Guid id);
+
     }
 }

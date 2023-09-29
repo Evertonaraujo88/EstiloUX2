@@ -47,7 +47,10 @@ namespace webapi.Health_Clinic_manha.Controllers
             }
 
         }
-
+        /// <summary>
+        /// EndPoint que aciona o método de LISTAR todos os usuarios cadastrados
+        /// </summary>
+        /// <returns>retorna a lista</returns>
         [HttpGet]
         public IActionResult Get() 
         {
@@ -66,7 +69,11 @@ namespace webapi.Health_Clinic_manha.Controllers
             }
         
         }
-
+        /// <summary>
+        /// EndPoint que aciona o metodo de DELETAR um usuario cadastrado.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         [HttpDelete]
         public IActionResult Delete( Guid id) 
         {
@@ -83,6 +90,24 @@ namespace webapi.Health_Clinic_manha.Controllers
                 return(BadRequest(e.Message));
             }
         
+        }
+
+        /// <summary>
+        /// EndPoint que aciona o metodo de BUSCAR POR ID.
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>retorna o usuario buscado pelo id</returns>
+        [HttpGet("{id}")]
+        public IActionResult GetById(Guid id)
+        {
+            try
+            {
+                return Ok(_usuarioRepository.BuscarPorId(id));
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
 
     }

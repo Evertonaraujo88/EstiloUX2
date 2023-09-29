@@ -4,6 +4,68 @@
         <name>webapi.Health_Clinic_manha</name>
     </assembly>
     <members>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.ClinicaController.Get">
+            <summary>
+            EndPoint que aciona o metodo de LISTAR as clinicas cadastradas.
+            </summary>
+            <returns>retorna alista de clinicas</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.ClinicaController.GetById(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de BUSCAR POR ID uma clínica
+            </summary>
+            <param name="id"></param>
+            <returns>a clinica buscada</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.ClinicaController.Post(webapi.Health_Clinic_manha.Domains.ClinicaDomain)">
+            <summary>
+            EndPoint que aciona o metodo de CADASTRAR uma nova clinica
+            </summary>
+            <param name="clinica"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.ClinicaController.Put(System.Guid,webapi.Health_Clinic_manha.Domains.ClinicaDomain)">
+            <summary>
+            ENdPoint que aciona o metodo de ATUALIZAR uma clinica já cadastrada.
+            </summary>
+            <param name="id"></param>
+            <param name="clinica"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.ClinicaController.Delete(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de DELETAR uma clinica
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.EspecialidadesController.Get">
+            <summary>
+            EndPoint que aciona o metodo de LISTAR as especilidades cadastradas.
+            </summary>
+            <returns>retorna alista de especialidades</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.EspecialidadesController.GetById(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de BUSCAR POR ID uma especialidade
+            </summary>
+            <param name="id"></param>
+            <returns>a especialidade buscada</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.EspecialidadesController.Post(webapi.Health_Clinic_manha.Domains.EspecialidadesDomain)">
+            <summary>
+            EndPoint que aciona o metodo de CADASTRAR uma nova especialidade
+            </summary>
+            <param name="clinica"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.EspecialidadesController.Delete(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de DELETAR uma especialidade
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
         <member name="M:webapi.Health_Clinic_manha.Controllers.TiposUsuarioController.Get">
             <summary>
             EndPoint que aciona o metodo de Listar tipos de usuarios cadastrados
@@ -24,6 +86,26 @@
             <param name="usuario"></param>
             <returns>o usuario cadastrado</returns>
         </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.UsuarioController.Get">
+            <summary>
+            EndPoint que aciona o método de LISTAR todos os usuarios cadastrados
+            </summary>
+            <returns>retorna a lista</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.UsuarioController.Delete(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de DELETAR um usuario cadastrado.
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.UsuarioController.GetById(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de BUSCAR POR ID.
+            </summary>
+            <param name="id"></param>
+            <returns>retorna o usuario buscado pelo id</returns>
+        </member>
         <member name="T:webapi.Health_Clinic_manha.Migrations.BDHealth">
             <inheritdoc />
         </member>
@@ -34,6 +116,18 @@
             <inheritdoc />
         </member>
         <member name="M:webapi.Health_Clinic_manha.Migrations.BDHealth.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:webapi.Health_Clinic_manha.Migrations.DB2">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Migrations.DB2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Migrations.DB2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Migrations.DB2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

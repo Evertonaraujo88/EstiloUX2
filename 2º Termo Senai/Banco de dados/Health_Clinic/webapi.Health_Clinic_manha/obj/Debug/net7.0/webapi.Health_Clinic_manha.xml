@@ -66,6 +66,40 @@
             <param name="id"></param>
             <returns></returns>
         </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.MedicoController.Get">
+            <summary>
+            EndPoint que aciona o metodo de LISTAR os medicos cadastrados.
+            </summary>
+            <returns>retorna alista de medicos</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.MedicoController.GetById(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de BUSCAR POR ID um medico
+            </summary>
+            <param name="id"></param>
+            <returns>o medico buscado</returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.MedicoController.Post(webapi.Health_Clinic_manha.Domains.MedicoDomain)">
+            <summary>
+            EndPoint que aciona o metodo de CADASTRAR um novo medico
+            </summary>
+            <param name="medico"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.MedicoController.Delete(System.Guid)">
+            <summary>
+            EndPoint que aciona o metodo de DELETAR uma especialidade
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:webapi.Health_Clinic_manha.Controllers.MedicoController.GetByEspecialidade(webapi.Health_Clinic_manha.Domains.MedicoDomain)">
+            <summary>
+            EndPoint que aciona o metodo de BUSCAR POR ESPECIALIDADE um medico
+            </summary>
+            <param name="especialidade"></param>
+            <returns>o medico buscado</returns>
+        </member>
         <member name="M:webapi.Health_Clinic_manha.Controllers.TiposUsuarioController.Get">
             <summary>
             EndPoint que aciona o metodo de Listar tipos de usuarios cadastrados

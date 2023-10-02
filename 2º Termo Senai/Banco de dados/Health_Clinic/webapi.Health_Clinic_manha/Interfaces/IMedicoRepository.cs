@@ -15,5 +15,7 @@ namespace webapi.Health_Clinic_manha.Interfaces
 
         void Atualizar(Guid id, MedicoDomain medico);
 
+        MedicoDomain BuscarPorEspecialidade(MedicoDomain especialidade);
+
     }
 }

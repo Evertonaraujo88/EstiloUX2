@@ -19,31 +19,34 @@ namespace webapi.Health_Clinic_manha.Repositories
         }
 
         public ConsultaDomain BuscarPorId(Guid id)
-        {
-            try
-            {
-                ConsultaDomain consultaBuscada = _healthContext.Consulta
-                    .Select(u => new ConsultaDomain
-                    {
-                        IdConsulta = u.IdConsulta,
-                        IdMedico = u.IdMedico,
-                        IdPaciente = u.IdPaciente,
+         {
+            throw new NotImplementedException();
+
+
+            //try
+            //{
+            //    ConsultaDomain consultaBuscada = _healthContext.Consulta
+            //        .Select(u => new ConsultaDomain
+            //        {
+            //            IdConsulta = u.IdConsulta,
+            //            IdMedico = u.IdMedico,
+            //            IdPaciente = u.IdPaciente,
 
 
 
-                    }).FirstOrDefault(u => u.IdEspecialidade == id)!;
+            //        }).FirstOrDefault(u => u.IdEspecialidade == id)!;
 
-                if (especialidadeBuscada != null)
-                {
-                    return (especialidadeBuscada);
+            //    if (especialidadeBuscada != null)
+            //    {
+            //        return (especialidadeBuscada);
 
-                }
-                return null!;
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            //    }
+            //    return null!;
+            //}
+            //catch (Exception)
+            //{
+            //    throw;
+            //}
         }
 
         public void Cadastrar(ConsultaDomain consulta)

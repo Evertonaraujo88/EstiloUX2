@@ -135,6 +135,7 @@ namespace webapi.Health_Clinic_manha.Repositories
                         IdUsuario = u.IdUsuario,
                         Email = u.Email,
                         Senha = u.Senha,
+
                         TiposUsuario = new TiposUsuarioDomain
                         {
                             IdTipoUsuario = u.IdTipoUsuario,

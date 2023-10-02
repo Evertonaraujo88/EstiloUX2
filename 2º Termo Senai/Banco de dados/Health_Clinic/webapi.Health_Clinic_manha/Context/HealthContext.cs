@@ -19,8 +19,8 @@ namespace webapi.Health_Clinic_manha.Context
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
 
-            //optionsBuilder.UseSqlServer("Server=NOTE01-S14; DataBase=HealthClinic_codeFisrst_manha; User Id= sa; Pwd= Senai@134; TrustServerCertificate=true", x => x.UseDateOnlyTimeOnly());
-            optionsBuilder.UseSqlServer("Server=DESKTOP-T9B12O6; DataBase=HealthClinic_codeFisrst_manha; User Id= sa; Pwd= Info@134; TrustServerCertificate=true", x => x.UseDateOnlyTimeOnly());
+            optionsBuilder.UseSqlServer("Server=NOTE01-S14; DataBase=HealthClinic_codeFisrst_manha; User Id= sa; Pwd= Senai@134; TrustServerCertificate=true", x => x.UseDateOnlyTimeOnly());
+            //optionsBuilder.UseSqlServer("Server=DESKTOP-T9B12O6; DataBase=HealthClinic_codeFisrst_manha; User Id= sa; Pwd= Info@134; TrustServerCertificate=true", x => x.UseDateOnlyTimeOnly());
 
             base.OnConfiguring(optionsBuilder);
 

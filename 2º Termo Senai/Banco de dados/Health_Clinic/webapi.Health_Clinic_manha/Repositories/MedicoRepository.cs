@@ -15,37 +15,42 @@ namespace webapi.Health_Clinic_manha.Repositories
             _healthContext = new HealthContext();
         }
 
-        public void Atualizar(Guid id, MedicoRepository medico)
+        public void Atualizar(Guid id, MedicoDomain medico)
         {
-            throw new NotImplementedException();
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public MedicoDomain BuscarPorId(Guid id)
         {
+
+
             try
             {
-                MedicoDomain medicoBuscado = _healthContext.Medico
-                    .Select(u => new MedicoDomain
-                    {
-                        IdMedico = u.IdMedico,
-                        CRM = u.CRM,
-                        NomeMedico = u.NomeMedico,
-                        IdEspecialidade = u.IdEspecialidade,
+                MedicoDomain medicoBuscado = _healthContext.Medico.FirstOrDefault(u => u.IdMedico == id)!;
 
-
-                    }).FirstOrDefault(u => u.IdMedico == id)!;
-
-                if (medicoBuscado != null)
+                if (medicoBuscado == null)
                 {
-                    return (medicoBuscado);
+                    throw new Exception($"O médico com o ID {id} não foi encontrado");
 
                 }
-                return null!;
+                 return (medicoBuscado);
             }
             catch (Exception)
             {
                 throw;
             }
+
+               //.Select(u => new MedicoDomain
+               // {
+               //     IdMedico = u.IdMedico,
+               //     CRM = u.CRM,
+               //     NomeMedico = u.NomeMedico,
+               //     IdEspecialidade = u.IdEspecialidade,
+
+
+               // })
         }
 
         public void Cadastrar(MedicoDomain medico)
@@ -109,21 +114,12 @@ namespace webapi.Health_Clinic_manha.Repositories
                         Usuario = new UsuarioDomain
                         {
                             IdUsuario = u.IdUsuario,
-
-
                         },
-
 
                         Clinica = new ClinicaDomain
                         {
-
                             IdClinica = u.IdClinica,
-
                         }
-
-
-
-
                     })
                     .ToList();
 
@@ -136,72 +132,107 @@ namespace webapi.Health_Clinic_manha.Repositories
             }
         }
 
-        public MedicoDomain BuscarPorEspecialidade(MedicoDomain especialidade)
+        public List<MedicoDomain> BuscarPorEspecialidade(string especialidadeDesejada)
         {
-
-
             try
             {
-                MedicoDomain medicoBuscado = _healthContext.Medico.Select(u => new MedicoDomain
-                {
-                    IdMedico = u.IdMedico,
-                    CRM = u.CRM,
-                    NomeMedico = u.NomeMedico,
-                    IdEspecialidade = u.IdEspecialidade,
+                // Primeiro, obtenha a lista de especialidades do EspecialidadesRepository.
+                List<EspecialidadesDomain> especialidades = _healthContext.Especialidades.ToList();
 
+                // Em seguida, filtre os médicos com base na especialidade desejada.
+                List<MedicoDomain> medicosComEspecialidade = _healthContext.Medico
+                    .Where(u => u.Especialidades != null && u.Especialidades.NomeEspecialidade == especialidadeDesejada)
+                    .Select(u => new MedicoDomain
+                    {
+                        IdMedico = u.IdMedico,
+                        CRM = u.CRM,
+                        NomeMedico = u.NomeMedico,
+                        IdEspecialidade = u.IdEspecialidade
+                    })
+                    .ToList();
 
-                }).Where(z => z.IdEspecialidade == especialidade.IdEspecialidade);
-
-                return(medicoBuscado);
-
+                return medicosComEspecialidade;
             }
             catch (Exception)
             {
                 throw;
             }
-
-            //    try
-            //{
-            //    MedicoDomain medicoBuscado = _healthContext.Medico
-            //        .Select(u => new MedicoDomain
-            //        {
-            //            IdMedico = u.IdMedico,
-            //            CRM = u.CRM,
-            //            NomeMedico = u.NomeMedico,
-            //            IdEspecialidade = u.IdEspecialidade,
-
-
-            //        }).FirstOrDefault(u => u.IdMedico == especialidade.IdMedico)!;
-
-            //    if (medicoBuscado != null)
-            //    {
-            //        return (medicoBuscado);
-
-            //    }
-            //    return null!;
-            //}
-            //catch (Exception)
-            //{
-            //    throw;
-            //}
-
-            //_healthContext.Medico.Where(z => z.IdEspecialidade == especialidade.IdEspecialidade).ToList();
-
-
-
-
-
         }
 
-        public void Atualizar(Guid id, MedicoDomain medico)
+        public List<MedicoDomain> BuscarPorEspecialidade(MedicoDomain especialidadeDesejada)
         {
             throw new NotImplementedException();
         }
 
-        void IMedicoRepository.Atualizar(Guid id, MedicoDomain medico)
+        MedicoDomain IMedicoRepository.BuscarPorEspecialidade(MedicoDomain especialidade)
         {
             throw new NotImplementedException();
         }
+
+
+        //public MedicoDomain BuscarPorEspecialidade(MedicoDomain especialidade)
+        //{
+
+
+
+
+        //try
+        //{
+        //    List<MedicoDomain> ListaMedico = new List<MedicoDomain>();
+        //      ListaMedico = _healthContext.Medico.Select(u => new MedicoDomain
+        //    {
+        //        IdMedico = u.IdMedico,
+        //        CRM = u.CRM,
+        //        NomeMedico = u.NomeMedico,
+        //        IdEspecialidade = u.IdEspecialidade,
+
+
+        //    }).Where(z => z.IdEspecialidade == especialidade.IdEspecialidade).ToString().ToList();
+
+        //    return(ListaMedico);
+
+        //}
+        //catch (Exception)
+        //{
+        //    throw;
+        //}
+
+        //    try
+        //{
+        //    MedicoDomain medicoBuscado = _healthContext.Medico
+        //        .Select(u => new MedicoDomain
+        //        {
+        //            IdMedico = u.IdMedico,
+        //            CRM = u.CRM,
+        //            NomeMedico = u.NomeMedico,
+        //            IdEspecialidade = u.IdEspecialidade,
+
+
+        //        }).FirstOrDefault(u => u.IdMedico == especialidade.IdMedico)!;
+
+        //    if (medicoBuscado != null)
+        //    {
+        //        return (medicoBuscado);
+
+        //    }
+        //    return null!;
+        //}
+        //catch (Exception)
+        //{
+        //    throw;
+        //}
+
+        //_healthContext.Medico.Where(z => z.IdEspecialidade == especialidade.IdEspecialidade).ToList();
+
+
+
+
+
+        //}
+
+
+
+
 
     }
 

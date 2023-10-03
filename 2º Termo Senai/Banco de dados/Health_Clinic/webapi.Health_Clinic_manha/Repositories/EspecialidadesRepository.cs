@@ -23,14 +23,7 @@ namespace webapi.Health_Clinic_manha.Repositories
         {
             try
             {
-                EspecialidadesDomain especialidadeBuscada = _healthContext.Especialidades
-                    .Select(u => new EspecialidadesDomain
-                    {
-                        IdEspecialidade = u.IdEspecialidade,
-                        NomeEspecialidade = u.NomeEspecialidade,
-                        
-
-                    }).FirstOrDefault(u => u.IdEspecialidade == id)!;
+                EspecialidadesDomain especialidadeBuscada = _healthContext.Especialidades.FirstOrDefault(u => u.IdEspecialidade == id)!;
 
                 if (especialidadeBuscada != null)
                 {
@@ -43,6 +36,14 @@ namespace webapi.Health_Clinic_manha.Repositories
             {
                 throw;
             }
+
+            //.Select(u => new EspecialidadesDomain
+            // {
+            //     IdEspecialidade = u.IdEspecialidade,
+            //     NomeEspecialidade = u.NomeEspecialidade,
+
+
+            // }).FirstOrDefault(u => u.IdEspecialidade == id)!;
         }
 
         public void Cadastrar(EspecialidadesDomain especialidade)

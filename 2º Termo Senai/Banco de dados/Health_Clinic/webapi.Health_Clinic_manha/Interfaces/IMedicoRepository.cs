@@ -17,5 +17,7 @@ namespace webapi.Health_Clinic_manha.Interfaces
 
         MedicoDomain BuscarPorEspecialidade(MedicoDomain especialidade);
 
+        List<MedicoDomain> BuscarPorEspecialidade(string especialidadeDesejada);
+
     }
 }

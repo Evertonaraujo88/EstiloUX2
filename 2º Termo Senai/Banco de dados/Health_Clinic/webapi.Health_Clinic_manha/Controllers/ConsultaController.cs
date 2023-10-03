@@ -10,28 +10,29 @@ namespace webapi.Health_Clinic_manha.Controllers
     [ApiController]
     [Produces("Application/Json")]
 
-    public class MedicoController : ControllerBase
+    public class ConsultaController : ControllerBase
     {
 
 
-        private IMedicoRepository _medicoRepository;
+        private IConsultaRepository _consultaRepository;
 
-        public MedicoController()
+        public ConsultaController()
         {
 
-            _medicoRepository = new MedicoRepository();
+            _consultaRepository = new ConsultaRepository();
 
         }
+
         /// <summary>
-        /// EndPoint que aciona o metodo de LISTAR os medicos cadastrados.
+        /// EndPoint que aciona o metodo de LISTAR as consultas cadastradas.
         /// </summary>
-        /// <returns>retorna alista de medicos</returns>
+        /// <returns>retorna alista de econsultas</returns>
         [HttpGet]
         public IActionResult Get()
         {
             try
             {
-                return Ok(_medicoRepository.Listar());
+                return Ok(_consultaRepository.Listar());
             }
             catch (Exception e)
             {
@@ -40,16 +41,16 @@ namespace webapi.Health_Clinic_manha.Controllers
         }
 
         /// <summary>
-        /// EndPoint que aciona o metodo de BUSCAR POR ID um medico
+        /// EndPoint que aciona o metodo de BUSCAR POR ID uma consulta
         /// </summary>
         /// <param name="id"></param>
-        /// <returns>o medico buscado</returns>
+        /// <returns>a consulta buscada</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
             try
             {
-                return Ok(_medicoRepository.BuscarPorId(id));
+                return Ok(_consultaRepository.BuscarPorId(id));
             }
             catch (Exception e)
             {
@@ -58,18 +59,18 @@ namespace webapi.Health_Clinic_manha.Controllers
         }
 
         /// <summary>
-        /// EndPoint que aciona o metodo de CADASTRAR um novo medico
+        /// EndPoint que aciona o metodo de CADASTRAR uma nova consulta
         /// </summary>
-        /// <param name="medico"></param>
+        /// <param name="consulta"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post(MedicoDomain medico)
+        public IActionResult Post(ConsultaDomain consulta)
         {
             try
             {
-                medico.IdMedico = Guid.NewGuid();
+                consulta.IdConsulta = Guid.NewGuid();
 
-                _medicoRepository.Cadastrar(medico);
+                _consultaRepository.Cadastrar(consulta);
 
                 return StatusCode(201);
             }
@@ -80,7 +81,7 @@ namespace webapi.Health_Clinic_manha.Controllers
         }
 
         /// <summary>
-        /// EndPoint que aciona o metodo de DELETAR uma especialidade
+        /// EndPoint que aciona o metodo de DELETAR uma consulta
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -89,7 +90,7 @@ namespace webapi.Health_Clinic_manha.Controllers
         {
             try
             {
-                _medicoRepository.Deletar(id);
+                _consultaRepository.Deletar(id);
 
                 return NoContent();
             }
@@ -99,24 +100,8 @@ namespace webapi.Health_Clinic_manha.Controllers
             }
         }
 
-        /// <summary>
-        /// EndPoint que aciona o metodo de BUSCAR POR ESPECIALIDADE um medico
-        /// </summary>
-        /// <param name="especialidade"></param>
-        /// <returns>o medico buscado</returns>
-        //[HttpGet("{especialidade}")]
-        //public IActionResult GetByEspecialidade(EspecialidadesDomain especialidade)
-        //{
-        //    try
-        //    {
-        //        MedicoDomain medicoBuscado = _medicoRepository.BuscarPorEspecialidade(especialidade);
 
-        //        return Ok(medicoBuscado);
-        //    }
-        //    catch (Exception e)
-        //    {
-        //        return BadRequest(e.Message);
-        //    }
-        //}
+
+
     }
 }

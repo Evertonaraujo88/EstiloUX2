@@ -93,13 +93,6 @@
             <param name="id"></param>
             <returns></returns>
         </member>
-        <member name="M:webapi.Health_Clinic_manha.Controllers.MedicoController.GetByEspecialidade(webapi.Health_Clinic_manha.Domains.MedicoDomain)">
-            <summary>
-            EndPoint que aciona o metodo de BUSCAR POR ESPECIALIDADE um medico
-            </summary>
-            <param name="especialidade"></param>
-            <returns>o medico buscado</returns>
-        </member>
         <member name="M:webapi.Health_Clinic_manha.Controllers.TiposUsuarioController.Get">
             <summary>
             EndPoint que aciona o metodo de Listar tipos de usuarios cadastrados

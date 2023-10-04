@@ -8,29 +8,28 @@ namespace webapi.Health_Clinic_manha.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Produces("Application/Json")]
-    public class EspecialidadesController : ControllerBase
+    public class PacienteController : ControllerBase
     {
 
-        private IEspecialidadesRepository _especialidadesRepository;
+        private IPacienteRepository _pacienteRepository;
 
-        public EspecialidadesController()
+        public PacienteController()
         {
 
-            _especialidadesRepository = new EspecialidadesRepository();
+            _pacienteRepository = new PacienteRepository();
 
         }
 
         /// <summary>
-        /// EndPoint que aciona o metodo de LISTAR as especilidades cadastradas.
+        /// EndPoint que aciona o metodo de LISTAR os pacientes cadastrados.
         /// </summary>
-        /// <returns>retorna alista de especialidades</returns>
+        /// <returns>retorna alista de pacientes</returns>
         [HttpGet]
         public IActionResult Get()
         {
             try
             {
-                return Ok(_especialidadesRepository.Listar());
+                return Ok(_pacienteRepository.Listar());
             }
             catch (Exception e)
             {
@@ -39,16 +38,16 @@ namespace webapi.Health_Clinic_manha.Controllers
         }
 
         /// <summary>
-        /// EndPoint que aciona o metodo de BUSCAR POR ID uma especialidade
+        /// EndPoint que aciona o metodo de BUSCAR POR ID um paciente
         /// </summary>
         /// <param name="id"></param>
-        /// <returns>a especialidade buscada</returns>
+        /// <returns>o paciente buscado</returns>
         [HttpGet("{id}")]
         public IActionResult GetById(Guid id)
         {
             try
             {
-                return Ok(_especialidadesRepository.BuscarPorId(id));
+                return Ok(_pacienteRepository.BuscarPorId(id));
             }
             catch (Exception e)
             {
@@ -57,18 +56,18 @@ namespace webapi.Health_Clinic_manha.Controllers
         }
 
         /// <summary>
-        /// EndPoint que aciona o metodo de CADASTRAR uma nova especialidade
+        /// EndPoint que aciona o metodo de CADASTRAR um nova paciente
         /// </summary>
-        /// <param name="especialidade"></param>
+        /// <param name="paciente"></param>
         /// <returns></returns>
         [HttpPost]
-        public IActionResult Post(EspecialidadesDomain especialidade)
+        public IActionResult Post(PacienteDomain paciente)
         {
             try
             {
-                especialidade.IdEspecialidade = Guid.NewGuid();
+                paciente.IdPaciente = Guid.NewGuid();
 
-               _especialidadesRepository.Cadastrar(especialidade);
+                _pacienteRepository.Cadastrar(paciente);
 
                 return StatusCode(201);
             }
@@ -78,8 +77,9 @@ namespace webapi.Health_Clinic_manha.Controllers
             }
         }
 
+
         /// <summary>
-        /// EndPoint que aciona o metodo de DELETAR uma especialidade
+        /// EndPoint que aciona o metodo de DELETAR um paciente
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
@@ -88,7 +88,7 @@ namespace webapi.Health_Clinic_manha.Controllers
         {
             try
             {
-                _especialidadesRepository.Deletar(id);
+                _pacienteRepository.Deletar(id);
 
                 return NoContent();
             }
@@ -99,5 +99,22 @@ namespace webapi.Health_Clinic_manha.Controllers
         }
 
 
+        /// <summary>
+        /// EndPoint que aciona o metodo de BUSCAR POR DataNascimento um paciente
+        /// </summary>
+        /// <param name="dataNascimento"></param>
+        /// <returns>o paciente buscado</returns>
+        //[HttpGet("{id}")]
+        //public IActionResult GetByNascimento(DateTime nascimento)
+        //{
+        //    try
+        //    {
+        //        return Ok(_pacienteRepository.BuscarDataDeNascimento(nascimento));
+        //    }
+        //    catch (Exception e)
+        //    {
+        //        return BadRequest(e.Message);
+        //    }
+        //}
     }
 }

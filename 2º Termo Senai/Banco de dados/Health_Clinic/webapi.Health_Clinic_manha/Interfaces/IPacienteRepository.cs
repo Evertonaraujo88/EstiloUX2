@@ -15,5 +15,7 @@ namespace webapi.Health_Clinic_manha.Interfaces
 
         void Atualizar(Guid id, PacienteDomain paciente);
 
+
+        List<PacienteDomain> ListaDataNascimento();
     }
 }

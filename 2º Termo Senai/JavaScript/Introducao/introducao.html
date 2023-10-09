@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Introdução ao JS!</h1>
+
+    <input type="text" placeholder="Digiseu nome" id="nome">
+
+    <button onclick="alert ('Bom dia pessoal!!!!!')  ">Bom dia</button>
+
+    <!--  //criar a funcao saudacao -->
+    <button onclick="saudacao()">Saudar</button>
+
+    <script>
+        function saudacao() {
+
+            var nome = document.getElementById("nome").value;
+
+            /* intorpolacao no JS, pode ser usada com ${}, sem precisar colocar o caracter + */
+            alert(`Bom dia ${nome}, Seja bem vindo!!!`)
+
+           /*  alert("Bom dia " + nome + " ,Seja bem vindo!!!"); */
+
+            /* console.log(nome.value); */
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- criar um fomulario para receber o nome do ususario e substituir por um nickname ao clicar do botao o nockname deve ser exibido na tela -->
+
+    <form onsubmit="Cadastrar()">
+        
+        <fieldset>
+            <legend>Nickname</legend>
+            <label for="nome">Nome: </label>
+            <input type="text" id="Nome">
+            <br><br>
+
+            <label for="Nickname">Nickname</label>
+            <input type="text" id="Nickname">
+            <br><br>
+
+            <p id="resNick">!!</p>
+
+            <button type="submit">Ok</button>
+
+        </fieldset>
+
+    </form>
+
+    <script>
+
+        function Cadastrar() {
+
+            let nome = document.getElementById("Nome").value;
+
+            let nick = document.getElementById("Nickname").value;
+
+            
+            document.getElementById("resNick").innerHTML = nome.replace(nome, `Ola, ${nick}!!`);
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>

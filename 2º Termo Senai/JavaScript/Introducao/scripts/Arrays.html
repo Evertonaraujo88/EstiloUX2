@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script><!--        0           1       2 -->
+        let frutas = ['banana', 'maçã', 'morango'];
+
+        console.log(frutas);
+        console.log(`Quantidade de frutas: ${frutas.length}`);
+       
+        /* para adicionar um novo item no array */
+        frutas.push('uva')
+        frutas.push('mamão')
+        frutas.push('amora')
+        
+        /* contar quantos itens existem no array de frutas */
+        console.log(`Quantidade de frutas: ${frutas.length}`);
+
+        /* .sort (ordena os itens por ordem alfabetica alterando os indices anteriormente cadastrados) */
+        frutas.sort()
+
+        console.log();
+        console.log();
+       
+        for (let index = 0; index < frutas.length; index++) {
+            console.log(`Fruta ${index + 1} ${frutas[index]}`); ;
+            
+        }
+
+        /* imprimindo as frutas cadastradas com foreach */
+        /* CALLBACK FUNCTION = uma funcao sem nome */
+        frutas.forEach(function (fruta) {
+            console.log(fruta);
+        })
+
+        /* imprimindo as frutas + seus indices */
+        frutas.forEach(function (fruta,indice) {
+            console.log(`Fruta ${indice} ${fruta}`);
+        })
+
+        let prateleira = [
+            'cerveja', 
+            'coca-cola', 
+            'agua', 
+            'corote', 
+            'gatorade',
+            'h2o',
+            'tubaina'];
+
+
+        let bebida = prateleira[8];    
+        
+        switch (bebida) {
+            case "cerveja":
+                console.log('Achei sua cerveja');
+                break;
+            case "coca-cola":
+                console.log('Achei sua coca-cola');
+                break;
+            case "agua":
+                console.log('Achei sua agua');
+                break;
+            case "corote":
+                console.log('Achei seu corote');
+                break;
+            case "gatorade":
+                console.log('Achei seu gatorade');
+                break;
+            case "h2o":
+                console.log('Achei sua h2o');
+                break;
+            case "tubaina":
+                console.log('Achei sua tubaina');
+                break;
+        
+            default:
+                console.log(`Nao encontrei sua bebida: (${bebida})`);
+                break;
+        }
+
+    </script>
+</body>
+</html>

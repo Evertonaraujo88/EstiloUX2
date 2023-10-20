@@ -2,7 +2,7 @@ const urlViaCep = "https://viacep.com.br/ws";
 
 function cadastrar(e) {
     e.preventDefault();
-   /*  alert("Cadastrar..."); */
+    /*  alert("Cadastrar..."); */
 
 }
 
@@ -17,11 +17,13 @@ async function buscarEndereco(cep) {
         /* transformo o json retornado em objeto oui array */
         const endereco = await promise.json();
         console.log(endereco);
-        
-        /* acessa os dados o bjeto endereço(viacep) e tras os values(valores) do objeto para o form de acordo com os ids definidos nos inputs  */
-        document.getElementById("logradouro").value = endereco.logradouro;
-        document.getElementById("localidade").value = endereco.localidade;
-        document.getElementById("uf").value = endereco.uf;
+
+        //preencher formualario
+        preencherCampos({
+            endereco: endereco.logradouro,
+            Localidade: endereco.Localidade,
+            uf: endereco.uf
+        })
 
         /* resetar o span de cep inválido */
         document.getElementById("not-found").innerText = "";
@@ -31,4 +33,11 @@ async function buscarEndereco(cep) {
     }
 
 
+}
+
+function preencherCampos(endere) {
+    /* acessa os dados o bjeto endereço(viacep) e tras os values(valores) do objeto para o form de acordo com os ids definidos nos inputs  */
+    document.getElementById("logradouro").value = endereco.logradouro;
+    document.getElementById("localidade").value = endereco.localidade;
+    document.getElementById("uf").value = endereco.uf;
 }

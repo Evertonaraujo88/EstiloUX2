@@ -9,22 +9,35 @@
 <body>
     <form onsubmit="cadastrar(event)">
 
+        <label for="nome">Nome:</label>
+        <input type="text" placeholder="digite seu Nome:" id="nome">
+        <br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" placeholder="digite seu e-mail:" id="email">
+        <br><br>
+
+
       <!--   onblur= quando vc termina de digitar -->
         <label for="cep">CEP</label>
-        <input type="number" autocomplete="off" onblur="buscarEndereco(this.value)" placeholder="digite seu CEP" id="cep">
+        <input type="number" autocomplete="off" onblur="buscarEndereco(this.value)" placeholder="digite seu CEP" id="cep" >
         <span id="not-found"></span>
         <br><br>
 
         <label for="endereco">Endereço</label>
-        <input type="text" placeholder="digite seu Endereço" id="logradouro">
+        <input type="text" placeholder="digite seu Endereço" id="endereco">
+        <br><br>
+
+        <label for="numero">Numero</label>
+        <input type="number" placeholder="digite seu número" id="numero">
         <br><br>
 
         <label for="cidade">Cidade</label>
-        <input type="text" placeholder="digite sua Cidade" id="localidade">
+        <input type="text" placeholder="digite sua Cidade" id="cidade">
         <br><br>
 
         <label for="estado">Estado</label>
-        <input type="text" placeholder="digite sua Estado" id="uf">
+        <input type="text" placeholder="digite sua Estado" id="estado">
         <br><br>
 
 

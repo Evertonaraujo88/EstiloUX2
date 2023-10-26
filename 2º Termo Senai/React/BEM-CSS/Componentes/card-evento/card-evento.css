@@ -1,0 +1,52 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.card-evento{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 250px;
+       border: 2px solid brown;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Poppins';
+        
+}
+
+.card__titulo{
+   
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card__texto{
+    
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    overflow: scroll;
+  
+}
+
+.card__conect{
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #B51D44;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+}
+
+.card__conect--desabilitado{
+    color: grey;
+    cursor: not-allowed;
+   
+}
+
+

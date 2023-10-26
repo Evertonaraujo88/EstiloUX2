@@ -1,0 +1,37 @@
+.button {
+    display: block;
+    height: 40px;
+    width: 300px;
+    min-width: 150px;
+    text-align: center;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: .8;
+}
+
+.button--success {
+    background-color: rgb(2, 66, 2);
+    color: white;
+}
+
+.button--warning {
+    background-color: rgba(255, 255, 0, 0.745);
+    
+}
+
+.button--danger {
+    background-color:red;
+    color: white;
+}
+
+.button--big {
+    width: 100%;
+}

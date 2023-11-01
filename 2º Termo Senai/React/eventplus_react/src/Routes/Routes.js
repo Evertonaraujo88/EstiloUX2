@@ -1,17 +1,29 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from "react-router-dom";
 
-import React from 'react';
 
-const Routes = () => {
+import TipoEventos from "../Pages/TipoEventosPage/TipoEventos";
+import  EventosPage  from "../Pages/EventosPage/EventosPage";
+import HomePage from "../Pages/HomePage/HomePage";
+import LoginPage from "../Pages/LoginPage/LoginPage";
+import TestePage from "../Pages/TestePage/TestePage";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
+
+const Rotas = () => {
     return (
         <div>
 
             <BrowserRouter>
                 <Routes>
+                    
+                   {/*  <Header /> */}
                     <Route element={<HomePage />} path={"/"} exact />
-                    <Route element={<LoginPage />} path={"/login"} exact />
-                    <Route element={} path={"/"} exact />
+                    <Route element={<LoginPage />} path={"/login"} />
+                    <Route element={<TipoEventos />} path={"/tipo-eventos"} />
+                    <Route element={<EventosPage />} path={"/eventos"} />
+                    <Route element={<TestePage />} path={"/testes"} />
+                  {/*   <Footer /> */}
                 </Routes>
             </BrowserRouter>
 
@@ -19,4 +31,4 @@ const Routes = () => {
     );
 };
 
-export default Routes;
+export default Rotas;

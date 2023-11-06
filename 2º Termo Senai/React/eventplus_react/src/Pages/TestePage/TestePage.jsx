@@ -19,7 +19,7 @@ const TestePage = () => {
     }
     return (
         <div>
-            <Header />
+           
             <h1>Pagina de Poc´s</h1>
             <h2>Calculator</h2>
             <form onSubmit={handleCalcular} >
@@ -53,7 +53,7 @@ const TestePage = () => {
                 />
                 <span>Resultado: <strong>{total}</strong></span>
 
-                <Footer />
+                
             </form>
 
             {/*  <p>Valor do N1: {n1}</p>

@@ -1,7 +1,7 @@
 import React from 'react';
 
 //import css
-import '../Container.css'
+import '../Container/Container.css';
 
 const Container = ({children}) => {
     return (

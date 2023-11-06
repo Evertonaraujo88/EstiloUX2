@@ -1,5 +1,5 @@
 import React from 'react';
-import '../PerfilUsuario.css';
+import '../PerfilUsuario/PerfilUsuario.css';
 
 const PerfilUsuario = () => {
     return (

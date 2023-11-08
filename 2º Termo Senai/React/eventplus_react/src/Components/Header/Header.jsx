@@ -9,6 +9,7 @@ import './Header.css';
 //import Imagens
 import menubar from '../../Assets/Images/menubar.png';
 
+
 const Header = () => {
 
     const [exibeNavbar, setExibeNavbar] = useState(false);  //exibe/esconde menu hamurger
@@ -29,6 +30,8 @@ const Header = () => {
 
                      <PerfilUsuario/>
                 </div>
+
+               
 
             </Container>
 

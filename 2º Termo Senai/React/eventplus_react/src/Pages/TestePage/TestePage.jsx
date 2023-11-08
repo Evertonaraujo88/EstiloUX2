@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import Botao from '../../Components/Botao/Botao';
 import Input from '../../Components/Input/Input';
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+import Title from '../../Components/Title/Title';
 
 const TestePage = () => {
 
@@ -20,7 +19,11 @@ const TestePage = () => {
     return (
         <div>
            
-            <h1>Pagina de Poc´s</h1>
+            
+            <Title
+                titleText="Pagina de Poc´s"
+                
+            />
             <h2>Calculator</h2>
             <form onSubmit={handleCalcular} >
 

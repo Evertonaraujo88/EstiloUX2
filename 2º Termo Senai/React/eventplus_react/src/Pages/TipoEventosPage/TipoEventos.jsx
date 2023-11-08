@@ -1,11 +1,14 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import Title from '../../Components/Title/Title';
 
 const TipoEventos = () => {
     return (
         <div>
             
-            <h1>Tipo Eventos Page</h1>
+            <Title
+                titleText="Tipo Eventos"
+                
+            />
         </div>
     );
 };

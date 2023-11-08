@@ -1,12 +1,21 @@
 import React from 'react';
-import Header from '../../Components/Header/Header';
+import Banner from '../../Components/Banner/Banner';
+
+import MainContent from '../../Components/MainContent/MainContent';
+
+import VisionSection from '../../Components/VisionSection/VisionSection';
 
 const HomePage = () => {
     return (
-        <div>
-            
-            <h1>Home Page</h1>
-        </div>
+
+        <MainContent>
+
+            <Banner />
+
+            <VisionSection />
+
+        </MainContent>
+
     );
 };
 

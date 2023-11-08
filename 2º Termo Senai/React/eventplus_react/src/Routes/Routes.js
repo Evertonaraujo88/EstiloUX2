@@ -12,24 +12,26 @@ import Footer from "../Components/Footer/Footer";
 
 const Rotas = () => {
     return (
-        <div>
-
-            <BrowserRouter>
-                 <Header />
-                <Routes>
 
 
-                    <Route element={<HomePage />} path={"/"} exact />
-                    <Route element={<LoginPage />} path={"/login"} />
-                    <Route element={<TipoEventos />} path={"/tipo-eventos"} />
-                    <Route element={<EventosPage />} path={"/eventos"} />
-                    <Route element={<TestePage />} path={"/testes"} />
+        <BrowserRouter>
+            <Header />
 
-                </Routes>
-                  <Footer />
-            </BrowserRouter>
+            <Routes>
 
-        </div>
+
+                <Route element={<HomePage />} path={"/"} exact />
+                <Route element={<LoginPage />} path={"/login"} />
+                <Route element={<TipoEventos />} path={"/tipo-eventos"} />
+                <Route element={<EventosPage />} path={"/eventos"} />
+                <Route element={<TestePage />} path={"/testes"} />
+
+            </Routes>
+
+            <Footer />
+        </BrowserRouter>
+
+
     );
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Banner from '../../Components/Banner/Banner';
 import ContactSection from '../../Components/ContactSection/ContactSection';
 import Container from '../../Components/Container/Container';
@@ -6,6 +6,7 @@ import MainContent from '../../Components/MainContent/MainContent';
 import NextEvent from '../../Components/NextEvent/NextEvent';
 import Title from '../../Components/Title/Title';
 import VisionSection from '../../Components/VisionSection/VisionSection';
+import axios from 'axios';
 
 //import estilizacao
 import './HomePage.css';
@@ -15,6 +16,13 @@ import './HomePage.css';
 
 
 const HomePage = () => {
+
+    const [nextEvents, setNextEvents] = useState([
+        { id: 1, title: "Evento x", description: "Evento de programacao x", eventDate: "10/11/2023" },
+        { id: 2, title: "Evento y", description: "Evento de programacao y", eventDate: "15/11/2023" },
+
+    ]); //dados "mocados"
+
     return (
 
         <MainContent>
@@ -24,29 +32,26 @@ const HomePage = () => {
             <section className='proximos-eventos'>
 
                 <Container>
-                    
+
                     <Title titleText={"Proximos Eventos"} />
 
                     <div className='events-box'>
 
-                        <NextEvent
-                            title={"Api"}
-                            description={"Evento de Api com o Carlão"}
-                            eventDate={"15/12/2023"}
-                            idEvent={"baskgquebajkkanilusmdcbdkuad"}
-                        />
-                        <NextEvent
-                            title={"React"}
-                            description={"Evento de React com O Edu"}
-                            eventDate={"15/12/2023"}
-                            idEvent={"baskgquebajkbdkuad"}
-                        />
-                        <NextEvent
-                            title={"Banco de Dados"}
-                            description={"Bando de dados do zero ao avançado"}
-                            eventDate={"15/12/2023"}
-                            idEvent={"baskgqueba16481klashiujkbdkuad"}
-                        />
+                        {
+                            nextEvents.map((e) => {
+
+                                return (
+                                    <NextEvent
+                                        title={e.title}
+                                        description={e.description}
+                                        eventDate={e.eventDate}
+                                        idEvent={e.id}
+                                    />
+                                    );
+
+                            })
+                        }
+
 
                     </div>
                 </Container>

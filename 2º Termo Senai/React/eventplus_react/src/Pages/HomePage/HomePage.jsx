@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Banner from '../../Components/Banner/Banner';
 import ContactSection from '../../Components/ContactSection/ContactSection';
 import Container from '../../Components/Container/Container';
@@ -17,11 +17,31 @@ import './HomePage.css';
 
 const HomePage = () => {
 
-    const [nextEvents, setNextEvents] = useState([
-        { id: 1, title: "Evento x", description: "Evento de programacao x", eventDate: "10/11/2023" },
-        { id: 2, title: "Evento y", description: "Evento de programacao y", eventDate: "15/11/2023" },
+    const [nextEvents, setNextEvents] = useState([]);
+    const urlLocal = 'https://localhost:7118/api';
 
-    ]); //dados "mocados"
+    //roda somente na inicialização do componente
+    useEffect(() => {
+
+        async function getNextEvents() {
+
+            try {
+
+                const promise = await axios.get(`${urlLocal}/Evento/ListarProximos`);
+                const dados = await promise.data;
+
+                setNextEvents(dados); //atualiza o state
+
+            } catch (error) {
+                alert("Erro!!!")
+            }
+
+        }
+
+        //roda a função
+        getNextEvents();
+
+    }, []);
 
     return (
 
@@ -37,19 +57,36 @@ const HomePage = () => {
 
                     <div className='events-box'>
 
-                        {
+                        {   //map busca o array original e retorna modificado
+                           /*  nextEvents.map((e) => {
+
+                                return (
+
+                                    <NextEvent
+                                        key={e.idEvento}
+                                        title={e.nomeEvento}
+                                        description={e.descricao}
+                                        eventDate={e.dataEvento}
+                                        idEvent={e.idEvento}
+                                    />
+                                );
+
+                            }) */
                             nextEvents.map((e) => {
 
                                 return (
+
                                     <NextEvent
-                                        title={e.title}
-                                        description={e.description}
-                                        eventDate={e.eventDate}
-                                        idEvent={e.id}
+                                        key={e.idEvento}
+                                        title={e.nomeEvento}
+                                        description={e.descricao}
+                                        eventDate={e.dataEvento}
+                                        idEvent={e.idEvento}
                                     />
-                                    );
+                                );
 
                             })
+
                         }
 
 

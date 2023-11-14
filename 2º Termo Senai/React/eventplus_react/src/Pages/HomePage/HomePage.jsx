@@ -8,6 +8,9 @@ import Title from '../../Components/Title/Title';
 import VisionSection from '../../Components/VisionSection/VisionSection';
 import axios from 'axios';
 
+import api from '../../Services/Service';
+
+
 //import estilizacao
 import './HomePage.css';
 
@@ -18,7 +21,7 @@ import './HomePage.css';
 const HomePage = () => {
 
     const [nextEvents, setNextEvents] = useState([]);
-    const urlLocal = 'https://localhost:7118/api';
+    
 
     //roda somente na inicialização do componente
     useEffect(() => {
@@ -27,7 +30,7 @@ const HomePage = () => {
 
             try {
 
-                const promise = await axios.get(`${urlLocal}/Evento/ListarProximos`);
+                const promise = await api.get(`/Evento/ListarProximos`);
                 const dados = await promise.data;
 
                 setNextEvents(dados); //atualiza o state

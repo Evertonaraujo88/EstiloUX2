@@ -6,7 +6,8 @@ import MainContent from '../../Components/MainContent/MainContent';
 import NextEvent from '../../Components/NextEvent/NextEvent';
 import Title from '../../Components/Title/Title';
 import VisionSection from '../../Components/VisionSection/VisionSection';
-import axios from 'axios';
+import Notification from '../../Components/Notification/Notification';
+
 
 import api from '../../Services/Service';
 
@@ -21,6 +22,7 @@ import './HomePage.css';
 const HomePage = () => {
 
     const [nextEvents, setNextEvents] = useState([]);
+    const [notifyUser, setNotifyUser] = useState("");
     
 
     //roda somente na inicialização do componente
@@ -36,7 +38,14 @@ const HomePage = () => {
                 setNextEvents(dados); //atualiza o state
 
             } catch (error) {
-                alert("Erro!!!")
+                
+                setNotifyUser({
+                    titleNote: "Erro",
+                    textNote: 'Erro ao tentar conectar com a api!!!',
+                    imgIcon: "danger",
+                    imgAlt: "Imagem de illustracao de erro.",
+                    showMessage: true
+                });
             }
 
         }

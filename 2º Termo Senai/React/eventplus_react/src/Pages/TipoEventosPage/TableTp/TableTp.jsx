@@ -17,7 +17,8 @@ const TableTp = ({ dados, fnDelete = null, fnUpdate = null }) => {
                 <tr className="table-data__head-row">
                     <th className="table-data__head-title table-data__head-title--big">Título</th>
                     <th className="table-data__head-title table-data__head-title--little">Editar</th>
-                    <th className="table-data__head-title table-data__head-title--little">Deletar</th>
+                    <th className="table-data__head-title table-data__head-title--little">Deletar
+                    </th>
                 </tr>
             </thead>
 
@@ -25,17 +26,37 @@ const TableTp = ({ dados, fnDelete = null, fnUpdate = null }) => {
             <tbody>
                 {dados.map((tp) => {
                     return (
-                        <tr className="table-data__head-row">
+                        <tr className="table-data__head-row" key={tp.idTipoEvento}>
                             <td className="table-data__data table-data__data--big">
-                                Texto do tipo
+                                {tp.titulo}
                             </td>
 
-                            <td className="table-data__data table-data__data--little">
-                                <img className="table-data__icon" src={edtiPen} alt="" />
+                            <td className="table-data__data table-data__data--little"
+                                idtipoevento={tp.idTipoEvento}
+                            >
+                                <img
+                                    className="table-data__icon"
+                                    src={edtiPen}
+                                    alt=""
+                                    onClick={() => {
+                                        fnUpdate(tp.idTipoEvento)
+                                    }}
+                                />
+
                             </td>
 
-                            <td className="table-data__data table-data__data--little">
-                                <img className="table-data__icon" src={trashDelete} alt="" />
+                            <td className="table-data__data table-data__data--little"
+
+                            >
+                                <img
+                                    idtipoevento={tp.idTipoEvento}
+                                    className="table-data__icon"
+                                    src={trashDelete}
+                                    alt=""
+                                    onClick={(e) => {
+                                        fnDelete(e.target.getAttribute('idtipoevento'))
+                                    }}
+                                />
                             </td>
                         </tr>
                     );

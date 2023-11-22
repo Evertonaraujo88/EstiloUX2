@@ -19,10 +19,6 @@ import tipoEventoImagem from '../../Assets/Images/tipo-evento.svg';
 import api, { eventsTypeResource } from '../../Services/Service';
 
 
-
-
-
-
 const TipoEventos = () => {
 
 
@@ -40,7 +36,7 @@ const TipoEventos = () => {
         //toda vez que houver alguma alteracao na api essa funcao correga o array tipo eventos
         async function loadEventsType() {
             setShowSpinner(true);
-            
+
             try {
                 const retorno = await api.get(eventsTypeResource);
 
@@ -248,64 +244,53 @@ const TipoEventos = () => {
         <>
             {<Notification {...notifyUser} setNotifyUser={setNotifyUser} />}
 
-            {/*SPINNER - Feito com position */}
-            {showSpinner ? <Spinner /> : null};
+            {showSpinner ? <Spinner /> : null}
 
             <MainContent>
-
-
                 <section className='cadastro-evento-section'>
-
+                    {/* título */}
+                    <Title titleText={"Cadastro tipo de eventos "} />
                     <Container>
-
                         <div className='cadastro-evento__box'>
-                            {/* Titulo */}
-                            <Title titleText={"Cadastro Tipos de Eventos"} />
 
-                            {/* imagem de ilustracao */}
+                            {/* imagem de ilustração */}
                             <ImageIllustrator
                                 imageRender={tipoEventoImagem}
                             />
-
-                            {/* componente formulario */}
+                            {/* componente de formulário*/}
                             <form
                                 className='ftipo-evento'
                                 onSubmit={frmEdit ? handleUpdate : handleSubmit}
                             >
-                                {/* cadastrar ou editar? */}
+                                {/* {cadastrar ou editar} */}
                                 {
                                     !frmEdit ? (
                                         <>
-
                                             <Input
-
                                                 id="Titulo"
                                                 placeholder="Título"
                                                 name={"titulo"}
                                                 type={"text"}
                                                 required={"required"}
                                                 value={titulo}
-                                                manipulationFunction={(e) => {
-                                                    setTitulo(e.target.value);
-                                                }}
+                                                manipulationFunction={(e) => { setTitulo(e.target.value); }}
                                             />
+
                                             <Button
                                                 textButton="Cadastrar"
-                                                id={"cadastrar"}
-                                                name={"cadastrar"}
-                                                type={"submit"}
+                                                id="cadastrar"
+                                                name="cadastrar"
+                                                type="submit"
                                             />
-                                            {/*     <Button
 
+                                           {/*  <Button
                                                 textButton="Magica"
-                                                id={"magica"}
-                                                name={"magica"}
-                                                type={"button"}
+                                                id="cadastrar"
+                                                name="cadastrar"
+                                                type="button"
                                                 manipulationFunction={theMagic}
                                             /> */}
-
                                         </>
-
                                     ) : (
 
                                         <>
@@ -328,23 +313,19 @@ const TipoEventos = () => {
                                                     id="atualizar"
                                                     name="atualizar"
                                                     type="submit"
-
                                                     additinalClass='button-component--middle'
-                                                    manipulationFunction={(e) => { handleUpdate(e.target.value) }}
                                                 />
 
-
                                                 <Button
+
                                                     textButton="Cancelar"
                                                     id="cancelar"
                                                     name="cancelar"
                                                     type="button"
-                                                    manipulationFunction={() => { editActionAbort() }}
-
+                                                    manipulationFunction={editActionAbort}
                                                     additinalClass='button-component--middle'
                                                 />
                                             </div>
-
 
                                         </>
 
@@ -352,34 +333,22 @@ const TipoEventos = () => {
                                 }
                             </form>
 
-
-
                         </div>
                     </Container>
-
                 </section>
 
                 <section className='lista-eventos-section'>
-
                     <Container>
-                        <Title titleText={"Lista Tipos de Eventos"} color="white" />
-
+                        <Title titleText={"Lista Tipo de Eventos"} color='white' />
                         <TableTp
                             dados={tipoEventos}
                             fnUpdate={showUpdateForm}
                             fnDelete={handleDelete}
-
                         />
-
-
                     </Container>
-
                 </section>
-
             </MainContent>
         </>
-
-
     );
 };
 

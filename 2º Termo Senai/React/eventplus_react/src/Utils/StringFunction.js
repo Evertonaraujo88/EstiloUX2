@@ -1,10 +1,21 @@
 //
-export const dateFormatDbToView = data => {
+export const dateFormatDbToView = date => {
 
-    //exemplo: 2023-11-15T00:00:00 para 15/11/2023
-    data = data.substr(0,10); //retorna apenas os 10 primeiros caracteres da data retornada
-    data = data.split("-"); //passou a ser da seguinte forma  =[2023][11][15]
+    date = date.substr(0,10)
+    date = date.split('-')
 
 
-    return `${data[2]}/${data[1]}/${data[0]}`;
-} 
+    return `${date[2]}/${date[1]}/${date[0]}`
+}
+
+export const dateFormatDbToViewSimple = date => {
+    return new Date(date).toLocaleDateString();
+}
+
+export const dateFormatDbToViewBack = date => {
+
+    date = date.substr(0,10)
+    date = date.split('-')
+
+    return `${date[0]}-${date[1]}-${date[2]}`
+}

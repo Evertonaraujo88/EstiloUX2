@@ -28,7 +28,12 @@ const NextEvent = ({ title, description, eventDate, idEvent }) => {
 
             </p>
 
+            <p className='event-card__description'>
+                {new Date(eventDate).toLocaleDateString()}
+                </p>
+
             <p className='event-card__description'>{dateFormatDbToView(eventDate)}</p>
+
 
             <a onClick={() => { conectar(idEvent) }} href="" className='event-card__connect-link'>Conectar</a>
 

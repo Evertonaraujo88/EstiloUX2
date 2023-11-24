@@ -6,6 +6,7 @@ import './TableEv.css';
 //imagens
 import edtiPen from '../../../Assets/Images/edit-pen.svg';
 import trashDelete from '../../../Assets/Images/trash-delete.svg';
+import { dateFormatDbToViewSimple } from '../../../Utils/StringFunction';
 
 const TableEv = ({ dados, fnDelete = null, fnUpdate = null }) => {
     return (
@@ -28,20 +29,40 @@ const TableEv = ({ dados, fnDelete = null, fnUpdate = null }) => {
             <tbody>
                 {dados.map((tp) => {
                     return (
-                        <tr className="table-data__head-row" key={tp.idTipoEvento}>
+                        <tr className="table-data__head-row" key={tp.idEvento}>
                             <td className="table-data__data table-data__data--big">
-                                {tp.titulo}
+                                {tp.nomeEvento}
+                            </td>
+
+                            <td className="table-data__data table-data__data--big">
+                                {tp.descricao}
+                            </td>
+
+                            <td className="table-data__data table-data__data--big">
+                                {tp.tiposEvento.titulo}
+                            </td>
+
+                            <td className="table-data__data table-data__data--big">
+                                {dateFormatDbToViewSimple(tp.dataEvento)}
                             </td>
 
                             <td className="table-data__data table-data__data--little"
-                                idtipoevento={tp.idTipoEvento}
+                                idevento={tp.idEvento}
                             >
                                 <img
                                     className="table-data__icon"
                                     src={edtiPen}
                                     alt=""
                                     onClick={() => {
-                                        fnUpdate(tp.idTipoEvento)
+                                        fnUpdate({
+                                            idEvento: tp.idEvento,
+                                            nomeEvento: tp.nomeEvento,
+                                            dataEvento: tp.dataEvento,
+                                            descricao: tp.descricao,
+                                            idInstituicao: tp.idInstituicao,
+                                            idTipoEvento: tp.idTipoEvento,
+
+                                        })
                                     }}
                                 />
 
@@ -51,12 +72,12 @@ const TableEv = ({ dados, fnDelete = null, fnUpdate = null }) => {
 
                             >
                                 <img
-                                    idtipoevento={tp.idTipoEvento}
+                                    idevento={tp.idEvento}
                                     className="table-data__icon"
                                     src={trashDelete}
                                     alt=""
                                     onClick={(e) => {
-                                        fnDelete(e.target.getAttribute('idtipoevento'))
+                                        fnDelete(e.target.getAttribute('idevento'))
                                     }}
                                 />
                             </td>

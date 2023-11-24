@@ -55,7 +55,7 @@ export const Select = ({
     options,
     additionalClass = "",
     manipulationFunction,
-    defaultValue
+    value
 
 }) => {
     return (
@@ -65,16 +65,12 @@ export const Select = ({
             required={required ? "required" : ""}
             className={`input-component ${additionalClass}`}
             onChange ={manipulationFunction}
-            value = {defaultValue}
+            value = {value}
         >
 
-            {/* <option value=""> Selecione </option> */}
+            <option value=''> Selecione </option>
 
-            {options.map((o) => {
-                return(
-                    <option key={Math.random()} value ={o.idTipoEvento}>{o.titulo}</option>
-                    );
-            })}
+            {options.map((option, index) => <option key={index} value={option.value}>{option.text}</option> )}
 
         </select>
     );

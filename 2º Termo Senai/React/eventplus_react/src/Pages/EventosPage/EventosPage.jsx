@@ -17,7 +17,7 @@ import './EventosPage.css';
 import EventoImagem from '../../Assets/Images/evento.svg';
 
 //api
-import api, { eventsTypeResource } from '../../Services/Service';
+import api, { eventsTypeResource, eventsResource } from '../../Services/Service';
 
 
 const EventosPage = () => {
@@ -26,11 +26,16 @@ const EventosPage = () => {
     //states
     const [frmEdit, setFrmEdit] = useState(false); //esta em edicao?
     const [nome, setNome] = useState("");
-    const [titulo, setTitulo] = useState("");
+    const [idTypeEvento, setIdTypeEvento] = useState("");
     const [descricao, setDescricao] = useState("");
     const [frmdata, setFrmData] = useState("");
     const [idEvento, setIdEvento] = useState(null);
     const [tipoEventos, setTipoEventos] = useState([]);// quando precisar trazer um array no useState usar []
+    const [eventos, setEventos] = useState([]);// quando precisar trazer um array no useState usar []
+    const [frmEditData, setfrmEditData] = useState([]);
+
+
+
     const [notifyUser, setNotifyUser] = useState("");
     const [showSpinner, setShowSpinner] = useState(false);//spinner loading
 
@@ -43,8 +48,10 @@ const EventosPage = () => {
 
             try {
                 const retorno = await api.get(eventsTypeResource);
-
-                setTipoEventos(retorno.data);
+                const dados = await (retorno.data.map(tipoEvento => {
+                    return { value: tipoEvento.idTipoEvento, text: tipoEvento.titulo }
+                }))
+                setTipoEventos(dados);
                 console.log(retorno.data);
 
             } catch (error) {
@@ -61,49 +68,64 @@ const EventosPage = () => {
 
             setShowSpinner(false);
         }
+
+        async function loadEvents() {
+            setShowSpinner(true);
+
+            try {
+                const retorno = await api.get(eventsResource);
+
+                setEventos(retorno.data);
+                console.log(retorno.data);
+
+            } catch (error) {
+                setNotifyUser({
+                    titleNote: "danger",
+                    textNote: 'Erro api na funcao loadEventsType no tipoEventos.JSX',
+                    imgIcon: "danger",
+                    imgAlt: "Imagem de illustracao de erro, Rapaz segurando im balão com símbolo",
+                    showMessage: true
+                });
+
+                console.log(error);
+            }
+
+            setShowSpinner(false);
+        }
+
+
         //chama a funcao/api no carregamento da page/componentes
         loadEventsType();
+        loadEvents();
     }, []);
 
- /*    async function loadEventsType() {
-        try {
-            const retorno = await api.get(eventsTypeResource)
-            setTipoEventos(retorno.data)
-        } catch (error) {
-            console.log(error)
-        }
-    } */
 
     /* ******CADASTRAR****** */
     async function handleSubmit(e) {
         e.preventDefault();// evita o submit do formulario
 
-        if (titulo.trim().length < 3) {
-
-            setNotifyUser({
-                titleNote: "Aviso",
-                textNote: 'O titulo deve ter pelo menos tres caracteres!',
-                imgIcon: "warning",
-                imgAlt: "Imagem de illustracao de aviso.",
-                showMessage: true
-            });
-
-            return;
-        }
-
 
         try {
             //('recurso', 'objeto de config')
-            const retorno = await api.post(eventsTypeResource, {
-                titulo: titulo
+            /*  setFrmData(new Date(frmdata).toJSON()); */
+            const retorno = await api.post(eventsResource, {
+                nomeEvento: nome,
+                descricao: descricao,
+                idTipoEvento: idTypeEvento,
+                dataEvento: frmdata,
+                idInstituicao: "6f556c09-04bb-48e9-9953-8856b57476f8"
+
             });
 
+            console.log(retorno);
             //atualiza a lista de eventos cadastrados
-            const buscarEventos = await api.get(eventsTypeResource);
-            setTipoEventos(buscarEventos.data);//aqui retornar um array com o item cadastrado
-
+            const buscarEventos = await api.get(eventsResource);
+            setEventos(buscarEventos.data);//aqui retornar um array com o item cadastrado
+            console.log(retorno);
             //esse comando usa para zerar o imput apos enviar para api
-            setTitulo("");
+            setNome("")
+            setDescricao('')
+            setFrmData('')
 
             setNotifyUser({
                 titleNote: "Sucesso",
@@ -116,6 +138,8 @@ const EventosPage = () => {
             console.log(retorno);
 
         } catch (error) {
+
+            console.error(error)
 
             setNotifyUser({
                 titleNote: "danger",
@@ -137,8 +161,11 @@ const EventosPage = () => {
         try {
 
             e.preventDefault();
+            setShowSpinner(true);
 
-            const retorno = await api.put(eventsTypeResource + "/" + idEvento, { "titulo": titulo });
+            const retorno = await api.put(eventsResource + "/" + idEvento, {
+                
+            });
 
             if (retorno.status === 204) {
                 //avisa o usuario que foi cadastrado
@@ -151,8 +178,8 @@ const EventosPage = () => {
                 });
 
                 //atualiza os dados na tela
-                const retorno = await api.get(eventsTypeResource);
-                setTipoEventos(retorno.data)
+                const retorno = await api.get(eventsResource);
+                setEventos(retorno.data)
             }
 
             //volta para a tela de cadastro
@@ -176,21 +203,25 @@ const EventosPage = () => {
     function editActionAbort() {
 
         setFrmEdit(false);
-        setTitulo("");
+        // setTitulo("");
         setIdEvento(null);
 
     }
 
     //mostra o formulario de edicao
-    async function showUpdateForm(idElement) {
+    async function showUpdateForm(evento) {
 
+        setfrmEditData(evento)
         setFrmEdit(true);
-        setIdEvento(idElement);
+     /*    setIdEvento(idEvento); */
 
         try {
 
-            const retorno = await api.get(`${eventsTypeResource}/${idElement}`);
-            setTitulo(retorno.data.titulo)
+            const retorno = await api.get(`${eventsResource}/${idEvento}`);
+            setNome(retorno.data.nomeEvento)
+            setDescricao(retorno.data.descricao)
+            setTipoEventos(retorno.data.idTipoEvento)
+            setFrmData(retorno.data.dataEvento)
 
             console.log(retorno);
 
@@ -219,12 +250,12 @@ const EventosPage = () => {
 
         try {
 
-            const retorno = await api.delete(`${eventsTypeResource}/${idElement}`);
+            const retorno = await api.delete(`${eventsResource}/${idElement}`);
 
-            setTipoEventos([]);//atualiza o TipoEventos
+            setEventos([]);//atualiza o TipoEventos
 
-            const buscarEventos = await api.get(eventsTypeResource);
-            setTipoEventos(buscarEventos.data);//aqui retornar um array sem o item apagado
+            const buscarEventos = await api.get(eventsResource);
+            setEventos(buscarEventos.data);//aqui retornar um array sem o item apagado
 
             setNotifyUser({
                 titleNote: "Sucesso",
@@ -301,19 +332,15 @@ const EventosPage = () => {
 
                                             <Select
                                                 id="tipo-evento"
-                                                name="tipo-evento" 
-                                                required="required" 
+                                                name="tipo-evento"
+                                                required="required"
                                                 options={tipoEventos}
+                                                value={idTypeEvento}
                                                 manipulationFunction={(e) => {
-                                                    setFrmData({
-                                                        ...frmdata,
-                                                        idTipoEvento: e.target.value
-                                                    })
-
+                                                    setIdTypeEvento(e.target.value)
                                                 }}
-
-                                                defaultValue={0}
                                             />
+
 
 
                                             <Input
@@ -345,18 +372,50 @@ const EventosPage = () => {
 
                                         <>
                                             <Input
-
-                                                id="Titulo"
-                                                placeholder="Título"
-                                                name={"titulo"}
+                                                id="Nome"
+                                                placeholder="Nome"
+                                                name={"nome"}
                                                 type={"text"}
                                                 required={"required"}
-                                                value={titulo}
+                                                value={frmEditData.nomeEvento}
                                                 manipulationFunction={(e) => {
-                                                    setTitulo(e.target.value);
+                                                    setNome(e.target.value);
                                                 }}
-
                                             />
+
+                                            <Input
+                                                id="Descricao"
+                                                placeholder="Descrição"
+                                                name={"descricao"}
+                                                type={"text"}
+                                                required={"required"}
+                                                value={frmEditData.descricao}
+                                                manipulationFunction={(e) => { setDescricao(e.target.value); }}
+                                            />
+
+                                            <Select
+                                                id="tipo-evento"
+                                                name="tipo-evento"
+                                                required="required"
+                                                options={tipoEventos}
+                                                value={frmEditData.idTypeEvento}
+                                                manipulationFunction={(e) => {
+                                                    setIdTypeEvento(e.target.value)
+                                                }}
+                                            />
+
+
+
+                                            <Input
+                                                id="Data"
+                                                placeholder="Data do Evento"
+                                                name={"data"}
+                                                type={"date"}
+                                                required={"required"}
+                                                value={new Date(frmEditData.dataEvento).toLocaleDateString("sv-SE")}
+                                                manipulationFunction={(e) => { setFrmData(e.target.value); }}
+                                            />
+
                                             <div className='buttons-editbox'>
                                                 <Button
                                                     textButton="Atualizar"
@@ -375,6 +434,7 @@ const EventosPage = () => {
                                                     manipulationFunction={editActionAbort}
                                                     additinalClass='button-component--middle'
                                                 />
+
                                             </div>
 
                                         </>
@@ -391,7 +451,8 @@ const EventosPage = () => {
                     <Container>
                         <Title titleText={"Lista de Eventos"} color='white' />
                         <TableEv
-                            dados={tipoEventos}
+                            dados={eventos}
+                            dadosTp={tipoEventos}
                             fnUpdate={showUpdateForm}
                             fnDelete={handleDelete}
                         />

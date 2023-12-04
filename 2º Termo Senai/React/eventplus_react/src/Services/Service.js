@@ -15,6 +15,13 @@ export const nextEventsResource = '/Evento/ListaProximos';
  */
 export const eventsTypeResource = '/TiposEvento';
 
+/**
+ * Rota para o recurso Instituição
+ */
+export const instituicaoResource = '/Instituicao';
+/**
+
+
 /** 
  * Rota para o recurso Login
  */

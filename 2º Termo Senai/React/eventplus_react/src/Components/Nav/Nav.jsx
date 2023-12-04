@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../Nav/Nav.css';
 
 //import imagens
 import logoMobile from '../../Assets/Images/logo-white.svg';
 import logoDesktop from '../../Assets/Images/logo-pink.svg';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../Context/AuthContext';
 
 const Nav = ({ exibeNavbar, setExibeNavbar }) => {
+    const {userData} = useContext(UserContext);
 
-    console.log(`exibe o menu? ${exibeNavbar}`);
+    //console.log(`exibe o menu? ${exibeNavbar}`);
+
     return (
 
         <nav className={`navbar ${exibeNavbar ? "exibeNavbar" : ""}`}>
@@ -27,14 +30,24 @@ const Nav = ({ exibeNavbar, setExibeNavbar }) => {
                 />
             </Link>
 
-            <div className='navbar__items-box'>
-
+                       <div className="navbar__items-box">
                 <Link to="/" className='navbar__item'>Home</Link>
-                <Link to="/tipo-eventos" className='navbar__item'>Tipos de Evento</Link>
-                <Link to="/eventos" className='navbar__item'>Eventos</Link>
-               {/*  <Link to="/login" className='navbar__item'>Login</Link> */}
-               {/*  <Link to="/testes" className='navbar__item'>Testes</Link> */}
-
+                
+                {userData.nome && userData.role === "Administrador" ? (
+                <>
+                    <Link  className='navbar__item' to="/tipo-eventos">Tipos de Evento</Link>
+                    <Link  className='navbar__item' to="/eventos">Eventos</Link>
+                </>
+                ) : (
+                    userData.nome && userData.role === "aluno" ? (
+                        <Link  className='navbar__item' to="/eventos-aluno">Eventos</Link>
+                    ):(
+                        null
+                    )
+                )}
+                
+                {/* <Link  className='navbar__item' to="/login">Login</Link> */}
+                {/* <Link  className='navbar__item' to="/testes">Testes</Link> */}
             </div>
 
         </nav>

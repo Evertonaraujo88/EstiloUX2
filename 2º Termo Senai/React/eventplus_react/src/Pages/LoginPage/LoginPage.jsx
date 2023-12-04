@@ -18,7 +18,7 @@ import { UserContext, userDecodeToken } from "../../Context/AuthContext";
 
 const LoginPage = () => {
 
-    const [user, setUser] = useState({/*  email: "adm@adm.com", senha: "senai123" */ });
+    const [user, setUser] = useState({  email: "adm@adm.com", senha: "senai123"  });
 
     const [notifyUser, setNotifyUser] = useState("");
 

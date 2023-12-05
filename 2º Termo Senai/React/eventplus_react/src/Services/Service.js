@@ -4,6 +4,10 @@ import axios from "axios";
  * Rota para o recurso Evento
  */
 export const eventsResource = '/Evento';
+/**
+ * Rota para o recurso meu eventos
+ */
+export const myEventsResource = '/PresencasEvento/ListarMinhas';
 
 /**
  * Rota para o recurso Proximos Eventos
@@ -29,7 +33,7 @@ export const loginResource = '/Login';
 
 const apiPort = '7118';
 const localApiUri = `https://localhost:${apiPort}/api`;
-const externalApiUri = null;
+/* const externalApiUri = null; */
 
 const api = axios.create({
     baseURL: localApiUri

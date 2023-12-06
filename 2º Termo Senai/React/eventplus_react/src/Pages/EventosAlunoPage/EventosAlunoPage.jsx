@@ -7,7 +7,7 @@ import Container from "../../Components/Container/Container";
 import { Select } from "../../Components/FormComponents/FormComponents";
 import Spinner from "../../Components/Spinner/Spinner";
 import Modal from "../../Components/Modal/Modal";
-import api, { eventsResource, myEventsResource } from "../../Services/Service";
+import api, { eventsResource, myEventsResource, presencesEventsResource } from "../../Services/Service";
 
 import "./EventosAlunoPage.css";
 import { UserContext } from "../../Context/AuthContext";
@@ -30,7 +30,12 @@ const EventosAlunoPage = () => {
   const { userData, setUserData } = useContext(UserContext);
 
   useEffect(() => {
-    async function loadEventsType() {
+    
+
+    loadEventsType();
+  }, [tipoEvento, userData.userId]);
+
+  async function loadEventsType() {
 
       setShowSpinner(true);
       setEventos([]); //zera o array de eventos
@@ -38,9 +43,24 @@ const EventosAlunoPage = () => {
       if (tipoEvento === "1") {
         //listar os eventos (Evento)
         try {
-          const retornoEventos = await api.get(eventsResource);
-          setEventos(retornoEventos.data);
-          console.log(retornoEventos.data);
+          const todosEventos = await api.get(eventsResource);
+          const meusEventos = await api.get(`${myEventsResource}/${userData.userId}`);
+
+          const eventosMarcados = verificaPresenca(todosEventos.data, meusEventos.data);
+          setEventos(eventosMarcados);
+
+          console.clear();
+          console.log("todos os eventos!!!");
+          console.log(todosEventos.data);
+
+          console.log("meus eventos!!!");
+          console.log(meusEventos.data);
+
+          console.log("Eventos marcados!!!");
+          console.log(eventosMarcados);
+
+          /* setEventos(todosEventos.data); */
+          /*  console.log(todosEventos.data); */
 
         } catch (error) {
           console.log("erro na api funcao loadeventstype da eventosa aluno page");
@@ -55,7 +75,11 @@ const EventosAlunoPage = () => {
           const arrEventos = []; //array vazio
 
           retornoEventos.data.forEach(e => {
-            arrEventos.push(e.evento);
+            arrEventos.push({
+              ...e.evento,
+              situacao: e.situacao
+
+            });
           });
           setEventos(arrEventos);
           console.log(arrEventos);
@@ -64,32 +88,30 @@ const EventosAlunoPage = () => {
           console.log("erro na api funcao loadeventstype da eventosa aluno page na condicao else");
           console.log(error);
         }
-      } else{
+      } else {
         setEventos([]);
-      } 
+      }
 
-      
+
       setShowSpinner(false);
     }
 
-    loadEventsType();
-  }, [tipoEvento, userData.id]);
+  const verificaPresenca = (arrAllEvents, eventsUser) => {
 
-  const verificaPresenca = (arrEvents, eventsUser) => {
+    for (let x = 0; x < arrAllEvents.length; x++) {//para cada evento principal
 
-    for (let x = 0; x < arrEvents.length; x++) {
+      for (let i = 0; i < eventsUser.length; i++) {//procurar a correspondencia em minhas presencas
 
-      for (let i = 0; i < eventsUser.length; i++) {
-        
-        if (arrEvents[x].idEvento === eventsUser[i].idEvento) {
-          arrEvents[x].situacao = true;
+        if (arrAllEvents[x].idEvento === eventsUser[i].evento.idEvento) {
+          arrAllEvents[x].situacao = true;
+          arrAllEvents[x].idPresencaEvento = eventsUser[i].idPresencaEvento;
           break; //para de procurar para o evento principal
         }
-        
+
       }
-      
-      
+
     }
+    return arrAllEvents;
   }
 
   // toggle meus eventos ou todos os eventos
@@ -109,8 +131,50 @@ const EventosAlunoPage = () => {
     alert("Remover o comentário");
   };
 
-  function handleConnect() {
-    alert("Desenvolver a função conectar evento");
+  async function handleConnect(eventId, whatTheFunction, presencaId = null) {
+
+    if (whatTheFunction === "connect") {
+
+      try {//connect
+
+        const promise = await api.post(presencesEventsResource, {
+          situacao: true,
+          idUsuario: userData.userId,
+          idEvento: eventId
+        });
+
+        if (promise.status === 201) {
+          alert("presenca confirmada!!!")
+        }
+        /* setTipoEvento(1);//chamar a api */
+
+        loadEventsType()
+
+      } catch (error) {
+
+      }
+      return;
+   
+    } 
+    //unconnect - aqui seria o else
+
+    try {
+
+      const unconnected = await api.delete(
+        `${presencesEventsResource}/${presencaId}`
+      );
+
+      if (unconnected.status === 204) {
+
+        alert("Desconectado do evento");
+        loadEventsType()
+      }
+    } catch (error) {
+      alert("nao desconectado do evento, alguns erro no try unconnect")
+    }
+
+
+    alert("Desconectar ao evento:" + eventId);
   }
   return (
     <>

@@ -11,6 +11,7 @@ import api, { eventsResource, myEventsResource, presencesEventsResource } from "
 
 import "./EventosAlunoPage.css";
 import { UserContext } from "../../Context/AuthContext";
+import { logDOM } from "@testing-library/react";
 
 const EventosAlunoPage = () => {
   // state do menu mobile
@@ -30,71 +31,72 @@ const EventosAlunoPage = () => {
   const { userData, setUserData } = useContext(UserContext);
 
   useEffect(() => {
-    
+
 
     loadEventsType();
   }, [tipoEvento, userData.userId]);
 
   async function loadEventsType() {
 
-      setShowSpinner(true);
-      setEventos([]); //zera o array de eventos
+    setShowSpinner(true);
+    setEventos([]); //zera o array de eventos
 
-      if (tipoEvento === "1") {
-        //listar os eventos (Evento)
-        try {
-          const todosEventos = await api.get(eventsResource);
-          const meusEventos = await api.get(`${myEventsResource}/${userData.userId}`);
+    if (tipoEvento === "1") {
+      //listar os eventos (Evento)
+      try {
+        const todosEventos = await api.get(eventsResource);
+        const meusEventos = await api.get(`${myEventsResource}/${userData.userId}`);
 
-          const eventosMarcados = verificaPresenca(todosEventos.data, meusEventos.data);
-          setEventos(eventosMarcados);
+        const eventosMarcados = verificaPresenca(todosEventos.data, meusEventos.data);
+        setEventos(eventosMarcados);
 
-          console.clear();
-          console.log("todos os eventos!!!");
-          console.log(todosEventos.data);
+        /*  console.clear();
+         console.log("todos os eventos!!!");
+         console.log(todosEventos.data);
 
-          console.log("meus eventos!!!");
-          console.log(meusEventos.data);
+         console.log("meus eventos!!!");
+         console.log(meusEventos.data);
 
-          console.log("Eventos marcados!!!");
-          console.log(eventosMarcados);
+         console.log("Eventos marcados!!!");
+         console.log(eventosMarcados);
+*/
+        /* setEventos(todosEventos.data); */
+        /*  console.log(todosEventos.data); */
 
-          /* setEventos(todosEventos.data); */
-          /*  console.log(todosEventos.data); */
-
-        } catch (error) {
-          console.log("erro na api funcao loadeventstype da eventosa aluno page");
-          console.log(error);
-        }
-      } else if (tipoEvento === "2") {
-        //listar os meu eventos (presencaEventos)
-        try {
-
-          const retornoEventos = await api.get(`${myEventsResource}/${userData.userId}`);
-
-          const arrEventos = []; //array vazio
-
-          retornoEventos.data.forEach(e => {
-            arrEventos.push({
-              ...e.evento,
-              situacao: e.situacao
-
-            });
-          });
-          setEventos(arrEventos);
-          console.log(arrEventos);
-
-        } catch (error) {
-          console.log("erro na api funcao loadeventstype da eventosa aluno page na condicao else");
-          console.log(error);
-        }
-      } else {
-        setEventos([]);
+      } catch (error) {
+        console.log("erro na api funcao loadeventstype da eventosa aluno page");
+        console.log(error);
       }
+    } else if (tipoEvento === "2") {
+      //listar os meu eventos (presencaEventos)
+      try {
 
+        const retornoEventos = await api.get(`${myEventsResource}/${userData.userId}`);
 
-      setShowSpinner(false);
+        const arrEventos = []; //array vazio
+
+        retornoEventos.data.forEach(e => {
+          arrEventos.push({
+            ...e.evento,
+            situacao: e.situacao,
+            idPresencaEvento: e.idPresencaEvento,
+
+          });
+        });
+        setEventos(arrEventos);
+        console.log(arrEventos);
+
+      } catch (error) {
+        console.log("erro na api funcao loadeventstype da eventosa aluno page na condicao else");
+        console.log(error);
+      }
+    } else {
+      setEventos([]);
     }
+
+
+    setShowSpinner(false);
+  }
 
   const verificaPresenca = (arrAllEvents, eventsUser) => {
 
@@ -119,17 +121,27 @@ const EventosAlunoPage = () => {
     setTipoEvento(tpEvent);
   }
 
-  async function loadMyComentary(idComentary) {
-    return "????";
-  }
-
+  
   const showHideModal = () => {
     setShowModal(showModal ? false : true);
   };
 
+  // ler um comentario
+  const loadMyCommentary = () => {
+    alert(" carregar comentario!!!")
+  }
+
+  //Cadastra comentario
+  const postMyCommentary = () => {
+    alert(" carregar comentario!!!")
+  }
+
+  //remove comentario
   const commentaryRemove = () => {
     alert("Remover o comentário");
   };
+
+
 
   async function handleConnect(eventId, whatTheFunction, presencaId = null) {
 
@@ -148,14 +160,14 @@ const EventosAlunoPage = () => {
         }
         /* setTipoEvento(1);//chamar a api */
 
-        loadEventsType()
+        loadEventsType();
 
       } catch (error) {
-
+        alert("erro no post handleConnect!!!")
       }
       return;
-   
-    } 
+
+    }
     //unconnect - aqui seria o else
 
     try {
@@ -171,6 +183,7 @@ const EventosAlunoPage = () => {
       }
     } catch (error) {
       alert("nao desconectado do evento, alguns erro no try unconnect")
+      console.log(error);
     }
 
 
@@ -211,6 +224,8 @@ const EventosAlunoPage = () => {
         <Modal
           userId={userData.userId}
           showHideModal={showHideModal}
+          fnGet={loadMyCommentary}
+          fnPost={postMyCommentary}
           fnDelete={commentaryRemove}
         />
       ) : null}

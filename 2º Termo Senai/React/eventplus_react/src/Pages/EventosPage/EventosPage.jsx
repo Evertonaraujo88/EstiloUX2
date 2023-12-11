@@ -113,7 +113,7 @@ const EventosPage = () => {
                 descricao: descricao,
                 idTipoEvento: idTypeEvento,
                 dataEvento: frmdata,
-                idInstituicao: "6f556c09-04bb-48e9-9953-8856b57476f8"
+                idInstituicao: "c68e3cc2-2ad7-42f7-9dc8-96084b714a35"//"6f556c09-04bb-48e9-9953-8856b57476f8"
 
             });
 

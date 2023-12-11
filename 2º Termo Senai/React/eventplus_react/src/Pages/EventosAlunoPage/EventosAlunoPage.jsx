@@ -7,7 +7,8 @@ import Container from "../../Components/Container/Container";
 import { Select } from "../../Components/FormComponents/FormComponents";
 import Spinner from "../../Components/Spinner/Spinner";
 import Modal from "../../Components/Modal/Modal";
-import api, { eventsResource, myEventsResource, presencesEventsResource } from "../../Services/Service";
+import Notification from "../../Components/Notification/Notification"
+import api, { eventsResource, myEventsResource, presencesEventsResource, commentaryEventIdResource, commentaryEventResource } from "../../Services/Service";
 
 import "./EventosAlunoPage.css";
 import { UserContext } from "../../Context/AuthContext";
@@ -17,6 +18,7 @@ const EventosAlunoPage = () => {
   // state do menu mobile
   const [exibeNavbar, setExibeNavbar] = useState(false);
   const [eventos, setEventos] = useState([]);
+  const [comentario, setComentario] = useState('');
   // select mocado
   const [quaisEventos, setQuaisEventos] = useState([
     { value: 1, text: "Todos os eventos" },
@@ -29,6 +31,8 @@ const EventosAlunoPage = () => {
 
   // recupera os dados globais do usuário
   const { userData, setUserData } = useContext(UserContext);
+   //Notify
+   const [notifyUser, setNotifyUser] = useState();
 
   useEffect(() => {
 
@@ -122,23 +126,105 @@ const EventosAlunoPage = () => {
   }
 
   
-  const showHideModal = () => {
+  const showHideModal = (idEvent) => {
     setShowModal(showModal ? false : true);
+    setUserData({ ...userData, idEvento: idEvent });
   };
 
   // ler um comentario
-  const loadMyCommentary = () => {
-    alert(" carregar comentario!!!")
+  const loadMyCommentary = async (idUsuario, idEvento) => {
+
+    try {
+      const promise = await api.get(commentaryEventIdResource + '?idUsuario=' + idUsuario + '&idEvento=' + idEvento);
+      console.log(promise.data);
+      setComentario(promise.data.descricao)
+
+    } catch (error) {
+
+    /*   Notify(
+        "Erro",
+        "Verifique a conexão com a internet",
+        "danger",
+        "Imagem de erro. Rapaz segurando um balão com símbolo x"
+      ); */
+      console.log(error);
+      return;
+      
+    }
   }
 
   //Cadastra comentario
-  const postMyCommentary = () => {
-    alert(" carregar comentario!!!")
+  const postMyCommentary = async (descricao, idUsuario, idEvento) => {
+
+    try {
+      const promise = await api.post(commentaryEventResource, {
+        descricao: descricao,
+        exibe: true,
+        idUsuario: idUsuario,
+        idEvento: idEvento
+      })
+      console.log(descricao, idUsuario, idEvento);
+      console.log(promise.data);
+      if (promise.status === 201) {
+
+        const promise = await api.get(commentaryEventIdResource + '?idUsuario=' + idUsuario + '&idEvento=' + idEvento);
+        console.log(promise.data);
+        setComentario(promise.data.descricao)
+       /*  Notify(
+          "Sucess",
+          "Comentario cadastrado com sucesso",
+          "success",
+          "Imagem de sucesso. Moça segurando balão"
+        ); */
+      }
+    } catch (error) {
+
+      /* Notify(
+        "Erro",
+        "O cadastro deve ter no mínimo 3 caracteres",
+        "warning",
+        "Imagem de aviso. Boneco batendo na exclamação"
+      );
+      console.log(error);
+      return; */
+    }
   }
 
+
   //remove comentario
-  const commentaryRemove = () => {
-    alert("Remover o comentário");
+  const commentaryRemove = async (idComentarioEvento, idUsuario, idEvento) => {
+
+    try {
+      
+      const GetById = await api.get(commentaryEventIdResource + '?idUsuario=' + idUsuario + '&idEvento=' + idEvento);
+      idComentarioEvento = GetById.data.idComentarioEvento
+
+      const promise = await api.delete(commentaryEventResource + '/' + idComentarioEvento)
+      if (promise.status === 204) {
+
+        const GetDesc = await api.get(commentaryEventIdResource + '?idUsuario=' + idUsuario + '&idEvento=' + idEvento);
+        console.log(promise.data);
+        setComentario(GetDesc.data.descricao)
+       /*  Notify(
+          "Sucess",
+          "Excluido com sucesso",
+          "success",
+          "Imagem de sucesso. Moça segurando balão"
+        );*/
+      }
+
+    } catch (error) {
+
+      /* Notify(
+        "Erro",
+        "Nenhum comentario para ser excluido",
+        "danger",
+        "Imagem de erro. Boneco batendo na exclamação"
+      );
+      console.log(error);
+      return; */
+    }
+
   };
 
 
@@ -210,9 +296,7 @@ const EventosAlunoPage = () => {
           <Table
             dados={eventos}
             fnConnect={handleConnect}
-            fnShowModal={() => {
-              showHideModal();
-            }}
+            fnShowModal={showHideModal}
           />
         </Container>
       </MainContent>
@@ -227,6 +311,7 @@ const EventosAlunoPage = () => {
           fnGet={loadMyCommentary}
           fnPost={postMyCommentary}
           fnDelete={commentaryRemove}
+          comentaryText={comentario}
         />
       ) : null}
     </>

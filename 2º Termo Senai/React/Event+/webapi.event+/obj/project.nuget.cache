@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "an6qu0ywtT5H6160G1Ce1tHhvu/M1maby4BVHwboceajNXKz8AIih3s4fLCEucVC8fVup+XX7ODNtgvV9/5elQ==",
+  "dgSpecHash": "TWgK9aoBPFn8/vRT+kxNQlIOU0yGkxmRh8hD6pytxmhfaFZH2L7J8p+yxgzX4Ch9qUk3XI2ljQcPbwyFvFmUwQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\32599952859\\Desktop\\2023-1S-2D\\sprint-2-api\\Event+\\webapi.event+\\webapi.event+.csproj",
+  "projectFilePath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\React\\Event+\\webapi.event+\\webapi.event+.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\32599952859\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
@@ -62,6 +62,7 @@
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\7.0.11\\microsoft.aspnetcore.mvc.newtonsoftjson.7.0.11.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.azure.cognitiveservices.contentmoderator\\2.0.0\\microsoft.azure.cognitiveservices.contentmoderator.2.0.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.build.framework\\17.3.2\\microsoft.build.framework.17.3.2.nupkg.sha512",
@@ -111,6 +112,8 @@
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.rest.clientruntime\\2.3.18\\microsoft.rest.clientruntime.2.3.18.nupkg.sha512",
+    "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.rest.clientruntime.azure\\3.3.18\\microsoft.rest.clientruntime.azure.3.3.18.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\7.0.9\\microsoft.visualstudio.web.codegeneration.7.0.9.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\7.0.9\\microsoft.visualstudio.web.codegeneration.core.7.0.9.nupkg.sha512",

@@ -1,7 +1,10 @@
-﻿using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.Azure.CognitiveServices.ContentModerator;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Newtonsoft.Json;
 using System.Reflection;
+using static System.Net.WebRequestMethods;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -71,6 +74,8 @@ builder.Services.AddSwaggerGen(options =>
         }
     });
 
+    //Adicionar dentro de AddSwaggerGen ****codigo implementado junto ao deploy na azure
+    options.ResolveConflictingActions(apiDescriptions => apiDescriptions.First());
 
     //Configura o Swagger para usar o arquivo XML gerado
     var xmlFilename = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -101,6 +106,8 @@ builder.Services.AddSwaggerGen(options =>
             new string[] {}
         }
     });
+
+
 });
 
 // CORS
@@ -115,14 +122,49 @@ builder.Services.AddCors(options =>
         });
 });
 
+
+//COnfiguracao do servico de moderacao de conteudo - AZURE
+// Chave e ENdpoint obitidos da Azure
+builder.Services.AddSingleton(provider => new ContentModeratorClient(
+    new ApiKeyServiceClientCredentials("307a7a1541944bc58092390d3bfdbe08"))
+{
+    Endpoint = "https://eventmoderator-everton.cognitiveservices.azure.com/"
+}
+);
+
+
 var app = builder.Build();
 
+
 //Habilite o middleware para atender ao documento JSON gerado e à interface do usuário do Swagger
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseSwagger();
+//    app.UseSwaggerUI();
+//}
+
+//Para atender à interface do usuário do Swagger na raiz do aplicativo
+//app.UseSwaggerUI(options =>
+//{
+//    options.SwaggerEndpoint("/swagger/v1/swagger.json", "v1");
+//    options.RoutePrefix = string.Empty;
+//});
+
+
+
+
+//Alterar dados do Swagger para a seguinte configuração
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseDeveloperExceptionPage();
 }
+
+app.UseSwagger(options =>
+{
+    options.SerializeAsV2 = true;
+});
+
+app.UseSwaggerUI();
 
 //Para atender à interface do usuário do Swagger na raiz do aplicativo
 app.UseSwaggerUI(options =>
@@ -132,6 +174,8 @@ app.UseSwaggerUI(options =>
 });
 
 app.UseCors("CorsPolicy");
+
+app.UseRouting();
 
 app.UseHttpsRedirection();
 

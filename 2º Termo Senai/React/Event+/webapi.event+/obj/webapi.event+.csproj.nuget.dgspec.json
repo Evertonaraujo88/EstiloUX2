@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\32599952859\\Desktop\\2023-1S-2D\\sprint-2-api\\Event+\\webapi.event+\\webapi.event+.csproj": {}
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\React\\Event+\\webapi.event+\\webapi.event+.csproj": {}
   },
   "projects": {
-    "C:\\Users\\32599952859\\Desktop\\2023-1S-2D\\sprint-2-api\\Event+\\webapi.event+\\webapi.event+.csproj": {
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\React\\Event+\\webapi.event+\\webapi.event+.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\2023-1S-2D\\sprint-2-api\\Event+\\webapi.event+\\webapi.event+.csproj",
+        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\React\\Event+\\webapi.event+\\webapi.event+.csproj",
         "projectName": "webapi.event+",
-        "projectPath": "C:\\Users\\32599952859\\Desktop\\2023-1S-2D\\sprint-2-api\\Event+\\webapi.event+\\webapi.event+.csproj",
+        "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\React\\Event+\\webapi.event+\\webapi.event+.csproj",
         "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\32599952859\\Desktop\\2023-1S-2D\\sprint-2-api\\Event+\\webapi.event+\\obj\\",
+        "outputPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\React\\Event+\\webapi.event+\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -55,6 +55,10 @@
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Microsoft.Azure.CognitiveServices.ContentModerator": {
+              "target": "Package",
+              "version": "[2.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",

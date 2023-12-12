@@ -15,6 +15,12 @@
             </summary>
             <param name="optionsBuilder">Objeto com as configurações definidas</param>
         </member>
+        <member name="M:webapi.event_.Controllers.ComentariosEventoController.#ctor(Microsoft.Azure.CognitiveServices.ContentModerator.ContentModeratorClient)">
+            <summary>
+            Construtor que recebe os dados necessarios para acesso ao servico externo
+            </summary>
+            <param name="contentModeratorClient">objeto do tipo ContentModeratorClinet</param>
+        </member>
         <member name="T:webapi.event_.Migrations.BD">
             <inheritdoc />
         </member>
@@ -49,6 +55,42 @@
             <inheritdoc />
         </member>
         <member name="M:webapi.event_.Migrations.bdprofessor.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:webapi.event_.Migrations.eventdatabaseazure">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:webapi.event_.Migrations.eventdatabaseazure2">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure2.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure2.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure2.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:webapi.event_.Migrations.eventdatabaseazure3">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure3.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure3.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:webapi.event_.Migrations.eventdatabaseazure3.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
             <inheritdoc />
         </member>
     </members>

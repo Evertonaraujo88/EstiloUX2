@@ -1,4 +1,6 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View, } from "react-native";
+
+
 
 //COmponente Person
 //Propos : name, age
@@ -20,6 +22,7 @@ const styles = StyleSheet.create({
   },
 
   txt: {
+    fontFamily: 'Poppins_800ExtraBold_Italic',
     fontSize: 18,
     fontWeight: '600'
   }

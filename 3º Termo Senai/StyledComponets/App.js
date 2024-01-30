@@ -1,6 +1,16 @@
 import { StatusBar } from "expo-status-bar";
 import { useState, useEffect } from "react";
-import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
+import { Container } from "./src/components/Container/Container";
+import { Title, Title2 } from "./src/components/Title/Title";
+import { Button, GreenBtn } from "./src/components/button/button";
+import { Fundo } from "./src/components/Fundo/Fundo";
+
+import {
+  useFonts,
+  Poppins_800ExtraBold_Italic,
+} from "@expo-google-fonts/poppins";
+
+const imagem = require("./src/assets/images/numeros.jpg");
 
 export default function App() {
   //hook (useState)
@@ -20,59 +30,29 @@ export default function App() {
     console.warn(`Contador atualizado: ${count}`);
   }, [count]);
 
+  let [fontsLoaded, fontError] = useFonts({
+    Poppins_800ExtraBold_Italic,
+  });
+
+  if (!fontsLoaded && !fontError) {
+    return null;
+  };
+
   return (
-    <View style={styles.container}>
+    <Container>
+      <Fundo source={imagem}>
+        <Title>Contador :</Title>
+        <Title>{count}</Title>
 
-      <View style={styles.cont}>
-        <Text style={styles.txt_cont}>Contador : {count} </Text>
-      </View>
-      
+        <Button onPress={incremet}>
+          <Title2>Incrementar</Title2>
+        </Button>
 
-      <TouchableOpacity style={styles.btn} onPress={incremet}>
-        <Text style={styles.text}>Incrementar</Text>
-      </TouchableOpacity>
-
-      <TouchableOpacity style={styles.btn} onPress={decremet}>
-        <Text  style={styles.text}>Decrementar</Text>
-      </TouchableOpacity>
-
-      <StatusBar style="auto"/>
-    </View>
+        <GreenBtn onPress={decremet}>
+          <Title2>Decrementar</Title2>
+        </GreenBtn>
+      </Fundo>
+      <StatusBar style="auto" />
+    </Container>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-
-  cont:{
-    width: '80%',
-    height: 200,
-    alignItems: 'center',
-    justifyContent: "center",
-  },
-
-  txt_cont:{
-    fontSize: 40,
-
-  },
-
-  btn: {
-    width: "80%",
-    height: 40,
-    backgroundColor: "blue",
-    marginTop: 20,
-    alignItems: 'center',
-    justifyContent: "center",
-    borderRadius: 8
-  },
-
-  text: {
-    fontSize: 18,
-    color: 'white'
- }
-});

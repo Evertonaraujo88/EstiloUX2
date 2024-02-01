@@ -1,4 +1,7 @@
 
+import { BoxInput } from "../../components/BoxInput";
+import { ContainerForm, ScrollForm } from "./style";
+
 export function Home(){
 
     //Hooks - states
@@ -15,12 +18,14 @@ export function Home(){
 
         <ScrollForm>
             <ContainerForm>
-                <BoxInput/>
+                <BoxInput
+                    textLable= "informe o cep:"
+                    placeholder= "Cep..."
+                    KeyType= 'numeric'
+                    maxLenght={9}
+                />
             </ContainerForm>
         </ScrollForm>
-
-        
-
-
+     
     )
 }

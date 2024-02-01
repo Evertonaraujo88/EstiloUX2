@@ -12,5 +12,5 @@ export function Header() {
         <TextHeader>Consumo da API ViaCep</TextHeader>
       </HeaderContent>
     </HeaderContainer>
-  );
+  )
 }

@@ -6,21 +6,19 @@ import {
   ContainerScroll,
   ScrollForm,
 } from "./style";
+
 import axios from "axios";
+import api from "../../service/API";
 
 export function Home() {
   //Hooks - states e variaveis
   const [cep, setCep] = useState();
-  const [logradouro, setLogradouro] = useState("");
-  const [bairro, setBairro] = useState("");
-  const [cidade, setCidade] = useState("");
-  const [estado, setEstado] = useState("");
-  const [uf, setUf] = useState("");
+  const [endereco, setEndereco] = useState({});
 
   // ao carregar do componente
-  useEffect(() => {
+ /*  useEffect(() => {
 
-  }, []);//array dependências
+  }, []);//array dependências */
 
 /* // ao carregar do componente
 // ao alterar do xpto
@@ -44,30 +42,29 @@ export function Home() {
   });//sem array dependências - programador esqueceu! */
 
   //Hooks - effect e functions
-  useEffect(async () => {
-    //chamada da API
+
+
+  //chamada da API
+  async function getCep() {
+
     try {
 
-      if (cep != "" && cep.lenght === 8) {
-       const endereco = await axios.get(`https://viacep.com.br/ws/${cep}/json/`);
+      if (cep != "") {
 
-       if (endereco.error) {
-            alert("Verifique o CPE");
-            return;
-       }
+          const promise = await axios.get(`https:viacep.com.br/ws/${cep}/json`)
+       /* const promise = await api.get(`/${cep}/json/`) */
 
-       setLogradouro(endereco.data.logradouro);
-       setBairro(endereco.data.bairro);
-       setCidade(endereco.data.localidade);
-       setEstado(endereco.data.uf);
-       setUf(endereco.data.uf);
+      
+       setEndereco(promise.data)
 
       }
+
     } catch (error) {
         console.log("Erro ao buscar o CEP.");
-        console.log(error);
+        /* console.log(error); */
+        alert(error)
     }
-  }, [cep]);
+  }
 
   return (
     //ScrollForm - View
@@ -85,27 +82,26 @@ export function Home() {
             maxLenght={9}
             fieldValue={cep}
             editable={true}
-            onchangeText={(tx) => {
-              return setCep(tx);
-            }}
+            onchangeText={tx => setCep(tx)}
+            onBlur={getCep}
           />
           <BoxInput
             textLable="Logradouro:"
             placeholder="Logradouro..."
             KeyType="string"
-            fieldValue={logradouro}
+            fieldValue={endereco.logradouro}
           />
           <BoxInput
             textLable="Bairro:"
             placeholder="Bairro..."
             KeyType="string"
-            fieldValue={bairro}
+            fieldValue={endereco.bairro}
           />
           <BoxInput
             textLable="Cidade:"
             placeholder="Cidade..."
             KeyType="string"
-            fieldValue={cidade}
+            fieldValue={endereco.cidade}
           />
 
           <RowContainer>
@@ -114,14 +110,14 @@ export function Home() {
               textLable="Estado:"
               placeholder="Estado..."
               KeyType="string"
-              fieldValue={estado}
+              fieldValue={endereco.uf}
             />
             <BoxInput
               fieldWidth="20"
               textLable="UF:"
               placeholder="UF..."
               KeyType="string"
-              fieldValue={uf}
+              fieldValue={endereco.uf}
             />
           </RowContainer>
         </ContainerForm>

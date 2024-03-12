@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { ActivityIndicator, StyleSheet, Text, View } from "react-native";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 // import da dependencia do mapa
 import MapView, { Marker, PROVIDER_GOOGLE } from "react-native-maps";
@@ -11,6 +11,12 @@ import {
 
   //recebe a localizacao atual do usuario
   getCurrentPositionAsync,
+
+  //monitorar o posicionamento
+  watchPositionAsync,
+
+  //Pega o valor da localizacao
+  LocationAccuracy
 } from "expo-location";
 
 // import de distancia entre dois pontos
@@ -19,9 +25,20 @@ import MapViewDirections from "react-native-maps-directions";
 //import APIKEY
 import {mapskey} from "./util/mapsApiKey"
 
+//USEref
+
+
 
 export default function App() {
+  const mapReference = useRef(null);
+
   const [initialPosition, setInitialPosition] = useState(null);
+  const [finalPosition, setFinalPosition] = useState(
+    {
+      latitude : -23.68037,
+      longitude : -46.49932
+    }
+  );
 
   async function CapturarLocalizacao() {
     const { granted } = await requestForegroundPermissionsAsync();
@@ -36,14 +53,56 @@ export default function App() {
   }
 
   useEffect(() => {
-    CapturarLocalizacao();
+    CapturarLocalizacao()
+
+    watchPositionAsync({
+      accuracy : LocationAccuracy.Highest,
+      timeInterval : 1000,
+      distanceInterval : 1,
+
+    }, async (response) => {
+
+      //recebe e aguarda a nova localizacao
+      await setInitialPosition (response)
+
+      mapReference.current?.animateCamera({
+        pitch: 60,
+        center: response.coords
+      })
+
+      console.log(response);
+    })
+
   }, [1000]);
+
+  useEffect(() => {
+    RecarregarVisualizacaoMapa();
+  }, [initialPosition]);
+
+  async function RecarregarVisualizacaoMapa() {
+      if (mapReference.current && initialPosition) {
+        await mapReference.current.fitToCoordinates(
+          [{ latitude: initialPosition.coords.latitude,
+             longitude: initialPosition.coords.longitude},
+
+             {latitude: finalPosition.latitude, longitude: finalPosition.longitude}
+          ],
+          {
+            edgePadding: { top: 60, right: 60, bottom: 60, left:60},
+            animated: true
+          }
+        )
+      }
+  }
 
   return (
     <View style={styles.container}>
       {initialPosition != null ? (
         <MapView
           style={styles.map}
+
+          ref={mapReference}
+
           //marcar o ponto de inicio
           initialRegion={{
             latitude: initialPosition.coords.latitude,
@@ -84,9 +143,9 @@ export default function App() {
               latitude: -23.68037,
               longitude: -46.49932,
             }}
-            title="Destino"
+            title="Destino final"
             description="Meu destino"
-            pinColor={'Blue'}
+            pinColor={'yellow'}
           />
         </MapView>
       ) : (

@@ -16,25 +16,29 @@ import {
   watchPositionAsync,
 
   //Pega o valor da localizacao
-  LocationAccuracy,
+  LocationAccuracy
 } from "expo-location";
 
 // import de distancia entre dois pontos
 import MapViewDirections from "react-native-maps-directions";
 
 //import APIKEY
-import { mapskey } from "./util/mapsApiKey";
+import {mapskey} from "./util/mapsApiKey"
 
 //USEref
+
+
 
 export default function App() {
   const mapReference = useRef(null);
 
   const [initialPosition, setInitialPosition] = useState(null);
-  const [finalPosition, setFinalPosition] = useState({
-    latitude: -23.68037,
-    longitude: -46.49932,
-  });
+  const [finalPosition, setFinalPosition] = useState(
+    {
+      latitude : -23.68037,
+      longitude : -46.49932
+    }
+  );
 
   async function CapturarLocalizacao() {
     const { granted } = await requestForegroundPermissionsAsync();
@@ -49,26 +53,26 @@ export default function App() {
   }
 
   useEffect(() => {
-    CapturarLocalizacao();
+    CapturarLocalizacao()
 
-    watchPositionAsync(
-      {
-        accuracy: LocationAccuracy.Highest,
-        timeInterval: 1000,
-        distanceInterval: 1,
-      },
-      async (response) => {
-        //recebe e aguarda a nova localizacao
-        await setInitialPosition(response);
+    watchPositionAsync({
+      accuracy : LocationAccuracy.Highest,
+      timeInterval : 1000,
+      distanceInterval : 1,
 
-        mapReference.current?.animateCamera({
-          pitch: 60,
-          center: response.coords,
-        });
+    }, async (response) => {
 
-        console.log(response);
-      }
-    );
+      //recebe e aguarda a nova localizacao
+      await setInitialPosition (response)
+
+      mapReference.current?.animateCamera({
+        pitch: 60,
+        center: response.coords
+      })
+
+      console.log(response);
+    })
+
   }, [1000]);
 
   useEffect(() => {
@@ -76,25 +80,19 @@ export default function App() {
   }, [initialPosition]);
 
   async function RecarregarVisualizacaoMapa() {
-    if (mapReference.current && initialPosition) {
-      await mapReference.current.fitToCoordinates(
-        [
-          {
-            latitude: initialPosition.coords.latitude,
-            longitude: initialPosition.coords.longitude,
-          },
+      if (mapReference.current && initialPosition) {
+        await mapReference.current.fitToCoordinates(
+          [{ latitude: initialPosition.coords.latitude,
+             longitude: initialPosition.coords.longitude},
 
+             {latitude: finalPosition.latitude, longitude: finalPosition.longitude}
+          ],
           {
-            latitude: finalPosition.latitude,
-            longitude: finalPosition.longitude,
-          },
-        ],
-        {
-          edgePadding: { top: 60, right: 60, bottom: 60, left: 60 },
-          animated: true,
-        }
-      );
-    }
+            edgePadding: { top: 60, right: 60, bottom: 60, left:60},
+            animated: true
+          }
+        )
+      }
   }
 
   return (
@@ -102,7 +100,9 @@ export default function App() {
       {initialPosition != null ? (
         <MapView
           style={styles.map}
+
           ref={mapReference}
+
           //marcar o ponto de inicio
           initialRegion={{
             latitude: initialPosition.coords.latitude,
@@ -110,6 +110,7 @@ export default function App() {
             latitudeDelta: 0.005,
             longitudeDelta: 0.005,
           }}
+
           provider={PROVIDER_GOOGLE}
           customMapStyle={grayMapStyle}
         >
@@ -120,17 +121,18 @@ export default function App() {
             }}
             title="Posição Inicial"
             description="Estou aqui"
-            pinColor={"Red"}
+            pinColor={'Red'}
           />
 
           <MapViewDirections
-            origin={initialPosition.coords}
-            destination={{
+            origin={ initialPosition.coords }
+            destination={ {
               latitude: -23.68037,
               longitude: -46.49932,
               latitudeDelta: 0.005,
               longitudeDelta: 0.005,
             }}
+
             strokeWidth={5}
             strokeColor="#496BBa"
             apikey={mapskey}
@@ -143,7 +145,7 @@ export default function App() {
             }}
             title="Destino final"
             description="Meu destino"
-            pinColor={"yellow"}
+            pinColor={'yellow'}
           />
         </MapView>
       ) : (
@@ -170,6 +172,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 });
+
+
 
 const grayMapStyle = [
   {
@@ -393,3 +397,4 @@ const grayMapStyle = [
     ],
   },
 ];
+

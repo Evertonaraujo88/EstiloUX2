@@ -37,8 +37,8 @@ export default function App() {
         return;
       }
 
-      /* //Obter o token de envio de notificação
-      const token = await Notifications.getExpoPushTokenAsync();
+      //Obter o token de envio de notificação
+      /* const token = await Notifications.getExpoPushTokenAsync();
 
       console.log(token); */
 
@@ -49,9 +49,10 @@ export default function App() {
           body: 'Criando uma poc para implementar expo notifications no aplicativo',
           
         },
-        trigger: {
+        trigger: null
+        /* {
           seconds: 2
-        }
+        } */
 
       })
 

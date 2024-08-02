@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos.Test\\Calculos.Test.csproj": {}
+    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos.Test\\Calculos.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos.Test\\Calculos.Test.csproj": {
+    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos.Test\\Calculos.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos.Test\\Calculos.Test.csproj",
+        "projectUniqueName": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos.Test\\Calculos.Test.csproj",
         "projectName": "Calculos.Test",
-        "projectPath": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos.Test\\Calculos.Test.csproj",
-        "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos.Test\\obj\\",
+        "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos.Test\\Calculos.Test.csproj",
+        "packagesPath": "C:\\Users\\evert\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\evert\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +22,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos\\Calculos.csproj": {
-                "projectPath": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos\\Calculos.csproj"
+              "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos\\Calculos.csproj": {
+                "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos\\Calculos.csproj"
               }
             }
           }
@@ -38,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -46,23 +52,23 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.6.0, )"
+              "version": "[17.10.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[6.0.0, )"
+              "version": "[6.0.2, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.9.0, )"
             },
             "xunit.runner.visualstudio": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[2.4.5, )"
+              "version": "[2.8.2, )"
             }
           },
           "imports": [
@@ -81,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos\\Calculos.csproj": {
+    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos\\Calculos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos\\Calculos.csproj",
+        "projectUniqueName": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos\\Calculos.csproj",
         "projectName": "Calculos",
-        "projectPath": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos\\Calculos.csproj",
-        "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\32599952859\\Desktop\\4º Termo\\Calculos\\obj\\",
+        "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos\\Calculos.csproj",
+        "packagesPath": "C:\\Users\\evert\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\Calculos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\evert\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -103,6 +109,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -115,6 +122,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -136,7 +148,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

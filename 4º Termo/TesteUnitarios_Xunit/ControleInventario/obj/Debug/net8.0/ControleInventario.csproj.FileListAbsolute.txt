@@ -13,3 +13,18 @@ C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ControleInvent
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ControleInventario\obj\Debug\net8.0\ControleInventario.pdb
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ControleInventario\obj\Debug\net8.0\ControleInventario.genruntimeconfig.cache
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ControleInventario\obj\Debug\net8.0\ref\ControleInventario.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\bin\Debug\net8.0\ControleInventario.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\bin\Debug\net8.0\ControleInventario.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\bin\Debug\net8.0\ControleInventario.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\bin\Debug\net8.0\ControleInventario.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\bin\Debug\net8.0\ControleInventario.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.sourcelink.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\refint\ControleInventario.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ControleInventario.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ControleInventario\obj\Debug\net8.0\ref\ControleInventario.dll

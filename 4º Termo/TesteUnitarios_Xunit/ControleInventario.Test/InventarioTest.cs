@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using Xunit;
+using ControleInventario;
+
 namespace ControleInventario.Test
 {
     public class InventarioTest
@@ -16,7 +19,6 @@ namespace ControleInventario.Test
             Inventario.AdicionarProduto("ProdutoA", 10);
             Inventario.AdicionarProduto("ProdutoA", 5);
             Inventario.AdicionarProduto("ProdutoB", 8);
-
 
             // Act & Assert: Verificar se os produtos foram adicionados corretamente
             // Verifica se a quantidade do ProdutoA foi incrementada corretamente
@@ -41,7 +43,7 @@ namespace ControleInventario.Test
             Assert.Equal(20, quantidade);
         }
 
-        
+        // Teste unitário para verificar a quantidade de um produto inexistente
         [Fact]
         public void TestarObterQuantidadeProdutoInexistente()
         {

@@ -35,6 +35,7 @@ namespace ControleInventario
         {
             // Procura o produto pelo nome na lista
             var produto = _produtos.FirstOrDefault(p => p.Nome == nome);
+
             // Retorna a quantidade do produto, ou zero se o produto não existir
             return produto != null ? produto.Quantidade : 0;
         }

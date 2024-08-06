@@ -15,6 +15,7 @@ namespace ValidacaoEmail.Test
         [Theory]
 
         //InlineData: é usado em conjunto com [Theory] para fornecer os dados de entrada para o método de teste.
+        //          dados               esperado
         [InlineData("everton@email.com", true)]
         [InlineData("email@email", false)]
         [InlineData("senai.com", false)]

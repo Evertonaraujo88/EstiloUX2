@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ConversaoTemperatura")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+134e72a07bb927c5116eb88eb28691d223177041")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+897572290bf589f10393414d1da4343a4326342b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ConversaoTemperatura")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ConversaoTemperatura")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

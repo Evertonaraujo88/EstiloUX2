@@ -13,3 +13,18 @@ C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ConversaoTempe
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.pdb
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.genruntimeconfig.cache
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ConversaoTemperatura\obj\Debug\net8.0\ref\ConversaoTemperatura.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\bin\Debug\net8.0\ConversaoTemperatura.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\bin\Debug\net8.0\ConversaoTemperatura.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\bin\Debug\net8.0\ConversaoTemperatura.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\bin\Debug\net8.0\ConversaoTemperatura.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\bin\Debug\net8.0\ConversaoTemperatura.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.sourcelink.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\refint\ConversaoTemperatura.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ConversaoTemperatura.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ConversaoTemperatura\obj\Debug\net8.0\ref\ConversaoTemperatura.dll

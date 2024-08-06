@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj": {}
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversaoTemperatura\\ConversaoTemperatura.csproj": {
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversaoTemperatura\\ConversaoTemperatura.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversaoTemperatura\\ConversaoTemperatura.csproj",
+        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversaoTemperatura\\ConversaoTemperatura.csproj",
         "projectName": "ConversaoTemperatura",
-        "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversaoTemperatura\\ConversaoTemperatura.csproj",
-        "packagesPath": "C:\\Users\\evert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversaoTemperatura\\obj\\",
+        "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversaoTemperatura\\ConversaoTemperatura.csproj",
+        "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversaoTemperatura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\evert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,11 +34,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -61,21 +55,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj": {
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj",
+        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj",
         "projectName": "ConversorTemperaturaTest",
-        "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj",
-        "packagesPath": "C:\\Users\\evert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversorTemperaturaTest\\obj\\",
+        "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversorTemperaturaTest\\ConversorTemperaturaTest.csproj",
+        "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversorTemperaturaTest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\evert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,15 +77,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversaoTemperatura\\ConversaoTemperatura.csproj": {
-                "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ConversaoTemperatura\\ConversaoTemperatura.csproj"
+              "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversaoTemperatura\\ConversaoTemperatura.csproj": {
+                "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ConversaoTemperatura\\ConversaoTemperatura.csproj"
               }
             }
           }
@@ -100,11 +93,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -144,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario.Test\\ControleInventario.Test.csproj": {}
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario.Test\\ControleInventario.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario.Test\\ControleInventario.Test.csproj": {
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario.Test\\ControleInventario.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario.Test\\ControleInventario.Test.csproj",
+        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario.Test\\ControleInventario.Test.csproj",
         "projectName": "ControleInventario.Test",
-        "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario.Test\\ControleInventario.Test.csproj",
-        "packagesPath": "C:\\Users\\evert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario.Test\\obj\\",
+        "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario.Test\\ControleInventario.Test.csproj",
+        "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario.Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\evert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +22,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario\\ControleInventario.csproj": {
-                "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario\\ControleInventario.csproj"
+              "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario\\ControleInventario.csproj": {
+                "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario\\ControleInventario.csproj"
               }
             }
           }
@@ -39,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -52,19 +46,23 @@
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.8.0, )"
+              "version": "[17.6.0, )"
             },
             "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.4.2, )"
             },
             "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.5.3, )"
+              "version": "[2.4.5, )"
             }
           },
           "imports": [
@@ -83,21 +81,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario\\ControleInventario.csproj": {
+    "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario\\ControleInventario.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario\\ControleInventario.csproj",
+        "projectUniqueName": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario\\ControleInventario.csproj",
         "projectName": "ControleInventario",
-        "projectPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario\\ControleInventario.csproj",
-        "packagesPath": "C:\\Users\\evert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\evert\\OneDrive\\Área de Trabalho\\Tecnico-Senai\\4º Termo\\ControleInventario\\obj\\",
+        "projectPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario\\ControleInventario.csproj",
+        "packagesPath": "C:\\Users\\32599952859\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\4º Termo\\TesteUnitarios_Xunit\\ControleInventario\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\evert\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\32599952859\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,7 +103,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -118,11 +115,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -144,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

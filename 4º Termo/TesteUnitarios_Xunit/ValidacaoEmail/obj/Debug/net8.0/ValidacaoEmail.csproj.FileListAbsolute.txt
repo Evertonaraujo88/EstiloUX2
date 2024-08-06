@@ -13,3 +13,18 @@ C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ValidacaoEmail
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.pdb
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.genruntimeconfig.cache
 C:\Users\evert\OneDrive\Área de Trabalho\Tecnico-Senai\4º Termo\ValidacaoEmail\obj\Debug\net8.0\ref\ValidacaoEmail.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\bin\Debug\net8.0\ValidacaoEmail.exe
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\bin\Debug\net8.0\ValidacaoEmail.deps.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\bin\Debug\net8.0\ValidacaoEmail.runtimeconfig.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\bin\Debug\net8.0\ValidacaoEmail.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\bin\Debug\net8.0\ValidacaoEmail.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.sourcelink.json
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\refint\ValidacaoEmail.dll
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.pdb
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ValidacaoEmail.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\Tecnico-Senai\4º Termo\TesteUnitarios_Xunit\ValidacaoEmail\obj\Debug\net8.0\ref\ValidacaoEmail.dll

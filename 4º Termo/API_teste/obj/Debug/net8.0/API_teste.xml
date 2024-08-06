@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>API_teste</name>
+    </assembly>
+    <members>
+        <member name="M:API_teste.Controllers.ProductsController.Get">
+            <summary>
+            Obtém todos os produtos.
+            </summary>
+            <returns>Lista de produtos.</returns>
+        </member>
+        <member name="M:API_teste.Controllers.ProductsController.Get(System.Guid)">
+            <summary>
+            Obtém um produto pelo ID.
+            </summary>
+            <param name="id">ID do produto.</param>
+            <returns>Produto correspondente ao ID.</returns>
+        </member>
+        <member name="M:API_teste.Controllers.ProductsController.Post(API_teste.Domains.Product)">
+            <summary>
+            Adiciona um novo produto.
+            </summary>
+            <param name="product">Produto a ser adicionado.</param>
+            <returns>Resultado da operação.</returns>
+        </member>
+        <member name="M:API_teste.Controllers.ProductsController.Put(System.Guid,API_teste.Domains.Product)">
+            <summary>
+            Atualiza um produto existente.
+            </summary>
+            <param name="id">ID do produto a ser atualizado.</param>
+            <param name="product">Dados do produto a serem atualizados.</param>
+            <returns>Resultado da operação.</returns>
+        </member>
+        <member name="M:API_teste.Controllers.ProductsController.Delete(System.Guid)">
+            <summary>
+            Remove um produto pelo ID.
+            </summary>
+            <param name="id">ID do produto a ser removido.</param>
+            <returns>Resultado da operação.</returns>
+        </member>
+        <member name="T:API_teste.Interfaces.IProductsRepository">
+            <summary>
+            Interface para o repositório de produtos, definindo os métodos necessários para manipulação de produtos.
+            </summary>
+        </member>
+        <member name="M:API_teste.Interfaces.IProductsRepository.GetProducts">
+            <summary>
+            Obtém a lista de todos os produtos.
+            </summary>
+            <returns>Lista de produtos.</returns>
+        </member>
+        <member name="M:API_teste.Interfaces.IProductsRepository.Post(API_teste.Domains.Product)">
+            <summary>
+            Adiciona um novo produto.
+            </summary>
+            <param name="product">Objeto do tipo Product a ser adicionado.</param>
+        </member>
+        <member name="M:API_teste.Interfaces.IProductsRepository.Delete(System.Guid)">
+            <summary>
+            Remove um produto pelo seu identificador.
+            </summary>
+            <param name="id">Identificador único do produto a ser removido.</param>
+        </member>
+        <member name="M:API_teste.Interfaces.IProductsRepository.GetById(System.Guid)">
+            <summary>
+            Obtém um produto pelo seu identificador.
+            </summary>
+            <param name="id">Identificador único do produto.</param>
+            <returns>Objeto do tipo Product.</returns>
+        </member>
+        <member name="M:API_teste.Interfaces.IProductsRepository.Put(System.Guid,API_teste.Domains.Product)">
+            <summary>
+            Atualiza um produto existente.
+            </summary>
+            <param name="id">Identificador único do produto a ser atualizado.</param>
+            <param name="product">Objeto do tipo Product com as novas informações.</param>
+        </member>
+        <member name="T:API_teste.Migrations.ApiTest">
+            <inheritdoc />
+        </member>
+        <member name="M:API_teste.Migrations.ApiTest.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_teste.Migrations.ApiTest.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:API_teste.Migrations.ApiTest.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

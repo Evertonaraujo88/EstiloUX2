@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "FdKEdnr23Z8I1LsZnc/hKRQD8T7vlfWE6Ga57JwhA2F3MKGdFq7Y5suyZQHAD/CQg0k/ctts11AjtYSuflQAdA==",
+  "dgSpecHash": "NWny6A9rvLlBB9DpJZTqrZW7R0EPXO7Wf9AOVp2ZQLV4NTt87Ga0ttFhK5GWP1Lqbj6CpsihrTx3n89hGoA7hA==",
   "success": true,
   "projectFilePath": "C:\\Users\\32599952859\\Desktop\\Tecnico-Senai\\2º Termo Senai\\Banco de dados\\Event+_codeFirst\\webapi.event+.manha\\webapi.event+.manha.csproj",
   "expectedPackageFiles": [
@@ -74,5 +74,16 @@
     "C:\\Users\\32599952859\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\32599952859\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'System.IdentityModel.Tokens.Jwt' 7.0.0 tem uma moderado vulnerabilidade de gravidade conhecida, https://github.com/advisories/GHSA-59j7-ghrg-fj52",
+      "libraryId": "System.IdentityModel.Tokens.Jwt",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

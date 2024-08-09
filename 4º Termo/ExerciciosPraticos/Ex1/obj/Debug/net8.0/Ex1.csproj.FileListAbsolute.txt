@@ -1,0 +1,14 @@
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\bin\Debug\net8.0\Ex1.exe
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\bin\Debug\net8.0\Ex1.deps.json
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\bin\Debug\net8.0\Ex1.runtimeconfig.json
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\bin\Debug\net8.0\Ex1.dll
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\bin\Debug\net8.0\Ex1.pdb
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.AssemblyInfoInputs.cache
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.AssemblyInfo.cs
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.csproj.CoreCompileInputs.cache
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.dll
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\refint\Ex1.dll
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.pdb
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\Ex1.genruntimeconfig.cache
+C:\Users\32599952859\Desktop\ExerceciosRevisão\ExerciciosPraticos\Ex1\obj\Debug\net8.0\ref\Ex1.dll

@@ -1,0 +1,70 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF6DD584-51B3-4F07-8154-54D5021F4AB8}|..\\ControleInventario.Test\\ControleInventario.Test.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\tecnico-senai\\4\u00BA termo\\controleinventario.test\\inventariotest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8439EDD-DCDC-41EB-8E48-6579D089C342}|ControleInventario.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\tecnico-senai\\4\u00BA termo\\controleinventario\\inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8439EDD-DCDC-41EB-8E48-6579D089C342}|ControleInventario.csproj|solutionrelative:inventario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8439EDD-DCDC-41EB-8E48-6579D089C342}|ControleInventario.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\tecnico-senai\\4\u00BA termo\\controleinventario\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8439EDD-DCDC-41EB-8E48-6579D089C342}|ControleInventario.csproj|solutionrelative:produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InventarioTest.cs",
+              "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario.Test\\InventarioTest.cs",
+              "RelativeDocumentMoniker": "..\\ControleInventario.Test\\InventarioTest.cs",
+              "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario.Test\\InventarioTest.cs",
+              "RelativeToolTip": "..\\ControleInventario.Test\\InventarioTest.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAUwCsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T02:21:15.562Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Inventario.cs",
+              "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario\\Inventario.cs",
+              "RelativeDocumentMoniker": "Inventario.cs",
+              "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario\\Inventario.cs",
+              "RelativeToolTip": "Inventario.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAQwCAAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T02:18:13.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario\\Produto.cs",
+              "RelativeDocumentMoniker": "Produto.cs",
+              "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\Tecnico-Senai\\4\u00BA Termo\\ControleInventario\\Produto.cs",
+              "RelativeToolTip": "Produto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-02T02:17:15.438Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
